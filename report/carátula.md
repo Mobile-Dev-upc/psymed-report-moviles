@@ -5,12 +5,12 @@
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
 ## <div style="text-align: center;"> Ingeniería de Software </div>
-## <div style="text-align: center;"> Ciclo 2025-02 </div>
+## <div style="text-align: center;"> Ciclo 2025-20 </div>
 ## <div style="text-align: center;"> 1ACC0238 - Aplicaciones para Dispositivos Móviles </div>
-## <div style="text-align: center;"> Nrc: 1827 </div>
+## <div style="text-align: center;"> NRC: 1827 </div>
 ## <div style="text-align: center;"> David Gerardo Quevedo Velasco </div>
 ## <div style="text-align: center;"> Informe de TB2 </div>
-## <div style="text-align: center;"> Start up: Go6U </div>
+## <div style="text-align: center;"> Start up: Go7U </div>
 ## <div style="text-align: center;"> Product: PSYMED </div>
 
 ### <div style="text-align: center;"> INTEGRANTES:</div>
