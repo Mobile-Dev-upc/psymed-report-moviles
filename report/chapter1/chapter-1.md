@@ -4,22 +4,20 @@
 ## 1.1. StartUp Profile
 
 ### 1.1.1. Description de la StartUp
-PsyMed es una plataforma web diseñada para optimizar la gestión y el seguimiento de pacientes en centros psiquiátricos. La aplicación facilita la comunicación continua entre psiquiatras y pacientes, permitiendo un monitoreo integral del progreso, el seguimiento personalizado de tratamientos, y la gestión eficiente de citas clínicas en un entorno seguro y accesible. PsyMed se enfoca en mejorar la calidad de la atención al proporcionar herramientas que permiten a los profesionales de la salud mental mantenerse conectados con sus pacientes de manera efectiva y con información actualizada en todo momento.
+PsyMed es una plataforma web diseñada para optimizar la gestión y el seguimiento de pacientes en proceso de terapia con profesionales de la salud mental. La aplicación facilita la comunicación continua entre psiquiatras y pacientes, permitiendo un monitoreo integral del progreso, el seguimiento personalizado de tratamientos, y la gestión eficiente de citas clínicas en un entorno seguro y accesible. PsyMed se enfoca en mejorar la calidad de la atención al proporcionar herramientas que permiten a los profesionales de la salud mental mantenerse conectados con sus pacientes de manera efectiva y con información actualizada en todo momento.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
 |                                                                                                      | Apellido y Nombre                                 | Carrera                | Acerca de                                                                                                                                                                                                                    | Habilidades                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <img src="https://github.com/Biblioteca-de-Software/final-report/raw/dev/report/chapter1/img_1.png"> | Maita Falckenheiner, Romina Guadalupe(u202213765) | Ingeniería de Software | Soy estudiante de Ingeniería de Software, actualmente estoy haciendo prácticas como desarrolladora Full Stack para un proyecto de Django. Me apasiona la tecnología y la música.                                             | Liderazgo, competitividad y organización.                                                                                                                                          |
-| <img src="https://github.com/user-attachments/assets/c06ef236-b869-43e8-a779-b9ca46d41364" />        | Asmad Padilla, Fatima Andrea (u20221b490)         | Ingeniería de Software | Soy estudiante a tiempo completo, me interesa la auditoría de software y me gustaría especializarme en este campo en un futuro.                                                                                              | Organización, responsabilidad y análisis crítico.                                                                                                                                  | 
+| <img src="https://github.com/Biblioteca-de-Software/final-report/raw/dev/report/chapter1/img_1.png"> | Maita Falckenheiner, Romina Guadalupe(u202213765) | Ingeniería de Software | Soy estudiante de Ingeniería de Software, actualmente estoy haciendo prácticas como desarrolladora Full Stack para un proyecto de Django. Me apasiona la tecnología y la música.                                             | Liderazgo, competitividad y organización.                                                                                                                                          |                                                                                                                                | 
 | <img src="https://github.com/Biblioteca-de-Software/final-report/raw/dev/report/chapter1/img_3.png"> | Torres Flores, Paolo Alessandro(u20221f613)       | Ingeniería de Software | Soy un estudiante de 5to ciclo con afán de mejorar cada día que pasa. Tengo muchas aspiraciones, ya sea en mi carrera como personalmente, y lucho diariamente para acercarme cada vez más a ellas.                           | Me considero una persona adaptable al entorno, sé trabajar en equipo y aprendo rápido. Mentalidad para resolver problemas. Conocimiento básico de las funcionalidades de software. |
-| <img src="https://github.com/Biblioteca-de-Software/final-report/raw/dev/report/chapter1/img_7.png"> | Nakasone Gomes, Marco Antonio(u202210790)         | Ingeniería de Software | Soy estudiante de Ingeniería de Software, tengo cualidades como la perseverancia, que me ayudan a ser resiliente ante cualquier adversidad en el trabajo. Además, soy buen compañero y siempre busco lo mejor para mi grupo. | Mentalidad enfocada en la resolución de problemas y conocimientos básicos de funcionalidades de software.                                                                          |
 
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
 
-- Who: El problema afecta a los psiquiatras, pacientes con trastornos mentales, y al sistema de salud en general.
+- Who: El problema afecta a los profesionaled de la salud mental, pacientes de los mismos, y al sistema de salud en general.
 
 - What: A pesar de las políticas de salud pública que han dado mayor importancia a la salud mental, el sistema sigue siendo incapaz de atender a la gran mayoría de la población afectada por trastornos mentales, como la depresión y la ansiedad.
 
@@ -103,7 +101,7 @@ El segmento inicial para la implementación de esta plataforma estará compuesto
     que la funcionalidad de gestión de citas no se integre correctamente con el resto de la plataforma o que las instituciones no perciban un valor claro en la adopción de una nueva plataforma tecnológica.
 
 
- ---
+
 
 **User Assumptions**
 
@@ -143,7 +141,7 @@ El segmento inicial para la implementación de esta plataforma estará compuesto
 
 **Colaboración y Coordinación Profesional:** Para los profesionales de la salud mental que trabajan en equipo, el outcome deseado es una mejor colaboración y coordinación en el tratamiento multidisciplinario de los pacientes. Esto incluye el fácil la organización de citas conjuntas, y la capacidad de monitorear el progreso de los pacientes en tiempo real. El éxito se evalúa por la eficiencia en la coordinación de tratamientos y la satisfacción de los profesionales con la colaboración facilitada por la plataforma.
 
----
+
 
 **Business Outcomes:**
 
@@ -153,7 +151,7 @@ El segmento inicial para la implementación de esta plataforma estará compuesto
 
 **Impacto Positivo en la Salud Mental:** A lo largo del primer año de operación, se espera que el uso de la plataforma reduzca la carga administrativa en un 30% para los profesionales de salud mental que la utilicen activamente, medido a través de encuestas de usuario y estudios de tiempo dedicados a tareas administrativas antes y después de la adopción de la plataforma. Además, se busca que al menos el 20% de los pacientes tratados a través de la plataforma reporten mejoras en la satisfacción con la atención recibida, lo que se evaluará mediante encuestas periódicas a los pacientes.
 
----
+
 **Features Assumptions:**
 
 **1. Acceso a Herramientas de Gestión Especializadas:**
