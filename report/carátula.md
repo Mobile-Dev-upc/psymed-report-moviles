@@ -18,18 +18,18 @@
     <table>
       <thead>
         <tr>
-          <th style="background-color: #333; color: #fff;">Apellidos y Nombres</th>
           <th style="background-color: #333; color: #fff;">Código de Alumno</th>
+          <th style="background-color: #333; color: #fff;">Nombre y Apellido</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Torres Flores, Paolo Alessandro</td>
           <td>U20221F613</td>
+          <td>Torres Flores, Paolo Alessandro</td>
         </tr>
         <tr>
-          <td>Maita Falckenheiner, Romina Guadalupe</td>
           <td>U202213765</td>
+          <td>Maita Falckenheiner, Romina Guadalupe</td>
         </tr>
       </tbody>
     </table> 
@@ -41,16 +41,6 @@
 
 
 ## Registro de Versiones del Informe
-
-**Proyecto:** PSYMED – Informe TP
-**Periodo de trabajo:** 04/09/2025 – 06/10/2025  
-**Integrantes del equipo:**  
-- **Paolo Torres** – Líder de UX / UI  
-- **Romina Maita** – Desarrolladora Backend  
-- **Fatima Asmad** – Desarrolladora Frontend  
-- **Marco Nakasone** – Analista de Requerimientos  
-
----
 
 ## Historial de Versiones
 
@@ -68,11 +58,17 @@
 |     1.0 | 13/09/2025 | Romina         | Diseño de Class Diagrams, Class Dictionary y Database Diagram. Inicio de Capítulo V con Software Configuration Management.                                                      |
 |     1.1 | 14/09/2025 | Todo el equipo | Revisión final, corrección de estilo y ortografía. Inclusión de evidencia de implementación (Landing, Frontend, Backend, API), bibliografía y anexos. Preparación para entrega. |
 
----
 
+
+<div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
+Durante la documentación del proyecto el grupo utilizó GitHub como controlador de versiones permitiendo ver el registro de cambios durante el ciclo académico.
+
+A continuación se muestra una captura de los insights de los integrantes de acuerdo a las entregas:
+
+TB2: 
 <img width="928" height="482" alt="inisss" src="https://github.com/user-attachments/assets/7234530d-4d15-47d8-bf5f-943253430be7" />
 
 # Contenido
