@@ -74,10 +74,6 @@ TB2:
 # Contenido
 ## Tabla de Contenidos
 
-## Student Outcome 
-
-## Objetivos SMART
-
 ### [Student Outcome](#student-outcome)
 ### [Objetivos SMART](#objetivos-smart)
 
@@ -188,3 +184,9 @@ TB2:
 ### [Bibliografía](#bibliografía)
 ### [Anexos](#anexos)
 
+<div style="page-break-after: always;"></div>
+
+## Student Outcome 
+
+
+## Objetivos SMART
