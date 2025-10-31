@@ -399,7 +399,7 @@ expectativas de nuestros usuarios.
 
 ![So-Patient.png](/assets/SO-patient.png)
 
-## **User Task Matrix**
+## 2.3.2. **User Task Matrix**
 
 En esta sección se presenta el **User Task Matrix**, que concentra las tareas que los User Persona (que representan a cada segmento) realizan para cumplir sus objetivos. No se deben confundir tareas (tasks) con opciones o características de software, pues las tareas deben ser realizadas por los segmentos independientemente de la existencia de la solución de software.
 
@@ -429,7 +429,7 @@ En la matriz presentada, se pueden observar las siguientes tareas con mayor frec
 Las coincidencias entre los segmentos destacan la importancia de una solución integrada que facilite la gestión tanto para médicos como para pacientes. Las principales diferencias se reflejan en la naturaleza de las tareas, donde los médicos tienen un enfoque más administrativo y clínico, mientras que los pacientes se centran en la gestión personal de su atención médica.
 
 
-## **User Journey Mapping**
+## 2.3.3. **User Journey Mapping**
 
 El User Journey Mapping se desarrolló para comprender la experiencia de los usuarios al interactuar con nuestra plataforma. Este mapeo detalla cada paso que el usuario realiza, los obstáculos que puede encontrar, y las emociones que surgen en el proceso. Así, nos ayuda a identificar oportunidades para mejorar la usabilidad y satisfacción del usuario.
 
@@ -439,7 +439,7 @@ El User Journey Mapping se desarrolló para comprender la experiencia de los usu
 ### **Segmento 2: Pacientes**
 ![UJMPaciente.png](/assets/UJMPaciente.png)
 
-## **Emphaty Mapping**
+## 2.3.4. **Emphaty Mapping**
 
 
 Para la creación del Empathy Map, hemos utilizado la información obtenida de nuestros dos User Personas que representan nuestro segmento objetivo. Este mapa nos permite profundizar en la comprensión de las necesidades, pensamientos, emociones y comportamientos de los usuarios, ayudándonos a diseñar soluciones más alineadas con sus expectativas y experiencias reales.
@@ -450,12 +450,6 @@ Para la creación del Empathy Map, hemos utilizado la información obtenida de n
 ### **Segmento 2: Pacientes**
 ![Texto alternativo](/assets/EMPaciente.png)
 
-
-### 2.3.5 As-is Scenario Mapping
-- **Segmento objetivo:** Pisquiatra  
-  ![as-is1](/assets/AS-IS%20Pisquiatra.jpg)
-- **Segmento objetivo:** Paciente    
-  ![as-is2](/assets/AS-IS%20Cliente.jpg)
 
 ## 2.4. Ubiquitous Language
 
