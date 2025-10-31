@@ -188,5 +188,24 @@ TB2:
 
 ## Student Outcome 
 
+ABET - EAC - Student Outcome 7
+Criterio: La capacidad de adquirir y aplicar nuevos conocimientos según sea
+necesario, utilizando estrategias deaprendizaje apropiadas.
+
+| Criterio específico                                                                                                                     | Acciones realizadas | Conclusiones |
+|-----------------------------------------------------------------------------------------------------------------------------------------|---------------------|--------------|
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. |                     |              |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.  |                     |              |
 
 ## Objetivos SMART
+
+### Paolo Alessandro Torres Flores
+Objetivo 1: Completar un máster en Gestión de Proyectos de Tecnología en un plazo máximo de tres años después de finalizar la carrera, con el propósito de adquirir competencias avanzadas en liderazgo y dirección de equipos de desarrollo de software.
+Objetivo 2: Alcanzar un puesto de Project Manager en una organización de tecnología o consultoría antes de cinco años de egresado, liderando proyectos de transformación digital que generen impacto en el sector educativo o empresarial.
+
+### Romina Guadalupe Maita Falckenheiner:
+
+Objetivo 1: Obtener una certificación en Gestión de Productos Digitales (Product Management) en un plazo máximo de 18 meses tras egresar, con el fin de fortalecer sus capacidades de planificación, análisis de mercado y liderazgo de productos tecnológicos.
+Objetivo 2: Desempeñarse como Product Owner en una startup tecnológica dentro de los primeros cuatro años de su carrera profesional, liderando equipos multidisciplinarios para el desarrollo de soluciones digitales orientadas a la educación y el bienestar social.
+
+<div style="page-break-after: always;"></div>
