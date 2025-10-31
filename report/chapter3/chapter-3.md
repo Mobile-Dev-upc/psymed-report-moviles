@@ -1,10 +1,5 @@
-# CAPÍTULO III: Requirements Specifications
+# Mover a capitulo 2
 
-## 3.1. To-Be Scenario Mapping.
-### Segmento Profesionales:
-![Professionals To-Be Scenario Mapping](../../assets/to-be-profesional.jpg)
-### Segmento Pacientes:
-![Pattients_TobeScenarioMapping](../../assets/to-be-paciente.jpg)
 ## 3.2. User Stories.
 
 ## Historias de usuario para la aplicación web
