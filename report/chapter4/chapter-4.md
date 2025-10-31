@@ -1,11 +1,12 @@
-# 4. Style Guidelines
-## 4.1. General Style Guidelines: 
+# Capítulo III: Solution UI/UX Design
+## 3.1. Product Design: 
 En esta sección, presentaremos el concepto de diseño para la página web y
 la aplicación, para proporcionar a nuestros usuarios una interfaz amigable
 y funcional. Con este propósito en mente, hemos optado por compartir un proyecto
 Figma en el que hemos trabajado todos y el cual todos pueden editar y usar los
-Assets,fonts y demas.
-### 4.1.1. General Style Guidelines
+Assets,fonts y demás.
+
+### 3.1.1. General Style Guidelines
 - **Branding:** El branding del logo de nuestra aplicación "PSYMED" representa un cerebro
   sobre un fondo verde, simbolizando la fusión entre la salud mental
   y el soporte administrativo eficiente. El cerebro es un emblema
@@ -110,7 +111,7 @@ claramente la información proporcionada. Este enfoque también refleja nuestro
 compromiso con la seriedad y profesionalismo en el tratamiento de la salud 
 mental.
 
-### 4.1.2. Web Style Guidelines
+### 3.1.1.1. Web Style Guidelines
 
 -**Colors:**
 Los colores de la aplicación web se eligieron para crear un 
@@ -154,11 +155,11 @@ signos vitales y comentarios diarios.
   <img width="400" height="210" alt="image" src="https://github.com/user-attachments/assets/de4b2ecd-8c84-4127-9f29-201ddf186834" />
 </div>
 
-### 4.1.3. Mobile Style Guidelines.
+### 3.1.1.2. Mobile Style Guidelines.
 
 En esta sección se definen los lineamientos de estilo aplicados al diseño de la aplicación móvil en sus dos principales sistemas operativos: iOS y Android. El objetivo es mantener la identidad visual de PSYMED de manera coherente, pero respetando las guías de usabilidad y diseño nativo de cada plataforma, para garantizar una experiencia óptima y consistente en dispositivos móviles.
 
-#### 4.1.3.1. iOS Mobile Style Guidelines.
+#### 3.1.1.2.1. iOS Mobile Style Guidelines.
 
 Aunque la aplicación está siendo desarrollada en Flutter, se han tomado en cuenta las guías de estilo de iOS para asegurar que la experiencia del usuario sea consistente y familiar en dispositivos Apple.
 
@@ -177,7 +178,7 @@ La interfaz en iOS adopta el estilo de bottom navigation bar y app bars minimali
 Consistency with Flutter:
 Si bien la aplicación se desarrolla en Flutter, se han respetado los lineamientos de iOS para garantizar que la experiencia sea nativa y coherente. Los componentes visuales en Flutter siguen las métricas y proporciones recomendadas por Apple, asegurando que el usuario perciba un diseño alineado con la plataforma.
 
-#### 4.1.3.2. Android Mobile Style Guidelines
+#### 3.1.1.2.2. Android Mobile Style Guidelines
 
 - Colors:
 Los mismos colores base de la identidad de PSYMED se adaptan a la Material Design Guidelines de Google, aplicando jerarquías cromáticas en botones, fondos y textos.
@@ -209,13 +210,13 @@ La navegación principal se implementa mediante un Navigation Drawer o Bottom Na
 - Gestures:
 El diseño incorpora gestos comunes en Android, como long press para abrir menús contextuales o drag & drop en elementos interactivos.
 
-## 4.2. Information Architecture
+## 3.1.2. Information Architecture
 La sección de arquitectura de la información se centra en 
 estructurar el contenido tanto de la aplicación web como 
 de la página principal de **PSYMED**. Esta sección 
 abarca los siguientes aspectos clave:
 
-### 4.2.1. Organization Systems
+### 3.1.2.1. Organization Systems
 Para asegurar una jerarquía clara y precisa en nuestra aplicación, es crucial facilitar una navegación satisfactoria para el usuario. La estructura que hemos definido es la siguiente:
 
 **Medicos:**
@@ -262,7 +263,7 @@ acceder a opciones tales como ver tareas y marcar como completadas.
   <img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/5f3803ae-8940-4afe-a2f0-7bc65ed12674" />
 </div>
 
-### 4.2.2. Labeling Systems
+### 3.1.2.2. Labeling Systems
 
 **Medicos:**
 
@@ -328,7 +329,7 @@ acceder a opciones tales como ver tareas y marcar como completadas.
     - Ver datos estadísticos de su estado a lo largo del tratamiento
 
 
-### 4.2.3. SEO Tags and Meta Tags
+### 3.1.2.3. SEO Tags and Meta Tags
 Las etiquetas reflejan el contenido de nuestro proyecto, abarcando tanto la Landing Page como el Sitio Web. Han sido creadas para mejorar la visibilidad de nuestro proyecto en los principales motores de búsqueda, lo que permitirá a los usuarios encontrar fácilmente nuestra aplicacion de PSYMED.
 
 Para la landing page:
@@ -342,7 +343,7 @@ para el Web Side:
 - **keywords:** Salud Mental,Psiquiatras, Software, Citas Médicas, Historial Clínico, Plataforma Psicólogos, Registro Pacientes, Tratamiento Psicológico, Seguimiento Pacientes.
 - **Author:** closedSource
 
-### 4.2.4. Searching Systems
+### 3.1.2.4. Searching Systems
 Los médicos pueden utilizar los métodos de búsqueda por:
 
 - Filtrado de Información por Fechas:
@@ -352,10 +353,10 @@ Los médicos pueden utilizar los métodos de búsqueda por:
     - Ver sesiones por fecha
   
 Los pacientes pueden utilizar los metodos de busqueda por: 
-- Filtrado de informacion por ID
+- Filtrado de información por ID
     - Confirmación de prescripciones por ID
 
-### 4.2.5. Navigation Systems
+### 3.1.2.5. Navigation Systems
 
 **Para Psiquiatras:**
 
@@ -377,52 +378,52 @@ Al ingresar, los pacientes ven un panel con opciones como "Inicio", "Perfil", "C
 
 Este sistema asegura un acceso rápido y sencillo a las funciones y datos clave tanto para psiquiatras como para pacientes.
 
-## 4.3. Landing Page UI Design
+## 3.1.3. Landing Page UI Design
 
-### 4.3.1. Landing Page Wireframe
+### 3.1.3.1. Landing Page Wireframe
 
 ![Fidelidad 2.jpg](/assets/Fidelidad2.jpg)
 
-### 4.3.2. Landing Page Mock-up
+### 3.1.3.2. Landing Page Mock-up
 
 ![Mockups Landing.jpg](/assets/MockupsLanding.jpg)
 
-## 4.4. Mobile Applications UX/UI Design. 
-### 4.4.1. Mobile Applications Wireframes. 
+## 3.1.4. Mobile Applications UX/UI Design. 
+### 3.1.4.1. Mobile Applications Wireframes. 
 
 <img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/44df38aa-f383-4931-9454-adb51ceb70f3" />
 
-### 4.4.2. Mobile Applications Wireflow Diagrams.
+### 3.1.4.2. Mobile Applications Wireflow Diagrams.
 
 <img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/bed0395c-376d-40c2-b183-33c46bff87f8" />
 
-### 4.4.3. Mobile Applications Mock-ups. 
+### 3.1.4.3. Mobile Applications Mock-ups. 
 
 <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/0ee2fd86-5555-4831-8463-b6c6133e65a5" />
 
-### 4.4.4. Mobile Applications User Flow Diagrams. 
+### 3.1.4.4. Mobile Applications User Flow Diagrams. 
 
 <div align="center">
 <img width="500" height="1000" alt="image" src="https://github.com/user-attachments/assets/caa69590-976b-4524-b78e-a8bc2bd83afe" />
 </div>
 
-## 4.5. Mobile Applications Prototyping. 
+## 3.1.4.5. Mobile Applications Prototyping. 
 
-### 4.5.1. Android Mobile Applications Prototyping. 
+### 3.1.4.5.1. Android Mobile Applications Prototyping. 
 
 En esta sección se presenta el prototipo de la aplicación móvil para Android. El prototipo incluye las pantallas principales y la navegación diseñada para representar la experiencia del usuario.
 
 El prototipo puede visualizarse en el siguiente enlace: [https://marvelapp.com/prototype/34ij6a2g](https://marvelapp.com/prototype/34ij6a2g)
 
-### 4.5.2. iOS Mobile Applications Prototyping. 
+### 3.1.4.5.2. iOS Mobile Applications Prototyping. 
 
 En esta sección se presenta el prototipo de la aplicación móvil para iOS. El prototipo refleja las pantallas principales, la navegación y la interacción previstas para los usuarios del sistema en dispositivos Apple.
 
 El prototipo puede visualizarse en el siguiente enlace: [https://marvelapp.com/prototype/34ij6a2g](https://marvelapp.com/prototype/34ij6a2g)
 
-## 4.6. Web Applications UX/UI Design
+## 3.1.4. Web Applications UX/UI Design
 
-### 4.6.1. Web Applications Wireframes
+### 3.1.4.1. Web Applications Wireframes
 
 En esta sección se presentan los Wireframes de la Aplicación Web, con cada pantalla teniendo un nombre y un propósito definido.
 
@@ -498,10 +499,10 @@ Agenda del Paciente: Calendario donde los pacientes pueden ver sus citas program
 
 ![Wireframes.jpg](/assets/WireFrames(19).png)
 
-### 4.6.2. Web Applications Wireflow Diagrams
+### 3.1.4.2. Web Applications Wireflow Diagram
 ![Wire flow.png](../../assets/Wire%20flow.png)
 
-### 4.6.3. Web Applications Mock-ups
+### 3.1.4.3. Web Applications Mock-ups
 
 En este apartado se muestran los Mock-Ups de la Aplicación Web, con notable más detalle que los Wireframes. Cada pantalla tiene un nombre y propósito específico.
 
@@ -573,7 +574,7 @@ Agenda del Paciente: Calendario donde los pacientes pueden ver sus citas program
 
 ![Wireframes.jpg](/assets/MockUps(19).png)
 
-### 4.6.4. Web Applications User Flow Diagrams
+### 3.1.4.4. Web Applications User Flow Diagrams
 
 <img width="1000" height="250" alt="image" src="https://github.com/user-attachments/assets/247e37f4-58ad-487d-8d8b-15fa5c99aadb" />
 
@@ -635,7 +636,7 @@ En este flow se puede observar como el profesional se loguea e ingresa a la pagi
 
 En este flow se puede observar como el profesional se registra en la plataforma.
 
-## 4.7. Web Applications Prototyping
+## 3.1.4.5. Web Applications Prototyping
 
 Para validar la usabilidad, la experiencia de usuario y los flujos de interacción definidos en la aplicación, se desarrolló un prototipo navegable que permite visualizar las principales pantallas y funcionalidades. Este prototipo facilita la retroalimentación temprana y asegura la alineación del diseño con los requerimientos del sistema.
 
