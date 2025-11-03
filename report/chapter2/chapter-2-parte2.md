@@ -1315,7 +1315,11 @@ TODO: Actualizar la tabla con las historias de usuario completas.
     - UnauthorizedRequestHandlerEntryPoint: manejador para peticiones no autorizadas.
     - WebSecurityConfiguration: configuración de seguridad HTTP y filtros.
 
----
+#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.x.6.2. Bounded Context Database Design Diagram
+
 
 ### 2.6.2. Bounded Context: profiles
 #### 2.6.2.1. Domain Layer
@@ -1364,6 +1368,10 @@ TODO: Actualizar la tabla con las historias de usuario completas.
 - Otras implementaciones de infraestructura:
     - Implementaciones de los servicios outbound (por ejemplo, adaptadores que consumen APIs de otros contextos como ExternalAccountService).
 
+#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.x.6.2. Bounded Context Database Design Diagram
 ---
 
 ### 2.6.3. Bounded Context: appointment and administration
@@ -1415,6 +1423,10 @@ TODO: Actualizar la tabla con las historias de usuario completas.
     - Jobs / Scheduled Tasks: procesos para limpiar citas antiguas, enviar recordatorios, y reconciliar estados.
     - Mecanismos de locking o coordinación para evitar solapamientos en la programación (p. ej. transacciones, filas optimistas/pesimistas según necesidad).
 
+#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.x.6.2. Bounded Context Database Design Diagram
 ---
 
 ### 2.6.4. Bounded Context: medication
@@ -1467,7 +1479,10 @@ TODO: Actualizar la tabla con las historias de usuario completas.
     - Adaptadores para ExternalMedicationInteractionService y ExternalPharmacyService.
 - Soporte operativo:
     - Tareas programadas para reconciliar stock, caducidades y para enviar recordatorios de cumplimiento de dosis si aplica.
-
+#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.x.6.2. Bounded Context Database Design Diagram
 ---
 
 ### 2.6.5. Bounded Context: patientreport
