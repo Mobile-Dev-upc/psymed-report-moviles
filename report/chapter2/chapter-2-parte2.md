@@ -1263,12 +1263,258 @@ TODO: Actualizar la tabla con las historias de usuario completas.
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 #### 2.5.3.3. Software Architecture Deployment Diagrams
+
+
 ## 2.6. Tactical-Level Domain-Driven Design
-### 2.6.x. Bounded Context: <Bounded Context Name>
-#### 2.6.x.1. Domain Layer
-#### 2.6.x.2. Interface Layer
-#### 2.6.x.3. Application Layer
-#### 2.6.x.4 Infrastructure Layer
+
+### 2.6.1. Bounded Context: iam
+#### 2.6.1.1. Domain Layer
+- Aggregate: Account
+    - Propósito: Representar la cuenta de usuario del sistema (credenciales y rol) y su asociación a un perfil.
+    - Atributos relevantes: userName (String, único), password (String), role (Roles enum), profileId (ProfileId embedded).
+    - Comportamientos principales: constructores a partir de SignUpCommand, validación de roles, getRoleInString(), getAllRoles().
+- Value Objects / Enums:
+    - Roles: enum que define roles del sistema (ej. ROLE_PROFESSIONAL, ROLE_PATIENT).
+    - ProfileId: identificador embebido que referencia un perfil asociado.
+- Commands y Queries relevantes:
+    - SignUpCommand, SignInCommand, SeedRolesCommand.
+    - GetAccountByIdQuery.
+- Domain Services / Interfaces:
+    - AccountCommandService: interfaz para operaciones de comando sobre cuentas (registro, autenticación delegada a infra/app).
+    - AccountQueryService: interfaz para consultas de cuenta.
+
+#### 2.6.1.2. Interface Layer
+- Controllers / REST:
+    - AuthenticationController: expone endpoints de autenticación (signin, signup).
+    - AccountsController: endpoints para operaciones CRUD/consulta de cuentas.
+- Resources / DTOs:
+    - SignUpResource, SignInResource, AuthenticatedAccountResource, AccountResource.
+- Transform/Assembler:
+    - SignUpCommandFromResourceAssembler, SignInCommandFromResourceAssembler, AuthenticatedAccountResourceFromEntityAssembler, AccountResourceFromEntityAssembler.
+- ACL / Facade:
+    - IamContextFacade: fachada de alto nivel para integraciones con el contexto IAM.
+
+#### 2.6.1.3. Application Layer
+- Implementaciones de servicios de aplicación:
+    - AccountCommandServiceImpl: implementa la lógica de comandos (registro, manejo de contraseñas delegando a servicios de hashing, creación de entidades).
+    - AccountQueryServiceImpl: implementa consultas y transformación a resources/DTOs.
+- Outbound services (interfaces usadas por la capa de aplicación):
+    - TokenService: abstracción para generación/validación de tokens.
+    - HashingService: abstracción para hashing de contraseñas.
+
+#### 2.6.1.4. Infrastructure Layer
+- Persistencia:
+    - AccountRepository (JPA): implementación de repositorio para la entidad Account.
+- Tokens / Hashing:
+    - TokenServiceImpl, BearerTokenService: implementación de generación y manejo de tokens JWT.
+    - BCryptHashingService, HashingServiceImpl: implementación de hashing de contraseñas usando bcrypt.
+- Seguridad / Authorization pipeline:
+    - UserDetailsServiceImpl: integración con Spring Security para cargar detalles del usuario.
+    - UserDetailsImpl, UsernamePasswordAuthenticationTokenBuilder: modelado de la información de seguridad para autenticación.
+    - BearerAuthorizationRequestFilter: filtro que extrae/valida tokens en requests.
+    - UnauthorizedRequestHandlerEntryPoint: manejador para peticiones no autorizadas.
+    - WebSecurityConfiguration: configuración de seguridad HTTP y filtros.
+
+---
+
+### 2.6.2. Bounded Context: profiles
+#### 2.6.2.1. Domain Layer
+- Aggregates:
+    - ProfessionalProfile
+        - Propósito: Representar el perfil profesional (datos identificadores, contacto, datos profesionales relevantes).
+        - Atributos típicos: identificador propio, datos de contacto (PersonName, Email), dirección (StreetAddress), referencia a cuenta (AccountId).
+    - PatientProfile
+        - Propósito: Representar el perfil de paciente con sus datos personales y de contacto.
+        - Atributos típicos: identificador, PersonName, Email, StreetAddress, referencia a cuenta (AccountId).
+- Value Objects:
+    - PersonName: nombre y apellidos como VO.
+    - StreetAddress: dirección compuesta como VO.
+    - Email: VO para dirección de correo.
+    - AccountId: VO que referencia la cuenta asociada.
+- Commands y Queries relevantes (evitando referencias a historial clínico):
+    - CreateProfessionalProfileCommand, CreatePatientProfileCommand.
+    - CheckProfessionalProfileByIdCommand, CheckPatientProfileByIdCommand.
+    - GetProfessionalProfileByIdQuery, GetProfessionalProfileByAccountIdQuery, GetPatientProfileByIdQuery, GetPatientProfileByAccountIdQuery, GetPatientProfileByProfessionalIdQuery, GetAllPatientProfilesQuery.
+- Domain Services / Interfaces:
+    - ProfessionalProfileCommandService / ProfessionalProfileQueryService.
+    - PatientProfileCommandService / PatientProfileQueryService.
+
+#### 2.6.2.2. Interface Layer
+- Controllers / REST:
+    - ProfessionalProfileController: endpoints para creación y consulta de perfiles profesionales.
+    - PatientProfileController: endpoints para creación y consulta de perfiles de pacientes.
+- Resources / DTOs:
+    - ProfileResource, CreateProfessionalProfileResource, CreatePatientProfileResource.
+- Transform / Assembler:
+    - ProfileResourceFromEntityAssembler, CreateProfessionalProfileCommandFromResourceAssembler, CreatePatientProfileCommandFromResourceAssembler.
+- ACL / Facade:
+    - ProfilesContextFacade (y su implementación ProfilesContextFacadeImpl): fachada para exposiciones del contexto profiles hacia otras zonas de la aplicación.
+
+#### 2.6.2.3. Application Layer
+- Implementaciones de servicios de aplicación:
+    - ProfessionalProfileCommandServiceImpl, ProfessionalProfileQueryServiceImpl.
+    - PatientProfileCommandServiceImpl, PatientProfileQueryServiceImpl.
+- Outbound services (interfaces usadas por la capa de aplicación):
+    - ExternalAccountService: integración con el contexto de cuentas (IAM) para validar o recuperar información de cuenta cuando se crea o consulta un perfil.
+
+#### 2.6.2.4. Infrastructure Layer
+- Persistencia:
+    - ProfessionalProfileRepository (JPA): repositorio para persistir perfiles profesionales.
+    - PatientProfileRepository (JPA): repositorio para persistir perfiles de pacientes.
+- Otras implementaciones de infraestructura:
+    - Implementaciones de los servicios outbound (por ejemplo, adaptadores que consumen APIs de otros contextos como ExternalAccountService).
+
+---
+
+### 2.6.3. Bounded Context: appointment and administration
+#### 2.6.3.1. Domain Layer
+- Aggregates / Entities:
+    - Appointment
+        - Propósito: Representar una cita programada entre un profesional y un paciente (fecha, hora, estado, referencias a perfiles).
+        - Atributos típicos: appointmentId, professionalId (referencia a perfil profesional), patientId (referencia a perfil de paciente), scheduledAt (fecha/hora), status (pendiente, confirmado, cancelado), notes (opcional).
+    - AdministrationRecord (si aplica)
+        - Propósito: Representar registros administrativos asociados a citas o a la gestión de la agenda (facturación básica, estado de atención, metadata administrativa).
+        - Atributos típicos: id, appointmentId, type, metadata.
+- Value Objects:
+    - AppointmentId, TimeSlot, Status (enum) y otros VO para encapsular reglas de validación de fechas y estados.
+- Commands y Queries relevantes:
+    - Commands: CreateAppointmentCommand, UpdateAppointmentCommand, CancelAppointmentCommand, ConfirmAppointmentCommand.
+    - Queries: GetAppointmentByIdQuery, GetAppointmentsByProfessionalQuery, GetAppointmentsByPatientQuery, GetAvailableTimeSlotsQuery.
+- Domain Services / Policies:
+    - AppointmentSchedulingService (reglas para validar solapamientos, disponibilidad de profesionales, ventanas de tiempo).
+    - NotificationsHelper (lógica de alto nivel para determinar notificaciones a enviar; la entrega se delega a infra).
+
+#### 2.6.3.2. Interface Layer
+- Controllers / REST:
+    - AppointmentsController: endpoints para crear, actualizar, cancelar, confirmar y listar citas.
+    - AdministrationController: endpoints administrativos relacionados con gestión de agendas y registros administrativos.
+- Resources / DTOs:
+    - AppointmentResource, CreateAppointmentResource, UpdateAppointmentResource, TimeSlotResource.
+- Transform / Assembler:
+    - Assemblers que convierten entre recursos HTTP y comandos/queries de aplicación.
+- ACL / Facade:
+    - AppointmentContextFacade: fachada para exponer capacidades de citas a otros bounded contexts.
+
+#### 2.6.3.3. Application Layer
+- Command / Query Handlers:
+    - Implementaciones que gestionan CreateAppointmentCommand, UpdateAppointmentCommand, CancelAppointmentCommand y consultas para recuperar agendas y citas.
+- Application Services / Use Cases:
+    - AppointmentCommandServiceImpl: orquesta creación/actualización/cancelación, valida mediante AppointmentSchedulingService y delega persistencia.
+    - AppointmentQueryServiceImpl: implementa consultas y construye resources/DTOs.
+- Outbound services (interfaces):
+    - ExternalNotificationService: interfaz para envío de notificaciones (email, SMS, push) usada por la capa de aplicación.
+    - ExternalCalendarService: interfaz opcional para sincronizar con calendarios externos.
+
+#### 2.6.3.4. Infrastructure Layer
+- Persistencia:
+    - AppointmentRepository (JPA): repositorio para persistir citas y registros administrativos.
+- Integraciones:
+    - Implementación de ExternalNotificationService (adaptadores a sistemas de mensajería o SMTP).
+    - Implementación de ExternalCalendarService (adaptador para sincronización con calendarios externos si aplica).
+- Infra de soporte:
+    - Jobs / Scheduled Tasks: procesos para limpiar citas antiguas, enviar recordatorios, y reconciliar estados.
+    - Mecanismos de locking o coordinación para evitar solapamientos en la programación (p. ej. transacciones, filas optimistas/pesimistas según necesidad).
+
+---
+
+### 2.6.4. Bounded Context: medication
+#### 2.6.4.1. Domain Layer
+- Aggregates / Entities:
+    - Medication
+        - Propósito: Representar un medicamento del catálogo (identificación, nombre comercial y genérico, presentaciones y concentraciones).
+        - Atributos típicos: medicationId, name, genericName, forms (tabletas, jarabe, inyección), strength, manufacturer.
+    - Prescription
+        - Propósito: Representar una prescripción asociada a un paciente y a un profesional, con instrucciones de dosificación y estado.
+        - Atributos típicos: prescriptionId, medicationId, patientId, professionalId, dosage (VO), frequency (VO), duration, instructions, status.
+    - AdministrationRecord
+        - Propósito: Representar registros de administración de dosis (fecha, dosis, quien administró), útil para seguimiento operativo.
+- Value Objects:
+    - Dosage: cantidad y unidad.
+    - Frequency: periodicidad (ej. 3 veces al día) y reglas asociadas.
+    - MedicationId, PrescriptionId.
+- Commands y Queries relevantes:
+    - Commands: CreateMedicationCommand, UpdateMedicationCommand, CreatePrescriptionCommand, UpdatePrescriptionCommand, DiscontinuePrescriptionCommand, RecordAdministrationCommand.
+    - Queries: GetMedicationByIdQuery, SearchMedicationsQuery, GetPrescriptionsByPatientQuery, GetPrescriptionByIdQuery.
+- Domain Services / Policies:
+    - PrescriptionValidationService (reglas de interacción, comprobaciones de contraindicaciones delegadas a servicios externos).
+    - DoseSchedulingService (calcula horarios y ventanas de administración según frequency/dosage).
+
+#### 2.6.4.2. Interface Layer
+- Controllers / REST:
+    - MedicationController: endpoints para gestión de catálogo de medicamentos.
+    - PrescriptionController: endpoints para crear/actualizar/cancelar prescripciones y listar prescripciones por paciente o profesional.
+- Resources / DTOs:
+    - MedicationResource, CreateMedicationResource, PrescriptionResource, CreatePrescriptionResource, AdministrationRecordResource.
+- Transform / Assembler:
+    - Assemblers que convierten entre recursos HTTP y comandos/queries de aplicación.
+- ACL / Facade:
+    - MedicationContextFacade: fachada para exponer servicios del contexto medication a otros bounded contexts.
+
+#### 2.6.4.3. Application Layer
+- Command / Query Handlers:
+    - Implementaciones para CreateMedicationCommand, CreatePrescriptionCommand, RecordAdministrationCommand y consultas relacionadas.
+- Application Services / Use Cases:
+    - MedicationCommandServiceImpl, MedicationQueryServiceImpl.
+    - PrescriptionCommandServiceImpl: orquesta validaciones, llamadas a servicios de interacción y persistencia.
+- Outbound services (interfaces):
+    - ExternalMedicationInteractionService: consulta interacciones/contraindicaciones en bases externas.
+    - ExternalPharmacyService: integración para envío o verificación de stock en farmacias.
+
+#### 2.6.4.4. Infrastructure Layer
+- Persistencia:
+    - MedicationRepository, PrescriptionRepository, AdministrationRecordRepository (JPA): persistencia de catálogo, prescripciones y registros.
+- Integraciones:
+    - Adaptadores para ExternalMedicationInteractionService y ExternalPharmacyService.
+- Soporte operativo:
+    - Tareas programadas para reconciliar stock, caducidades y para enviar recordatorios de cumplimiento de dosis si aplica.
+
+---
+
+### 2.6.5. Bounded Context: patientreport
+#### 2.6.5.1. Domain Layer
+- Aggregates / Entities:
+    - PatientReport
+        - Propósito: Representar informes generados para un paciente (contenido estructurado, metadatos, estado de revisión y publicación).
+        - Atributos típicos: reportId, patientId, authorProfessionalId, title, content (estructura o blob), createdAt, status (draft, reviewed, published).
+    - ReportTemplate
+        - Propósito: Plantillas reutilizables para generación de informes con campos estructurados.
+        - Atributos típicos: templateId, name, structureDefinition.
+- Value Objects:
+    - ReportId, ReportStatus, Metadata (fecha, tags, confidencialidad).
+- Commands y Queries relevantes:
+    - Commands: CreateReportCommand, UpdateReportCommand, ReviewReportCommand, PublishReportCommand.
+    - Queries: GetReportByIdQuery, GetReportsByPatientQuery, GetReportsByAuthorQuery.
+- Domain Services / Policies:
+    - ReportGenerationService (lógica para ensamblar contenido desde templates y datos aportados).
+    - ReportAccessControlService (políticas de visibilidad y acceso según roles y permisos).
+
+#### 2.6.5.2. Interface Layer
+- Controllers / REST:
+    - PatientReportController: endpoints para crear, editar, revisar, publicar y listar informes.
+- Resources / DTOs:
+    - PatientReportResource, CreateReportResource, ReportTemplateResource.
+- Transform / Assembler:
+    - Assemblers para convertir entre entidades/domain commands y recursos HTTP.
+- ACL / Facade:
+    - PatientReportContextFacade: fachada para exponer operaciones de informes a otros contextos.
+
+#### 2.6.5.3. Application Layer
+- Command / Query Handlers:
+    - Handlers que procesan CreateReportCommand, ReviewReportCommand, PublishReportCommand y consultas para recuperación de informes.
+- Application Services / Use Cases:
+    - PatientReportCommandServiceImpl, PatientReportQueryServiceImpl.
+- Outbound services (interfaces):
+    - ExternalStorageService: interfaz para almacenar blobs (PDFs, anexos) en almacenamiento externo.
+    - ExternalNotificationService: notificar publicación o cambios de estado a interesados.
+
+#### 2.6.5.4. Infrastructure Layer
+- Persistencia:
+    - PatientReportRepository (JPA): persistencia de metadatos de informes.
+- Integraciones:
+    - Adaptadores para ExternalStorageService (S3, Filesystem) y para servicios de notificaciones.
+- Soporte operativo:
+    - Jobs para generación batch de reportes, exportación y limpieza de archivos temporales.
+
 #### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
 #### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
 #### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
