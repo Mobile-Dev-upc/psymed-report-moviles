@@ -1,1228 +1,321 @@
-# Mover a capitulo 2
+# Capítulo III: Solution UI/UX Design
+## 3.1. Product Design: 
+En esta sección, presentaremos el concepto de diseño para la página web y
+la aplicación, para proporcionar a nuestros usuarios una interfaz amigable
+y funcional. Con este propósito en mente, hemos optado por compartir un proyecto
+Figma en el que hemos trabajado todos y el cual todos pueden editar y usar los
+Assets,fonts y demás.
+
+### 3.1.1. Style Guidelines
+
+### 3.1.1.1. General Style Guidelines
+
+- **Branding:** El branding del logo de nuestra aplicación "PSYMED" representa un cerebro
+  sobre un fondo verde, simbolizando la fusión entre la salud mental
+  y el soporte administrativo eficiente. El cerebro es un emblema
+  universal del conocimiento y la mente humana, lo que lo convierte
+  en la elección ideal para una plataforma dedicada a apoyar a los
+  médicos en el campo de la salud mental.El fondo verde añade una sensación de equilibrio, serenidad
+  y crecimiento, reflejando el entorno calmado y profesional
+  que nuestra aplicación busca ofrecer. Este diseño visual
+  transmite confianza y un enfoque moderno, asegurando que
+  tanto los médicos como sus pacientes se sientan apoyados en
+  cada etapa de su interacción con la plataforma.
+
+<div align="center">
+  <img src="/assets/PSYMED.png" alt="Logo de la platafroma PSYMED" style="max-width: 50%; height: auto;">
+</div>
+- **Colors:**
+Nuestra paleta de colores se ha seleccionado para proporcionar un 
+entorno digital de apoyo a la salud mental y el bienestar, tanto para 
+los psiquiatras como para sus pacientes. El objetivo principal de 
+nuestra plataforma es crear un espacio donde la confianza, la claridad 
+y la seguridad sean primordiales, asegurando que la interacción entre 
+profesionales y pacientes sea fluida y efectiva. Este enfoque se refleja
+en la selección de colores, que buscan transmitir calma, confiabilidad y 
+profesionalismo. A continuación, se presenta una breve descripción de los 
+colores que se utilizarán en nuestra aplicación:
+
+- **#091133 (Azul Profundo)** Este color aporta un nivel de
+  profundidad y seriedad a la plataforma, lo que lo convierte en una
+  excelente elección para textos clave y elementos que requieren un
+  alto contraste. Su tonalidad oscura asegura una legibilidad superior
+  y destaca información crucial, permitiendo a los usuarios concentrarse
+  en los detalles más importantes con facilidad. Es ideal para títulos,
+  subtítulos, y enlaces que guían la experiencia del usuario de manera
+  efectiva y profesional.
+
+<div align="center">
+  <img width="400" height="210" alt="image" src="https://github.com/user-attachments/assets/a8997847-10d5-447c-9c32-43944f4c3cf4" />
+</div>
+
+- **#FFFFFF (Blanco):** Este color ofrece una apariencia limpia y
+  minimalista, siendo ideal para fondos y áreas de contenido que
+  requieren claridad y simplicidad. Su neutralidad ayuda a crear
+  un espacio visualmente relajante y despejado, permitiendo que
+  otros colores y elementos destacados resalten de manera efectiva.
+  El blanco es fundamental para proporcionar contraste y asegurar
+  que el contenido sea fácil de leer y navegar, especialmente en
+  secciones de la plataforma que buscan ofrecer una experiencia
+  de usuario sin distracciones.
+
+<div align="center">
+  <img width="400" height="210" alt="image" src="https://github.com/user-attachments/assets/eaa6e5b4-83e4-49fc-8c4c-557323dfd225" />
+</div>
+
+- **#10BEAE (Teal Brillante):** Este color vibrante y refrescante
+  aporta energía y modernidad a la plataforma. Es ideal para
+  elementos que requieren un toque de frescura, como botones
+  de acción o enlaces destacados. Su tonalidad brillante y alegre
+  asegura que los usuarios se sientan motivados y comprometidos,
+  creando un ambiente visual que equilibra tanto la funcionalidad
+  como la estética. Este color es perfecto para destacar
+  información que debe ser notada rápidamente, sin comprometer
+  la armonía general de la interfaz.
+
+<div align="center">
+  <img width="400" height="210" alt="image" src="https://github.com/user-attachments/assets/985a5a2c-3d06-4fc7-a6dd-52674cde478b" />
+</div>
+
+**Scale:**
+- **Base:** El tamaño base es de 18px.
+- **Ratio:** Utilizaremos un ratio de escala (por ejemplo, 1.2) que definirá la relación entre los tamaños de texto, creando una jerarquía visual consistente y armoniosa en la aplicación.
+
+
+**Line Spacing (Espaciado entre líneas):** Entre 1.4 y 1.6, dependiendo del tamaño de la fuente y el contexto de uso. Esto asegurará una legibilidad óptima, especialmente en textos más largos.
+
+### Nomenclature
+
+- **Name / Size / Weights**
+
+    - **Heading 0 / 22px / Medium**  
+      Uso: Secciones importantes o subtítulos destacados.
+
+    - **Heading 1 / 38px / Medium**  
+      Uso: Títulos principales, como el nombre de la sección o la página.
+
+    - **Heading 2 / 34px / Medium**  
+      Uso: Subtítulos de menor jerarquía, pero aún relevantes.
+
+    - **Heading 3 / 25px / Medium**  
+      Uso: Títulos de secciones menores o encabezados de subsecciones.
+
+    - **Heading 4 / 22px / Medium**  
+      Uso: Encabezados para elementos menores, como cuadros de información o tarjetas.
+
+    - **Base / 18px / Light**  
+      Uso: Texto principal o cuerpo de texto, ideal para párrafos largos y contenido estándar.
+
+    - **Body 1 / 10px / Regular**  
+      Uso: Detalles secundarios, etiquetas pequeñas o textos de ayuda.
+- **Tipo de lenguaje**
+  Utilizamos un lenguaje formal para garantizar que los usuarios comprendan
+  claramente la información proporcionada. Este enfoque también refleja nuestro
+  compromiso con la seriedad y profesionalismo en el tratamiento de la salud
+  mental.
+
 
-## 3.2. User Stories.
+## 3.1.2. Information Architecture
+La sección de arquitectura de la información se centra en 
+estructurar el contenido tanto de la aplicación web como 
+de la página principal de **PSYMED**. Esta sección 
+abarca los siguientes aspectos clave:
+
+### 3.1.2.1. Organization Systems
+Para asegurar una jerarquía clara y precisa en nuestra aplicación, es crucial facilitar una navegación satisfactoria para el usuario. La estructura que hemos definido es la siguiente:
+
+**Medicos:**
+
+Al acceder a la plataforma del proyecto para profesionales de la salud mental, los usuarios (psiquiatras, psicólogos y otros profesionales de la salud mental) pueden iniciar sesión, registrarse si no tienen una cuenta previa, escoger su plan de pago y recuperar su contraseña en caso de olvido. Una vez autenticados, la página principal presenta un calendario con las fechas de sus citas y una barra lateral con las opciones: Citas, Inicio, Pacientes y Notificaciones.
+
+En la sección de Citas, se pueden observar todas las citas del profesional con sus pacientes, así como agendar nuevas consultas o modificar horarios.
+
+En la sección Pacientes, los profesionales pueden ver una lista de sus pacientes actuales y seleccionar a uno para acceder a su perfil detallado, con una barra lateral que incluye las opciones: Diagnóstico, Historial Clínico, Terapia, Citas.
+
+- En Diagnóstico, se puede visualizar y agregar un nuevo diagnóstico, así como revisar el historial de diagnósticos previos.
+- En Historial Clínico, se muestra la información clínica del paciente.
+- En la sección Terapia, se centralizan botones para acceder a: Funciones Biológicas, Estados de Ánimo, Prescripción y Track de Pastillas.
+  - Funciones Biológicas: muestra reportes estadísticos de los datos fisiológicos del paciente.
+  - Estados de Ánimo: permite observar el registro y evolución emocional del paciente.
+  - Prescripciones: contiene la lista de medicamentos con sus datos, dosis, frecuencia y duración del tratamiento. Incluye la opción de agregar o modificar medicamentos.
+  - Track de Pastillas: permite confirmar el consumo de los medicamentos.
+
+En la sección de Notificaciones, los profesionales reciben confirmaciones sobre actividades realizadas por los pacientes.
+
+<div align="center">
+<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/48e18ae2-ef8f-4eb2-aac7-ac7f232ecf17" />
+</div>
+
+---
+**Pacientes:**
+
+Al acceder a la plataforma, los usuarios pueden iniciar sesión con sus credenciales, cambiar la contraseña en caso necesario, y una vez autenticados, la página principal presenta un Sidebar con las opciones: Inicio, Terapia, Citas.
+
+En la sección "Lista de Tareas" se pueden visualizar los 
+conjuntos de actividades designados por el profesional de 
+la salud mental en cada sesión. Dentro de esta vista, se puede 
+acceder a opciones tales como ver tareas y marcar como completadas.
+
+- En la sección Terapia, se muestran accesos a Diagnóstico, Funciones Biológicas, Estados de Ánimo y Prescripción.
+  - Diagnóstico: visualización del diagnóstico otorgado por el profesional.
+  - Funciones Biológicas: muestra los registros de datos fisiológicos.
+  - Estados de Ánimo: muestra el seguimiento de los estados emocionales.
+  - Prescripción: permite visualizar los medicamentos recetados y confirmar su consumo.
+- En la sección Citas, los pacientes pueden visualizar las citas programadas y acceder a sus detalles.
+- En la sección Perfil, se puede visualizar y actualizar la información personal, incluyendo datos de contacto y de salud.
+
+<div align="center">
+  <img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/5f3803ae-8940-4afe-a2f0-7bc65ed12674" />
+</div>
+
+### 3.1.2.2. Labeling Systems
+
+**Medicos:**
+
+**inicio**
+- Iniciar sesión
+- Registrarse 
+- Recuperar su contraseña
 
-## Historias de usuario para la aplicación web
-
-US01 - Registro como profesional de la salud mental
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US01</td>
-<td>Profesional de la salud mental</td>
-<td>8</td>
-<td>EP01</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Registro como profesional de la salud mental</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como profesional de la salud mental, quiero registrarme con mis credenciales para poder acceder a las funcionalidades específicas y gestionar la información de mis pacientes.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Registro de datos exitoso</b>
+1. **Navegación Principal** (Header/Barra de navegación lateral)
+   **Página** principal del usuario después de iniciar sesión.
+   **Citas:** Calendario y gestión de citas con pacientes.
+   **Pacientes:** Gestión de pacientes y acceso a historiales clínicos.
+   **Notificaciones:** Alertas y confirmaciones de actividades.
+   **Perfil:** Información del profesional de salud mental.
+   Ajustes: Configuración y seguridad de la cuenta.
 
+**Pacientes** 
+  - lista de sus pacientes
+      - Historial de citas
+      - Tratamientos en curso
+          - Diagnósticos
+          - Datos fisiológicos
+          - Registro de estados de ánimo
+          - Tareas asignadas
+          - Asignar Medicamentos
 
-Dado que el profesional de la salud mental ha completado todos los campos del formulario de registro,
+**Agenda:** 
+- Agendar nuevas consultas
+- Modificar horarios
+- Enviar recordatorios
 
+**Perfil:** 
+- Datos de contacto
+- Especialidad
 
-Cuando hace clic al botón "Crear cuenta",
+**Ajustes:** 
+- Cambiar contraseñas
 
+---
+**Pacientes:**
 
-Entonces la cuenta se crea,
+**Inicio** 
+- Iniciar sesión 
+- Cambiar la contraseña
 
+**Pagina principal**
+- Perfil
+- Citas
+- Tratamiento Actual
 
-Y el profesional accede a la aplicación con el rol de profesional de la salud mental.</li>
-<li><b>Escenario 2: Registro de datos incompleto</b>
+**Perfil:** 
+- Datos de contacto
+- Datos de salud
 
+**Citas:** 
+- Ver detalles de la cita
 
-Dado que el profesional de la salud mental no ha completado todos los campos del formulario de registro,
+**Tratamiento Actual:** 
+- Registro de Medicamentos
+- Diagnóstico Actual
+- Formulario de Estados de Ánimo
+    - Registro de Estados Fisiológicos
+    - Ver datos estadísticos de su estado a lo largo del tratamiento
 
 
-Cuando hace clic al botón "Crear cuenta",
+### 3.1.2.3. SEO Tags and Meta Tags
+Las etiquetas reflejan el contenido de nuestro proyecto, abarcando tanto la Landing Page como el Sitio Web. Han sido creadas para mejorar la visibilidad de nuestro proyecto en los principales motores de búsqueda, lo que permitirá a los usuarios encontrar fácilmente nuestra aplicacion de PSYMED.
 
+Para la landing page:
+- **Título:** PSYMED - Plataforma de Gestión de Salud Mental
+- **Descripción:** PSYMED - plataforma de gestión de salud mental - LandingPage .
+- **keywords:** Salud Mental,Psiquiatras, Software, Citas Médicas, Historial Clínico, Plataforma Psicólogos, Registro Pacientes, Tratamiento Psicológico, Seguimiento Pacientes. 
+- **Author:** closedSource
+para el Web Side: 
+- **Título:** PSYMED - Plataforma de Gestión de Salud Mental
+- **Descripción:** PSYMED - plataforma de gestión de salud mental - Web Side .
+- **keywords:** Salud Mental,Psiquiatras, Software, Citas Médicas, Historial Clínico, Plataforma Psicólogos, Registro Pacientes, Tratamiento Psicológico, Seguimiento Pacientes.
+- **Author:** closedSource
 
-Entonces la plataforma muestra un mensaje de error indicando qué campos faltan por completar.</li>
-<li><b>Escenario 3: Registro con credenciales ya utilizadas</b>
+### 3.1.2.4. Searching Systems
+Los médicos pueden utilizar los métodos de búsqueda por:
 
+- Filtrado de Información por Fechas:
+    - Búsqueda de sesiones por fecha
+    - Búsqueda de diagnósticos por fecha
+    - Búsqueda de prescripciones por fecha
+    - Ver sesiones por fecha
+  
+Los pacientes pueden utilizar los metodos de busqueda por: 
+- Filtrado de información por ID
+    - Confirmación de prescripciones por ID
 
-Dado que el profesional de la salud mental ha completado todos los campos del formulario de registro usando un correo ya registrado,
+### 3.1.2.5. Navigation Systems
 
+**Para Psiquiatras:**
 
-Cuando hace clic al botón "Crear cuenta",
+En la plataforma para profesionales de salud mental, tras iniciar sesión, los usuarios acceden a un panel de control con un menú superior que incluye "Inicio", "Pacientes", "Agenda", "Perfil" y "Ajustes".
 
+En "Pacientes", pueden ver y gestionar perfiles detallados de los pacientes, incluyendo historial de citas y tratamientos.
 
-Entonces la plataforma muestra un mensaje de error indicando que el correo electrónico ya está en uso
+"Agenda" muestra un calendario con citas programadas y permite agendar nuevas, modificar horarios y enviar recordatorios.
 
+En "Perfil", se visualiza la información personal del profesional y en "Ajustes", se gestionan aspectos de seguridad de la cuenta.
 
-Y sugiere recuperar la contraseña.</li>
-</ul>
-</td>
-</tr>
-</table>
+**Para Pacientes:**
 
-US02 - Inicio de sesión como paciente
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US02</td>
-<td>Paciente</td>
-<td>8</td>
-<td>EP01</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Inicio de sesión como paciente</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como paciente, quiero iniciar sesión en la plataforma para acceder a mi información personal y seguimiento de tratamiento.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Inicio de sesión exitoso</b>
+Al ingresar, los pacientes ven un panel con opciones como "Inicio", "Perfil", "Citas" y "Tratamiento Actual".
 
+"Tratamiento Actual" ofrece detalles sobre prescripciones, diagnósticos, estados de ánimo y datos estadísticos.
 
-Dado que el paciente ha ingresado su correo electrónico y contraseña correctamente,
+"Citas" permite ver y gestionar citas programadas, mientras que "Perfil" muestra la información personal del paciente.
 
+Este sistema asegura un acceso rápido y sencillo a las funciones y datos clave tanto para psiquiatras como para pacientes.
 
-Cuando hace clic en un botón de "Iniciar sesión",
+## 3.1.3. Landing Page UI Design
 
+### 3.1.3.1. Landing Page Wireframe
 
-Entonces accede a su cuenta
+![Fidelidad 2.jpg](/assets/Fidelidad2.jpg)
 
+### 3.1.3.2. Landing Page Mock-up
 
-Y es dirigido a su panel de control personal con el rol de paciente.</li>
-<li><b>Escenario 2: Contraseña incorrecta</b>
+![Mockups Landing.jpg](/assets/MockupsLanding.jpg)
 
+## 3.1.4. Mobile Applications UX/UI Design. 
+### 3.1.4.1. Mobile Applications Wireframes. 
 
-Dado que el paciente ha ingresado su correo y una contraseña incorrecta,
+<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/44df38aa-f383-4931-9454-adb51ceb70f3" />
 
+### 3.1.4.2. Mobile Applications Wireflow Diagrams.
 
-Cuando hace clic en un botón de "Iniciar sesión",
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/bed0395c-376d-40c2-b183-33c46bff87f8" />
 
+### 3.1.4.3. Mobile Applications Mock-ups. 
 
-Entonces la plataforma muestra un mensaje de error indicando que la contraseña es incorrecta
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/0ee2fd86-5555-4831-8463-b6c6133e65a5" />
 
+### 3.1.4.4. Mobile Applications User Flow Diagrams. 
 
-Y ofrece la opción de restablecerla.</li>
-<li><b>Escenario 3: Recuperación de contraseña</b>
+<div align="center">
+<img width="500" height="1000" alt="image" src="https://github.com/user-attachments/assets/caa69590-976b-4524-b78e-a8bc2bd83afe" />
+</div>
 
+## 3.1.4.5. Mobile Applications Prototyping.
 
-Dado que el paciente ha olvidado su contraseña,
+En esta sección se presenta el prototipo de la aplicación móvil. El prototipo incluye las pantallas principales y la navegación diseñada para representar la experiencia del usuario.
 
+El prototipo puede visualizarse en el siguiente enlace: [https://marvelapp.com/prototype/34ij6a2g](https://marvelapp.com/prototype/34ij6a2g)
 
-Cuando hace clic en un botón de "Olvidé mi contraseña",
-
-
-Entonces la plataforma envía un enlace de restablecimiento de contraseña al correo electrónico registrado.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US03 - Inicio de sesión como profesional de la salud mental
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US03</td>
-<td>Profesional de la salud mental</td>
-<td>8</td>
-<td>EP01</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Inicio de sesión como profesional de la salud mental</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como profesional de la salud mental, quiero iniciar sesión en la plataforma para gestionar la información de mis pacientes y acceder a herramientas de seguimiento.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Inicio de sesión exitoso</b>
-
-
-Dado que el profesional de la salud mental ha ingresado su correo electrónico y contraseña correctamente,
-
-
-Cuando hace clic en un botón de "Iniciar sesión",
-
-
-Entonces accede a su cuenta
-
-
-Y es dirigido a su panel de control con acceso a herramientas avanzadas de gestión de pacientes y el rol de profesional de la salud.</li>
-<li><b>Escenario 2: Contraseña incorrecta</b>
-
-
-Dado que el profesional de la salud mental ha ingresado su correo y una contraseña incorrecta,
-
-
-Cuando hace clic en un botón de "Iniciar sesión",
-
-
-Entonces la plataforma muestra un mensaje de error indicando que la contraseña es incorrecta
-
-
-Y ofrece la opción de restablecerla.</li>
-<li><b>Escenario 3: Recuperación de contraseña</b>
-
-
-Dado que el profesional de la salud mental ha olvidado su contraseña,
-
-
-Cuando hace clic en un botón de "Olvidé mi contraseña",
-
-
-Entonces la plataforma envía un enlace de restablecimiento de contraseña al correo electrónico registrado.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US04 - Registro de información personal del paciente
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US04</td>
-<td>Profesional de la salud mental</td>
-<td>5</td>
-<td>EP01</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Registro de información personal del paciente</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como profesional de la salud mental, quiero registrar la información personal del paciente para tener una referencia detallada y precisa de sus datos básicos en cada consulta.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Registro exitoso de información personal</b>
-
-
-Dado que el profesional de la salud mental ha ingresado todos los datos del formulario de información personal del paciente,
-
-
-Cuando hace clic en un botón de "Guardar",
-
-
-Entonces la información personal del paciente se registra correctamente en la plataforma y está disponible para futuras consultas.</li>
-<li><b>Escenario 2: Registro incompleto de información personal</b>
-
-
-Dado que el profesional de la salud mental no ha ingresado todos los datos del formulario de información personal del paciente,
-
-
-Cuando hace clic en un botón de "Guardar",
-
-
-Entonces la plataforma muestra un mensaje de error indicando qué campos faltan por completar.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US05 - Visualización del estado actual de ánimo del paciente
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US05</td>
-<td>Profesional de la salud mental</td>
-<td>3</td>
-<td>EP02</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Visualización del estado actual de ánimo del paciente</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como profesional de la salud mental, quiero visualizar el estado de ánimo actual del paciente para evaluar su condición emocional.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Visualización del estado de ánimo</b>
-
-
-Dado que el profesional de la salud mental ha accedido al perfil del paciente,
-
-
-Cuando selecciona la opción de visualizar estados de ánimo,
-
-
-Entonces la plataforma muestra el estado de ánimo del paciente que se registró el mismo día.</li>
-<li><b>Escenario 2: Estados de ánimo no registrados</b>
-
-
-Dado que el profesional de la salud mental ha accedido al perfil del paciente sin haber registrado ningún estado de ánimo del mismo,
-
-
-Cuando selecciona la opción de visualizar estados de ánimo,
-
-
-Entonces la plataforma no muestra los datos ingresados.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US06 - Registro de estado de ánimo
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US06</td>
-<td>Paciente</td>
-<td>5</td>
-<td>EP02</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Registro de estado de ánimo</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como paciente, quiero comunicarle a mi profesional mi estado de ánimo para ver mi estado actual.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Registro de emoción</b>
-
-
-Dado que el paciente se encuentra en la sección de registros de estado emocional,
-
-
-Cuando registra su estado de ánimo actual,
-
-
-Entonces la plataforma debe actualizar su estado emocional en el perfil del paciente.</li>
-<li><b>Escenario 2: Almacenamiento de estado de ánimo</b>
-
-
-Dado que el paciente se encuentra en la sección de registros de estado emocional,
-
-
-Y posee un registro con cada uno de los estados que ingresó con anterioridad,
-
-
-Cuando ingresa al historial de estados de ánimo,
-
-
-Entonces la plataforma debe mostrar un calendario con los estados del paciente a lo largo del tiempo.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US07 - Registro de funciones biológicas
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US07</td>
-<td>Paciente</td>
-<td>5</td>
-<td>EP02</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Registro de funciones biológicas</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como paciente, quiero registrar la calidad de mis funciones biológicas para que mi profesional conozca mi estado actual de salud.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Ingreso de funciones biológicas</b>
-
-
-Dado que el paciente ha accedido a la sección de registro de funciones biológicas,
-
-
-Cuando selecciona la opción de registrar funciones,
-
-
-Entonces la plataforma debe permitir al paciente seleccionar su nivel de sueño, hambre, energía e hidratación en una escala del 1 al 5.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US08 - Registro de medicamentos del paciente
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US08</td>
-<td>Profesional de la salud mental</td>
-<td>3</td>
-<td>EP03</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Registro de medicamentos del paciente</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como profesional de la salud mental, quiero registrar los medicamentos del paciente para seguir adecuadamente su tratamiento farmacológico.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Registro exitoso de medicamentos</b>
-
-
-Dado que el profesional de la salud mental ha ingresado todos los datos de los medicamentos de su paciente,
-
-
-Cuando hace clic en un botón de "Guardar",
-
-
-Entonces los datos del medicamento se registran correctamente en el sistema y se asocian al perfil del paciente.</li>
-<li><b>Escenario 2: Registro incompleto de medicamentos</b>
-
-
-Dado que el profesional de la salud mental no ha ingresado todos los datos de los medicamentos de su paciente,
-
-
-Cuando hace clic en un botón de "Guardar",
-
-
-Entonces la plataforma muestra un mensaje de error indicando los campos incompletos o incorrectos.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US09 - Ver medicamentos
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US09</td>
-<td>Paciente</td>
-<td>3</td>
-<td>EP03</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Ver medicamentos</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como paciente, quiero poder ver los medicamentos que mi profesional de salud mental ha asignado para poder estar pendiente de cuáles consumir.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Visualización de medicamentos</b>
-
-
-Dado que el paciente entra a la plataforma
-
-
-Cuando ingresa a la vista de medicamentos
-
-
-Entonces puede ver todos los medicamentos recetados.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US10 - Creación de citas
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US10</td>
-<td>Profesional de la salud</td>
-<td>2</td>
-<td>EP04</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Creación de citas</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como profesional de la salud, quiero agendar las citas de mis pacientes.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Creación de nueva cita</b>
-
-
-Dado que el profesional de salud entra a la plataforma
-
-
-Cuando ingresa a la vista de citas sobre el perfil de un paciente
-
-
-Entonces puede registrar una nueva cita.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US11 - Ver citas médicas
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US11</td>
-<td>Paciente</td>
-<td>2</td>
-<td>EP04</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Ver citas médicas</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como paciente, quiero poder ver las citas médicas programadas para poder saber qué días ir al consultorio del profesional de salud mental.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Visualización de citas</b>
-
-
-Dado que el paciente entra a la plataforma
-
-
-Cuando ingresa a la vista de citas
-
-
-Entonces puede ver todas las citas programas y los detalles de hora y fecha.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-## Historias de usuario para la aplicación Móvil
-
-US12 - Iniciar Sesión como Paciente
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US12</td>
-<td>Paciente</td>
-<td>8</td>
-<td>EP01</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Iniciar Sesión como Paciente en la aplicación móvil</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como Paciente, quiero poder iniciar sesión con mi usuario y contraseña para acceder a mi información personal y de salud dentro de la aplicación.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Inicio de Sesión Exitoso</b>
-
-
-Dado que el Paciente está en la pantalla de "Bienvenido" e ingresa su Usuario y Contraseña correctos,
-
-
-Cuando pulsa el botón "Iniciar Sesión",
-
-
-Entonces el sistema valida las credenciales y el paciente es dirigido a la pantalla principal.</li>
-<li><b>Escenario 2: Credenciales Inválidas</b>
-
-
-Dado que el Paciente ingresa un Usuario o Contraseña incorrectos,
-
-
-Cuando pulsa el botón "Iniciar Sesión",
-
-
-Entonces el sistema no permite iniciar sesión
-
-
-Y muestra un mensaje de error.</li>
-<li><b>Escenario 3: Campos Vacíos</b>
-
-
-Dado que el Paciente deja los campos de Usuario y/o Contraseña vacíos,
-
-
-Cuando pulsa el botón "Iniciar Sesión",
-
-
-Entonces el sistema no permite iniciar sesión
-
-
-Y muestra un mensaje de error indicando qué campos faltan.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US13 - Visualizar Información de Perfil
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US13</td>
-<td>Paciente</td>
-<td>3</td>
-<td>EP01</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Visualizar Información de Perfil en la aplicación móvil</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como Paciente, quiero poder ver mi información personal (Correo Electrónico, Dirección, ID de Paciente y ID de Profesional) en la sección "Mi Perfil" para confirmar que mis datos son correctos.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Visualización del Perfil</b>
-
-
-Dado que estoy en la aplicación y navego a la pestaña "Profile",
-
-
-Entonces veo mi Nombre completo,
-
-
-Y veo mi Correo Electrónico asociado,
-
-
-Y veo mi Dirección,
-
-
-Y veo mi ID de Paciente y mi ID de Profesional asignados.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US14 - Cerrar Sesión
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US14</td>
-<td>Paciente</td>
-<td>2</td>
-<td>EP01</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Cerrar Sesión en la aplicación móvil</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como Paciente, quiero poder cerrar mi sesión de forma segura desde la pantalla de Mi Perfil para proteger mi privacidad.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Cierre de Sesión Exitoso</b>
-
-
-Dado que estoy en la pantalla "Mi Perfil" he iniciado sesión,
-
-
-Cuando pulso el botón "Cerrar Sesión",
-
-
-Entonces la sesión actual se cierra exitosamente,
-
-
-Y soy redirigido a la pantalla de Inicio de Sesión.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US15 - Registrar Mi Estado de Salud Diario
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US15</td>
-<td>Paciente</td>
-<td>5</td>
-<td>EP02</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Registrar Mi Estado de Salud Diario en la aplicación móvil</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como Paciente, quiero poder registrar mi estado de salud diario (Mood, Hunger, Hydration, Sleep Quality, Energy Level) para llevar un seguimiento de mi bienestar.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Registro Exitoso de Datos de Salud</b>
-
-
-Dado que estoy en la pestaña "Health" y no he completado el registro de hoy,
-
-
-Cuando selecciono una opción para cada categoría (Mood, Hunger, Hydration, Sleep Quality, Energy Level) y pulso el botón de registro,
-
-
-Entonces el sistema guarda el registro de ese día,
-
-
-Y muestra un mensaje de confirmación.</li>
-<li><b>Escenario 2: Reintento de Registro del Mismo Día</b>
-
-
-Dado que ya he completado el registro de mi estado de salud hoy,
-
-
-Cuando navego a la pestaña "Health",
-
-
-Entonces veo un mensaje o un botón deshabilitado que indica "Ya registrado hoy", impidiendo un nuevo registro.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US16 - Consultar Mi Lista de Medicamentos
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US16</td>
-<td>Paciente</td>
-<td>5</td>
-<td>EP03</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Consultar Mi Lista de Medicamentos en la aplicación móvil</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como Paciente, quiero poder ver la lista de medicamentos que tengo asignados para conocer el nombre, el motivo, la frecuencia (Intervalo) y la Cantidad de cada uno.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Visualización de Medicamentos</b>
-
-
-Dado que estoy en la pestaña "Medication",
-
-
-Entonces veo una lista de todos mis medicamentos,
-
-
-Y para cada medicamento, se muestra el Motivo, el Intervalo, y la Cantidad.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US17 - Ver Próximas Citas
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US17</td>
-<td>Paciente</td>
-<td>3</td>
-<td>EP04</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Ver Próximas Citas en la aplicación móvil</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como Paciente, quiero poder ver una lista de mis citas médicas próximas con sus detalles (fecha, hora, duración y profesional ID) para estar informado y planificar mi asistencia.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Visualización de Citas</b>
-
-
-Dado que estoy en la pestaña de "Appointments",
-
-
-Entonces veo la sección "Próximas Citas",
-
-
-Y veo una lista de citas, donde cada una muestra la Fecha, la Hora, la Duración y el Profesional ID.</li>
-<li><b>Escenario 2: Identificación de Cita de Hoy</b>
-
-
-Dado que hay una cita programada para la fecha actual,
-
-
-Entonces esta cita muestra una etiqueta distintiva con el texto "HOY".</li>
-</ul>
-</td>
-</tr>
-</table>
-
-## Historias de Usuario de la Landing Page (US18 - US20)
-
-US18 - Encontrar información del propósito de la aplicación
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US18</td>
-<td>Visitante de la Landing Page</td>
-<td>1</td>
-<td>EP05</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Encontrar información del propósito de la aplicación</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como visitante de la Landing Page, quiero encontrar fácilmente la información que explique el propósito de la aplicación para comprender cómo puede ser útil para mí.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Visibilidad del propósito de la aplicación</b>
-
-
-Dado que el visitante se encuentra en la landing page,
-
-
-Cuando explora la página principal,
-
-
-Entonces la landing page debe poseer información clara y concisa sobre el propósito de la aplicación.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US19 - Visualización de imágenes y gráficos relevantes
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US19</td>
-<td>Visitante de la Landing Page</td>
-<td>1</td>
-<td>EP05</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Visualización de imágenes y gráficos relevantes</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como visitante de la Landing Page, quiero que las imágenes y gráficos sean claros y visualmente atractivos para captar mi interés y comprender mejor el contenido.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Calidad de las imágenes</b>
-
-
-Dado que el visitante se encuentra en la landing page,
-
-
-Cuando explora la página principal,
-
-
-Entonces la landing page debe presentar imágenes de alta calidad y relevantes que capten la atención del visitante.</li>
-<li><b>Escenario 2: Relevancia de los gráficos</b>
-
-
-Dado que el visitante se encuentra en la landing page,
-
-
-Cuando se desplaza,
-
-
-Entonces la landing page debe mostrar gráficos que ayuden al visitante a comprender el contenido.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-US20 - Tipografía cómoda y agradable estéticamente
-<table>
-<tr>
-<th>Story ID</th>
-<th>User</th>
-<th>Priority</th>
-<th>Epic</th>
-</tr>
-<tr>
-<td>US20</td>
-<td>Visitante de la Landing Page</td>
-<td>1</td>
-<td>EP05</td>
-</tr>
-<tr>
-<th colspan="4">Title</th>
-</tr>
-<tr>
-<td colspan="4">Tipografía cómoda y agradable estéticamente</td>
-</tr>
-<tr>
-<th colspan="4">Description</th>
-</tr>
-<tr>
-<td colspan="4">
-Como visitante de la Landing Page, quiero que la tipografía de la misma sea legible y estéticamente agradable para facilitar la lectura y la navegación.
-</td>
-</tr>
-<tr>
-<th colspan="4">Acceptance Criteria</th>
-</tr>
-<tr>
-<td colspan="4">
-<ul>
-<li><b>Escenario 1: Legibilidad de la tipografía</b>
-
-
-Dado que el visitante se encuentra en la landing page,
-
-
-Cuando se desplaza a través de la página principal,
-
-
-Entonces la landing page debe poseer una tipografía clara y de un tamaño adecuado para facilitar la lectura.</li>
-<li><b>Escenario 2: Consistencia en el estilo tipográfico</b>
-
-
-Dado que el visitante se encuentra en la landing page,
-
-
-Cuando cambia de sección,
-
-
-Entonces la landing page debe mostrar un estilo tipográfico consistente para mantener la coherencia visual.</li>
-</ul>
-</td>
-</tr>
-</table>
-
-**Spike Stories**
-
-| Story ID | User      | Priority | Epic                           | Title                                                                                                | Description                                                                                                                                                                                                             | Acceptance Criteria                                                                                                                                                                                                                                                                         |
-|----------|-----------|----------|--------------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SP-01    | Developer | Alta     | Autenticación                  | Investigar bibliotecas de autenticación y manejo de roles                                            | Como desarrollador quiero investigar bibliotecas y frameworks de autenticación (JWT) para determinar cuál es más adecuada para integrar autenticación segura y diferenciación de roles entre pacientes y profesionales. | Dado que se realiza la investigación de bibliotecas de autenticación<br>Cuando se evalúan criterios de compatibilidad, seguridad, persistencia de sesión y soporte multiplataforma<br>Entonces se entrega un documento técnico con la librería recomendada y un prototipo mínimo funcional. |
-| SP-02    | Developer | Alta     | Sincronización móvil–backend   | Analizar mecanismos de sincronización de datos entre aplicación móvil y backend                      | Como desarrollador quiero investigar las opciones de sincronización de datos (online/offline) entre la aplicación móvil y el backend para garantizar consistencia de la información clínica y del paciente.             | Dado que se analizan distintas estrategias de sincronización (REST, local)<br>Cuando se evalúan la latencia, seguridad y manejo de errores<br>Entonces se presenta un documento técnico y un prototipo que demuestra la sincronización correcta de datos básicos del usuario.               |
-| SP-03    | Developer | Media    | Gestión de información clínica | Definir modelo de datos y herramientas para visualización de estado emocional y funciones biológicas | Como desarrollador quiero definir la estructura de base de datos y las herramientas de visualización adecuadas para representar los estados de ánimo, funciones biológicas y medicamentos del paciente.                 | Dado que se analizan bases de datos SQL<br>Cuando se evalúan criterios de rendimiento, escalabilidad y compatibilidad con el backend<br>Entonces se entrega un esquema de datos propuesto y un prototipo visual básico de los registros del paciente.                                       |
-| SP-04    | Developer | Media    | Sistema de citas               | Investigar opciones para la gestión y visualización de citas médicas                                 | Como desarrollador quiero investigar librerías y APIs que faciliten la creación, visualización y sincronización de citas médicas entre paciente y profesional.                                                          | Dado que se prueban distintas herramientas de calendarización<br>Cuando se evalúan sus capacidades de integración, manejo de conflictos y notificaciones<br>Entonces se documenta la opción más viable y se crea un prototipo que demuestre la creación de una cita básica.                 |
-| SP-05    | Developer | Baja     | Web App                        | Investigar diseño visual, tipografía y accesibilidad para la Web App                                 | Como desarrollador quiero investigar lineamientos de diseño visual, tipografía y frameworks front-end para crear una Web App atractiva, legible y accesible.                                                            | Dado que se analizan frameworks como Angular Material y TailwindCSS<br>Cuando se evalúan los criterios de legibilidad, contraste, accesibilidad y consistencia visual<br>Entonces se entrega un prototipo de la Web App y una guía de estilos inicial para su implementación.               |
-
-## 3.3. Impact Mapping.
-### Segmento profesionales:
-![Professionals_](/assets/professionals_IM.jpeg)
-
-### Segmento pacientes:
-![Patients_impactmapping](/assets/patients_IM.jpeg)
-
-## 3.4 Product Backlog.
-
-| Order User Story | Título                                                     | Descripción                                                                                                                                                                                       | Story Points (Priority) |
-|------------------|------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1                | Registro como profesional de la salud mental               | Como profesional de la salud mental quiero registrarme con mis credenciales para poder acceder a las funcionalidades específicas y gestionar la información de mis pacientes.                     | 8                       |
-| 2                | Inicio de sesión como paciente                             | Como paciente, quiero iniciar sesión en la plataforma para acceder a mi información personal y seguimiento de tratamiento.                                                                        | 8                       |
-| 3                | Inicio de sesión como profesional de la salud mental       | Como profesional de la salud mental, quiero iniciar sesión en la plataforma para gestionar la información de mis pacientes y acceder a herramientas de seguimiento.                               | 8                       |
-| 4                | Iniciar Sesión como Paciente en la aplicación móvil        | Como Paciente, quiero poder iniciar sesión con mi usuario y contraseña para acceder a mi información personal y de salud dentro de la aplicación.                                                 | 8                       |
-| 5                | Registro de información personal del paciente              | Como profesional de la salud mental, quiero registrar la información personal del paciente para tener una referencia detallada y precisa de sus datos básicos en cada consulta.                   | 5                       |
-| 6                | Registro de estado de ánimo                                | Como paciente, quiero comunicarle a mi profesional mi estado de ánimo para ver mi estado actual.                                                                                                  | 5                       |
-| 7                | Registro de funciones biológicas                           | Como paciente, quiero registrar la calidad de mis funciones biológicas para que mi profesional conozca mi estado actual de salud.                                                                 | 5                       |
-| 8                | Registrar Mi Estado de Salud Diario en la aplicación móvil | Como Paciente, quiero poder registrar mi estado de salud diario (Mood, Hunger, Hydration, Sleep Quality, Energy Level) para llevar un seguimiento de mi bienestar.                                | 5                       |
-| 9                | Consultar Mi Lista de Medicamentos en la aplicación móvil  | Como Paciente, quiero poder ver la lista de medicamentos que tengo asignados para conocer el nombre, el motivo, la frecuencia (Intervalo) y la Cantidad de cada uno.                              | 5                       |
-| 10               | Visualización de el estado actual de ánimo del paciente    | Como profesional de la salud mental, quiero visualizar el estado de ánimo actual del paciente para evaluar su condición emocional.                                                                | 3                       |
-| 11               | Registro de medicamentos del paciente                      | Como profesional de la salud mental, quiero registrar los medicamentos del paciente para seguir adecuadamente su tratamiento farmacológico.                                                       | 3                       |
-| 12               | Ver medicamentos                                           | Como paciente quiero poder ver los medicamentos que mi profesional de salud mental ha asignado para poder estar pendiente de cuales consumir.                                                     | 3                       |
-| 13               | Visualizar Información de Perfil en la aplicación móvil    | Como Paciente, quiero poder ver mi información personal (Correo Electrónico, Dirección, ID de Paciente y ID de Profesional) en la sección "Mi Perfil" para confirmar que mis datos son correctos. | 3                       |
-| 14               | Ver Próximas Citas en la aplicación móvil                  | Como Paciente, quiero poder ver una lista de mis citas médicas próximas con sus detalles (fecha, hora, duración y profesional ID) para estar informado y planificar mi asistencia.                | 3                       |
-| 15               | Creación de citas                                          | Como profesional de la salud quiero agendar las citas de mis pacientes.                                                                                                                           | 2                       |
-| 16               | Ver citas médicas                                          | Como paciente quiero poder ver las citas médicas programadas para poder saber que días ir al consultorio del profesional de salud mental.                                                         | 2                       |
-| 17               | Cerrar Sesión en la aplicación móvil                       | Como Paciente, quiero poder cerrar mi sesión de forma segura desde la pantalla de Mi Perfil para proteger mi privacidad.                                                                          | 2                       |
-| 18               | Encontrar información del propósito de la aplicación       | Como visitante de la Landing Page, quiero encontrar fácilmente la información que explique el propósito de la aplicación para comprender cómo puede ser útil para mí.                             | 1                       |
-| 19               | Visualización de imágenes y gráficos relevantes            | Como visitante de la Landing Page, quiero que las imágenes y gráficos sean claros y visualmente atractivos para captar mi interés y comprender mejor el contenido.                                | 1                       |
-| 20               | Tipografía cómoda y agradable estéticamente                | Como visitante de la Landing Page, quiero que la tipografía de la misma sea legible y estéticamente agradable para facilitar la lectura y la navegación.                                          | 1                       |
-
+TODO: Agregar imagen del prototipo

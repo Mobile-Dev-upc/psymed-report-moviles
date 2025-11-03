@@ -451,7 +451,7 @@ Para la creación del Empathy Map, hemos utilizado la información obtenida de n
 ![Texto alternativo](/assets/EMPaciente.png)
 
 
-## 2.4. Ubiquitous Language
+## 2.3.5 Ubiquitous Language
 
 - Patient (Paciente): Persona que recibe atención de un profesional de salud mental y cuyo progreso es monitoreado mediante la aplicación. El paciente puede ingresar información sobre sus funciones biológicas y estado emocional.
 
