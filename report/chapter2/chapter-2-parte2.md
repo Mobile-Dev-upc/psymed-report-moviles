@@ -2,8 +2,6 @@
 ## 2.4. Requirements specification
 ### 2.4.1 User Stories.
 
-## Historias de usuario para la aplicación web
-
 US01 - Registro como profesional de la salud mental
 <table>
 <tr>
