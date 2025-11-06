@@ -126,7 +126,19 @@ TODO: Actualizar la tabla con las historias de usuario completas.
 ### 2.5.2. Context Mapping
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
+
+En esta sección se puede apreciar el diagrama de contexto C4 que muestra el panorama general de trabajo del proyecto.
+
+<img width="1529" height="2700" alt="image" src="https://github.com/user-attachments/assets/cdd027df-31c8-4496-9320-dfe72cff0676" />
+
+
 #### 2.5.3.2. Software Architecture Container Level Diagrams
+
+Aquí podemos apreciar el diagrama de contenedores del producto realizado
+
+<img width="2709" height="3891" alt="image" src="https://github.com/user-attachments/assets/610a59b9-70d0-4352-9536-57c00714d5c7" />
+
+
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
 
