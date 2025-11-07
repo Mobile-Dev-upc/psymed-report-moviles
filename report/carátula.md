@@ -5,7 +5,7 @@
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
 ## <div style="text-align: center;"> Ingeniería de Software </div>
-## <div style="text-align: center;"> Ciclo 2025-20 </div>
+## <div style="text-align: center;"> Periodo 2025-20 </div>
 ## <div style="text-align: center;"> 1ACC0238 - Aplicaciones para Dispositivos Móviles </div>
 ## <div style="text-align: center;"> NRC: 1827 </div>
 ## <div style="text-align: center;"> David Gerardo Quevedo Velasco </div>
