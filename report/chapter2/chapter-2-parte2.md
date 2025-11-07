@@ -392,7 +392,66 @@ Aquí podemos apreciar el diagrama de contenedores del producto realizado
 - Soporte operativo:
     - Jobs para generación batch de reportes, exportación y limpieza de archivos temporales.
 
-#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
-#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
-#### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
-#### 2.6.x.6.2. Bounded Context Database Design Diagram
+#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se ve el diagrama de componentes del Bounded Context IAM, en este caso, llamado Identity and Access.
+
+<img width="1210" height="3100" alt="image" src="https://github.com/user-attachments/assets/ac193c02-7dff-4f9a-bdcd-6fb8a780eb09" />
+
+#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.1.6.2. Bounded Context Database Design Diagram
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se ve el diagrama de componentes del Bounded Context Profiles, en este llamado, User Management
+
+<img width="1640" height="3700" alt="image" src="https://github.com/user-attachments/assets/b6b708c1-4120-4d00-b3f4-54fbfef39a82" />
+
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+En esta sección se muestra el diagrama de clases a nivel de Profiles
+
+<img width="900" height="655" alt="image" src="https://github.com/user-attachments/assets/91797e6a-8aa0-4d70-ae64-b6a85b93018d" />
+
+
+#### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se ve el diagrama de componentes del Bounded Context Appointment and Administration
+
+<img width="2278" height="4991" alt="image" src="https://github.com/user-attachments/assets/319932db-c794-42dd-8191-fb5e5d526dba" />
+
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se ve el diagrama de componentes del Bounded Context Medication
+
+<img width="1640" height="3700" alt="image" src="https://github.com/user-attachments/assets/d9615687-461d-46e1-8d7b-14a3d90fa84b" />
+
+
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagram
+
+En esta sección se muestra el diagrama de clases a nivel de Medication
+
+<img width="588" height="730" alt="image" src="https://github.com/user-attachments/assets/60e672cb-a146-4409-8d36-c15688998ece" />
+
+#### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se ve el diagrama de componentes del Bounded Context Patient Report, en este caso llamado Tracking
+
+<img width="994" height="3700" alt="image" src="https://github.com/user-attachments/assets/e848ebc1-ebad-4801-b920-7f528a9e0cdf" />
+
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+#### 2.6.5.6.2. Bounded Context Database Design Diagram
