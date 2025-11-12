@@ -4,7 +4,7 @@ En esta sección, presentaremos el concepto de diseño para la página web y
 la aplicación, para proporcionar a nuestros usuarios una interfaz amigable
 y funcional. Con este propósito en mente, hemos optado por compartir un proyecto
 Figma en el que hemos trabajado todos y el cual todos pueden editar y usar los
-Assets,fonts y demás.
+Assets, fonts y demás.
 
 ### 3.1.1. Style Guidelines
 
@@ -307,6 +307,76 @@ Este sistema asegura un acceso rápido y sencillo a las funciones y datos clave 
 <img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/0ee2fd86-5555-4831-8463-b6c6133e65a5" />
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams. 
+
+#### **User Goal:**
+El usuario busca iniciar sesión y gestionar su información médica personal incluyendo citas y medicamentos desde una interfaz centralizada y sencilla.
+#### **Task Flow:** 
+
+- Registro, inicio de sesión y gestión médica
+
+##### 1. Descripción del flujo de tareas
+
+##### 1.1. Registro de usuario
+
+1. El usuario accede a la aplicación desde la pantalla de **Inicio**.
+2. Selecciona la opción **“Registrarse”**.
+3. Completa los campos requeridos: nombre, correo electrónico, contraseña y confirmación de contraseña.
+4. Presiona el botón **“Confirmar registro”**.
+5. El sistema valida los datos ingresados y crea la cuenta.
+6. La aplicación muestra un mensaje de confirmación y redirige a la pantalla de **Inicio de sesión**.
+
+---
+
+##### 1.2. Inicio de sesión
+
+1. El usuario introduce sus credenciales (correo y contraseña).
+2. Selecciona la opción **“Iniciar sesión”**.
+3. El sistema valida la información y permite el acceso.
+4. Si las credenciales son correctas, se redirige al **Home**.
+5. En caso de error, el sistema muestra un mensaje de advertencia y ofrece la opción de reintentar.
+
+---
+
+##### 1.3. Interacción dentro del Home
+
+Una vez dentro del *Home*, el usuario dispone de tres módulos principales:
+
+##### a. Módulo de citas
+
+1. El usuario selecciona la opción **“Citas”**.
+2. Completa los campos de fecha, hora y motivo de la cita.
+3. Presiona **“Guardar”**.
+4. El sistema almacena la información y confirma la creación de la cita.
+5. El usuario puede visualizar la lista de citas o regresar al **Home**.
+
+##### b. Módulo de medicamentos
+
+1. Desde el *Home*, selecciona **“Medicamentos”**.
+2. Visualiza la lista actual de medicamentos registrados.
+3. Puede agregar, editar o eliminar un medicamento.
+4. Guarda los cambios y regresa al **Home**.
+
+##### c. Módulo de perfil
+
+1. Desde el *Home*, accede a **“Perfil”**.
+2. Revisa o modifica la información personal y médica.
+3. Guarda los cambios realizados.
+4. Retorna al **Home**.
+
+---
+
+##### 2. Rutas alternas y validaciones
+
+- Si el usuario intenta registrar un correo previamente existente, el sistema muestra un mensaje de error y solicita ingresar uno distinto.
+- En caso de error al guardar una cita o medicamento, los datos ingresados se conservan y se ofrece la opción de reintentar.
+- Si la sesión expira o el usuario cierra la aplicación, el sistema redirige automáticamente al módulo de **Inicio de sesión**.
+
+---
+
+##### 3. Conclusión
+
+El presente *Task Flow* detalla los pasos que el usuario debe seguir para alcanzar la meta planteada dentro del sistema.  
+Este flujo permite identificar claramente las tareas principales, las rutas alternas y los puntos de validación, contribuyendo al diseño de una experiencia de usuario coherente, eficiente y centrada en las necesidades del usuario.
 
 <div align="center">
 <img width="500" height="1000" alt="image" src="https://github.com/user-attachments/assets/caa69590-976b-4524-b78e-a8bc2bd83afe" />
