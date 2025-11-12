@@ -5,35 +5,21 @@
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
 ## <div style="text-align: center;"> Ingeniería de Software </div>
-## <div style="text-align: center;"> Periodo 2025-20 </div>
+## <div style="text-align: center;"> Periodo: 202520 </div>
 ## <div style="text-align: center;"> 1ACC0238 - Aplicaciones para Dispositivos Móviles </div>
 ## <div style="text-align: center;"> NRC: 1827 </div>
 ## <div style="text-align: center;"> David Gerardo Quevedo Velasco </div>
-## <div style="text-align: center;"> Informe de TB2 </div>
+## <div style="text-align: center;"> Informe de Trabajo Final </div>
 ## <div style="text-align: center;"> Start up: Go7U </div>
 ## <div style="text-align: center;"> Product: PSYMED </div>
 
 ### <div style="text-align: center;"> INTEGRANTES:</div>
-<div style="display: flex; justify-content: center;">
-    <table>
-      <thead>
-        <tr>
-          <th style="background-color: #333; color: #fff;">Código de Alumno</th>
-          <th style="background-color: #333; color: #fff;">Nombre y Apellido</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>U20221F613</td>
-          <td>Torres Flores, Paolo Alessandro</td>
-        </tr>
-        <tr>
-          <td>U202213765</td>
-          <td>Maita Falckenheiner, Romina Guadalupe</td>
-        </tr>
-      </tbody>
-    </table> 
-</div>
+<p align="center">
+U202213765 - Maita Falckenheiner, Romina Guadalupe <br>
+U20221F613 - Torres Flores, Paolo Alessandro
+</p>
+
+
 
 <div style="text-align: center;"> Noviembre 2025 </div>
 
