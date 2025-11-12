@@ -43,12 +43,11 @@ Para superar este desafío, es esencial implementar soluciones tecnológicas que
 
 #### 1.2.2.1. Lean UX Problem Statements.
 
-El sistema de salud mental en Perú se enfrenta a una crisis debido a la sobrecarga administrativa que limita la capacidad de los profesionales para brindar atención directa a sus pacientes. La creciente demanda de servicios de salud mental, impulsada por trastornos como la depresión y la ansiedad, ha generado un colapso en la gestión de citas, historiales clínicos y comunicación entre médicos y pacientes. Esta situación ha resultado en una reducción en la calidad del servicio y en el acceso oportuno a la atención que los pacientes necesitan.
+Nuestro servicio busca ofrecer atención accesible y de calidad a las personas que padecen trastornos como la depresión y la ansiedad, garantizando una gestión eficiente de citas, control de estado e interacción entre profesionales y pacientes.
 
-¿Cómo podríamos desarrollar una solución tecnológica que automatice las tareas administrativas, libere tiempo para los profesionales de salud mental y, en última instancia, mejore el acceso y la calidad de la atención en el sistema de salud mental en Perú?
+Se ha identificado que la sobrecarga administrativa está afectando la capacidad de los profesionales para brindar atención directa. Esto genera demoras en la gestión de citas, poco control de estado y dificultades en la interacción entre médicos y pacientes, reduciendo la calidad y oportunidad del servicio.
 
-Nuestra plataforma debe ser fácil de usar, integrando de manera eficiente la gestión de citas, historiales médicos y comunicación entre médicos y pacientes. Esto permitirá a los profesionales de salud mental enfocarse en lo que más importa: brindar atención de calidad a sus pacientes.
-
+¿Cómo podríamos mejorar la eficiencia operativa del sistema de salud mental en Perú para que los profesionales dispongan de más tiempo para atender a los pacientes y se incremente la calidad y accesibilidad del servicio?
 
 ### **Customer Segments**
 Los usuarios principales de esta plataforma serán los profesionales de la salud mental, y otros especialistas que trabajan en instituciones médicas dedicadas a la salud mental. También incluye al personal administrativo encargado de la gestión de citas y la organización de información clínica.
@@ -68,7 +67,7 @@ El segmento inicial para la implementación de esta plataforma estará compuesto
 
 #### 1.2.2.2. Lean UX Assumptions.
 
-**Bussiness Assumptions**
+**Business Assumptions**
 
 1. **Creemos que nuestros clientes tienen la necesidad de:**  
    organizar y gestionar de manera eficiente la información de los pacientes, citas, y datos clínicos.
