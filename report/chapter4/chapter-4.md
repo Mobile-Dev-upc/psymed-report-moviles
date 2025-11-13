@@ -674,9 +674,397 @@ Las evidencias de desarrollo se reflejan en los commits realizados en el reposit
 
 
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
+
+En esta sección se detallarán los user stories implementadas en el presente sprint con sus respectivos tests de aceptación (Gherkin).
+
+### US01
+Feature: Registro de profesional de la salud mental  
+Como profesional de la salud mental<br>
+Quiero registrarme con mis credenciales<br>
+Para acceder a las funcionalidades específicas y gestionar información de mis pacientes.<br>
+
+Escenario: Registro exitoso<br>
+Dado que el profesional de la salud mental proporciona la información requerida para su registro<br>
+Cuando el sistema valida la información ingresada<br>
+Entonces el sistema debe registrar los datos del profesional de forma segura<br>
+Y asignarle el rol correspondiente de profesional de la salud mental<br>
+
+Escenario: Información incompleta<br>
+Dado que el profesional no proporciona toda la información requerida<br>
+Cuando el sistema valida los datos<br>
+Entonces el sistema debe rechazar el registro<br>
+Y notificar qué información falta para completarlo<br>
+
+Escenario: Credenciales duplicadas<br>
+Dado que el profesional intenta registrarse con credenciales ya existentes<br>
+Cuando el sistema valida la información<br>
+Entonces el sistema debe impedir el registro<br>
+Y notificar que las credenciales ya están registradas, sugiriendo la recuperación de acceso<br><br>
+
+---
+
+### US02
+Feature: Inicio de sesión como paciente  
+Como paciente<br>
+Quiero iniciar sesión en la plataforma<br>
+Para acceder a mi información personal y seguimiento de tratamiento.<br>
+
+Escenario: Inicio exitoso<br>
+Dado que el paciente proporciona credenciales válidas<br>
+Cuando el sistema las valida<br>
+Entonces el sistema debe permitir el acceso al entorno del paciente<br>
+Y habilitar las funciones asociadas a su rol<br>
+
+Escenario: Credenciales incorrectas<br>
+Dado que el paciente ingresa credenciales incorrectas<br>
+Cuando el sistema valida la información<br>
+Entonces el sistema debe denegar el acceso<br>
+Y notificar que las credenciales no son válidas, ofreciendo una opción de recuperación<br>
+
+Escenario: Recuperación de acceso<br>
+Dado que el paciente solicita recuperar su acceso<br>
+Cuando el sistema procesa la solicitud<br>
+Entonces debe enviar un enlace de restablecimiento al correo electrónico registrado<br><br>
+
+---
+
+### US03
+Feature: Inicio de sesión como profesional de la salud mental  
+Como profesional de la salud mental<br>
+Quiero iniciar sesión en la plataforma<br>
+Para gestionar la información de mis pacientes y acceder a herramientas de seguimiento.<br>
+
+Escenario: Inicio exitoso<br>
+Dado que el profesional proporciona credenciales válidas<br>
+Cuando el sistema las valida<br>
+Entonces el sistema debe permitir el acceso<br>
+Y habilitar las funciones de gestión de pacientes correspondientes a su rol<br>
+
+Escenario: Credenciales inválidas<br>
+Dado que el profesional proporciona credenciales incorrectas<br>
+Cuando el sistema las valida<br>
+Entonces el sistema debe denegar el acceso<br>
+Y notificar el error, ofreciendo la opción de restablecer el acceso<br>
+
+Escenario: Recuperación de acceso<br>
+Dado que el profesional solicita recuperar su contraseña<br>
+Cuando el sistema procesa la solicitud<br>
+Entonces debe enviar un enlace de restablecimiento al correo asociado<br><br>
+
+---
+
+### US04
+Feature: Registro de información personal del paciente  
+Como profesional de la salud mental<br>
+Quiero registrar la información personal del paciente<br>
+Para tener una referencia detallada y precisa de sus datos básicos en cada consulta.<br>
+
+Escenario: Registro exitoso<br>
+Dado que el profesional proporciona toda la información requerida del paciente<br>
+Cuando el sistema valida los datos<br>
+Entonces debe almacenar la información de manera segura y asociarla al perfil del paciente<br>
+
+Escenario: Datos incompletos<br>
+Dado que el profesional no completa toda la información requerida<br>
+Cuando el sistema valida los datos<br>
+Entonces debe impedir el registro<br>
+Y notificar qué información falta para completarlo<br><br>
+
+---
+
+### US05
+Feature: Visualización del estado de ánimo del paciente  
+Como profesional de la salud mental<br>
+Quiero visualizar el estado de ánimo actual del paciente<br>
+Para evaluar su condición emocional.<br>
+
+Escenario: Estado disponible<br>
+Dado que existe un registro del estado de ánimo del paciente<br>
+Cuando el sistema consulta el perfil<br>
+Entonces debe mostrar el estado de ánimo más reciente registrado<br>
+
+Escenario: Sin registros previos<br>
+Dado que no existen registros de estado de ánimo<br>
+Cuando el sistema realiza la consulta<br>
+Entonces debe indicar la ausencia de registros disponibles<br><br>
+
+---
+
+### US06
+Feature: Registro de estado de ánimo  
+Como paciente<br>
+Quiero comunicar mi estado emocional actual<br>
+Para que mi profesional pueda evaluar mi progreso.<br>
+
+Escenario: Registro exitoso<br>
+Dado que el paciente proporciona su estado emocional actual<br>
+Cuando el sistema valida la información<br>
+Entonces el sistema debe almacenar el registro de estado de ánimo<br>
+Y asociarlo al perfil del paciente<br>
+
+Escenario: Visualización del historial<br>
+Dado que el paciente tiene registros previos de estados de ánimo<br>
+Cuando el sistema consulta el historial<br>
+Entonces debe mostrar los registros anteriores organizados cronológicamente<br><br>
+
+---
+
+### US07
+Feature: Registro de funciones biológicas  
+Como paciente<br>
+Quiero registrar mis funciones biológicas<br>
+Para que mi profesional conozca mi estado de salud actual.<br>
+
+Escenario: Registro exitoso<br>
+Dado que el paciente proporciona información sobre sueño, hambre, energía e hidratación<br>
+Cuando el sistema valida y procesa los datos<br>
+Entonces debe almacenar la información en su perfil<br>
+Y permitir su posterior consulta por el profesional<br><br>
+
+---
+
+### US08
+Feature: Registro de medicamentos del paciente  
+Como profesional de la salud mental<br>
+Quiero registrar los medicamentos del paciente<br>
+Para seguir adecuadamente su tratamiento farmacológico.<br>
+
+Escenario: Registro exitoso<br>
+Dado que el profesional proporciona toda la información requerida del medicamento<br>
+Cuando el sistema valida los datos<br>
+Entonces debe registrar la información y asociarla al paciente<br>
+
+Escenario: Información incompleta<br>
+Dado que la información ingresada es incompleta o incorrecta<br>
+Cuando el sistema valida los datos<br>
+Entonces debe rechazar el registro<br>
+Y notificar los campos que necesitan corrección<br><br>
+
+---
+
+### US09
+Feature: Visualización de medicamentos del paciente  
+Como paciente<br>
+Quiero ver los medicamentos que me asignó mi profesional<br>
+Para poder seguir correctamente mi tratamiento.<br>
+
+Escenario: Visualización de medicamentos<br>
+Dado que existen medicamentos registrados por el profesional<br>
+Cuando el sistema consulta la información<br>
+Entonces debe mostrar la lista completa de medicamentos y sus detalles<br>
+
+Escenario: Sin medicamentos registrados<br>
+Dado que no hay medicamentos asignados<br>
+Cuando el sistema realiza la consulta<br>
+Entonces debe mostrar un mensaje indicando la ausencia de registros<br><br>
+
+---
+
+### US10
+Feature: Creación de citas  
+Como profesional de la salud mental<br>
+Quiero agendar citas con mis pacientes<br>
+Para organizar las sesiones de terapia.<br>
+
+Escenario: Creación de cita<br>
+Dado que el profesional proporciona fecha, hora, duración y paciente<br>
+Cuando el sistema valida y registra la información<br>
+Entonces debe crear la cita y asociarla al paciente<br><br>
+
+---
+
+### US11
+Feature: Visualización de citas médicas  
+Como paciente<br>
+Quiero ver mis citas médicas programadas<br>
+Para saber cuándo debo asistir al consultorio.<br>
+
+Escenario: Visualización de citas<br>
+Dado que existen citas registradas<br>
+Cuando el sistema consulta las citas del paciente<br>
+Entonces debe mostrar la lista con fecha, hora y profesional asignado<br>
+
+Escenario: Sin citas registradas<br>
+Dado que no existen citas programadas<br>
+Cuando el sistema realiza la consulta<br>
+Entonces debe indicar que no hay citas próximas<br><br>
+
+---
+
+### US12
+Feature: Inicio de sesión como paciente en aplicación móvil  
+Como paciente<br>
+Quiero iniciar sesión con mi usuario y contraseña<br>
+Para acceder a mi información personal y de salud dentro de la aplicación móvil.<br>
+
+Escenario: Inicio exitoso<br>
+Dado que el paciente proporciona credenciales válidas<br>
+Cuando el sistema las valida<br>
+Entonces debe permitir el acceso al entorno móvil del paciente<br>
+Y cargar su información personal<br>
+
+Escenario: Credenciales inválidas<br>
+Dado que el paciente proporciona credenciales incorrectas<br>
+Cuando el sistema valida la información<br>
+Entonces debe rechazar el acceso<br>
+Y mostrar un mensaje de error<br>
+
+Escenario: Campos vacíos<br>
+Dado que el paciente deja campos de autenticación vacíos<br>
+Cuando el sistema valida la solicitud<br>
+Entonces debe impedir el acceso<br>
+Y notificar la ausencia de datos requeridos<br><br>
+
+---
+
+### US13
+Feature: Visualización de información de perfil en aplicación móvil  
+Como paciente<br>
+Quiero ver mi información personal<br>
+Para confirmar que mis datos sean correctos dentro de la aplicación.<br>
+
+Escenario: Visualización del perfil<br>
+Dado que el paciente accede a su perfil<br>
+Cuando el sistema recupera su información<br>
+Entonces debe mostrar nombre, correo, dirección, ID de paciente y profesional asociado<br><br>
+
+---
+
+### US14
+Feature: Cierre de sesión en aplicación móvil  
+Como paciente<br>
+Quiero cerrar mi sesión de forma segura<br>
+Para proteger mi privacidad y evitar accesos no autorizados.<br>
+
+Escenario: Cierre exitoso<br>
+Dado que el paciente ha iniciado sesión<br>
+Cuando solicita cerrar sesión<br>
+Entonces el sistema debe finalizar la sesión activa<br>
+Y eliminar los datos temporales de autenticación<br><br>
+
+---
+
+### US15
+Feature: Registro del estado de salud diario en aplicación móvil  
+Como paciente<br>
+Quiero registrar mi estado de salud diario<br>
+Para llevar un seguimiento de mi bienestar y progreso terapéutico.<br>
+
+Escenario: Registro exitoso<br>
+Dado que el paciente proporciona su estado diario en todas las categorías requeridas<br>
+Cuando el sistema valida y guarda la información<br>
+Entonces debe registrar los datos de ese día<br>
+Y confirmar la acción<br>
+
+Escenario: Registro duplicado<br>
+Dado que el paciente ya registró su estado diario<br>
+Cuando intenta volver a hacerlo el mismo día<br>
+Entonces el sistema debe impedir el registro duplicado<br>
+Y notificar que ya existe un registro para esa fecha<br><br>
+
+---
+
+### US16
+Feature: Consulta de lista de medicamentos en aplicación móvil  
+Como paciente<br>
+Quiero ver mi lista de medicamentos asignados<br>
+Para conocer los detalles de motivo, frecuencia e intervalo.<br>
+
+Escenario: Visualización de medicamentos<br>
+Dado que existen medicamentos registrados<br>
+Cuando el sistema recupera la información<br>
+Entonces debe mostrar cada medicamento con su motivo, intervalo y cantidad<br>
+
+Escenario: Sin medicamentos registrados<br>
+Dado que el paciente no tiene medicamentos asignados<br>
+Cuando el sistema realiza la consulta<br>
+Entonces debe mostrar un mensaje informando la ausencia de registros<br><br>
+
+---
+
+### US17
+Feature: Visualización de próximas citas en aplicación móvil  
+Como paciente<br>
+Quiero ver mis próximas citas médicas con sus detalles<br>
+Para planificar mi asistencia de forma eficiente.<br>
+
+Escenario: Visualización de citas futuras<br>
+Dado que existen citas programadas<br>
+Cuando el sistema recupera la información<br>
+Entonces debe mostrar la lista con fecha, hora, duración y profesional asignado<br>
+
+Escenario: Cita actual<br>
+Dado que existe una cita para la fecha actual<br>
+Cuando el sistema carga la información<br>
+Entonces debe marcarla con una etiqueta distintiva que indique “Cita de hoy”<br>
+
+Escenario: Sin citas registradas<br>
+Dado que no hay citas programadas<br>
+Cuando el sistema consulta la información<br>
+Entonces debe mostrar un mensaje que indique que no hay citas próximas<br><br>
+
+---
+
+### US18
+Feature: Visualización del propósito de la aplicación en la Landing Page  
+Como visitante de la Landing Page<br>
+Quiero entender claramente el propósito de la aplicación<br>
+Para saber cómo puede ayudarme.<br>
+
+Escenario: Propósito visible<br>
+Dado que el visitante accede a la página principal<br>
+Cuando el sistema carga el contenido<br>
+Entonces debe mostrar información clara y concisa sobre el propósito de la aplicación<br><br>
+
+---
+
+### US19
+Feature: Visualización de imágenes y gráficos relevantes en la Landing Page  
+Como visitante de la Landing Page<br>
+Quiero ver imágenes y gráficos claros y relevantes<br>
+Para complementar la información y aumentar mi interés en la aplicación.<br>
+
+Escenario: Imágenes relevantes<br>
+Dado que el visitante navega por la página<br>
+Cuando el sistema presenta contenido visual<br>
+Entonces las imágenes deben ser de alta calidad y coherentes con el mensaje del sitio<br>
+
+Escenario: Gráficos informativos<br>
+Dado que el visitante visualiza secciones con gráficos<br>
+Cuando el sistema muestra estos elementos<br>
+Entonces deben facilitar la comprensión del contenido textual<br><br>
+
+---
+
+### US20
+Feature: Visualización de tipografía cómoda y agradable estéticamente  
+Como visitante de la Landing Page<br>
+Quiero que la tipografía sea legible y visualmente coherente<br>
+Para facilitar la lectura y mantener una experiencia estética agradable.<br>
+
+Escenario: Legibilidad de la tipografía<br>
+Dado que el visitante accede a la Landing Page<br>
+Cuando el sistema muestra el contenido textual<br>
+Entonces debe utilizar una tipografía clara, con tamaño adecuado y contraste suficiente para facilitar la lectura<br>
+
+Escenario: Consistencia tipográfica<br>
+Dado que el visitante navega entre diferentes secciones de la página<br>
+Cuando el sistema renderiza los textos<br>
+Entonces debe mantener coherencia visual en los estilos tipográficos (fuente, tamaño y color)<br><br>
+
+
 #### 4.2.1.5. Execution Evidence for Sprint Review
+
+
+
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
+
+
+
 #### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
+
+
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
