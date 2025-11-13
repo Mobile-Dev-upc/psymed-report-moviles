@@ -218,11 +218,208 @@ Una vez completado el despliegue, la landing page quedará publicada y accesible
   </tr>
   <tr>
     <th>Sprint 1 - Story Points</th>
-    <td>30 Story Points distribuidos en 20 User Stories, incluyendo registro, inicio de sesión, gestión de pacientes, programación de citas, control de estado y visualización de tareas.</td>
+    <td>30 Story Points distribuidos en 20 User Stories, incluyendo registro, inicio de sesión, gestión de pacientes, programación de citas, gestion de medicación y control de estado</td>
   </tr>
 </table>
 
 #### 4.2.1.2. Sprint Backlog 1
+
+Durante este Sprint, el equipo se enfocó en desarrollar la primera versión funcional completa de PsyMed, una plataforma web y móvil 
+destinada a optimizar la gestión, comunicación y seguimiento de pacientes en terapia con profesionales de la salud mental. El objetivo fue 
+implementar todas las funcionalidades esenciales del MVP (web, móvil y landing page), garantizando el flujo completo de registro, inicio de sesión, 
+gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
+
+**Url del trello:**
+<br>
+
+<br>
+<br>
+
+<table>
+  <tr>
+    <th colspan="1">Sprint #</th>
+    <td colspan="7">Sprint 1</td>
+  </tr>
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="5">Work-Item / Task</th>
+  </tr>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Estimation (Hours)</th>
+    <th>Assigned To</th>
+    <th>Status (To-do / In-Process / To-Review / Done)</th>
+  </tr>
+
+  <!-- US01 -->
+  <tr>
+    <td>US01</td>
+    <td>Registrar como profesional de la salud mental</td>
+    <td>T01</td>
+    <td>Implementar formulario de registro</td>
+    <td>Creación del formulario de registro para profesionales con validación de credenciales.</td>
+    <td>6</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T02</td>
+    <td>Conexión backend para registro</td>
+    <td>Configurar endpoint para registro de profesionales y guardado en base de datos.</td>
+    <td>8</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US02 -->
+  <tr>
+    <td>US02</td>
+    <td>Iniciar sesión como paciente</td>
+    <td>T03</td>
+    <td>Diseño de interfaz de login</td>
+    <td>Diseñar la vista de inicio de sesión para pacientes.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T04</td>
+    <td>Validación de credenciales (backend)</td>
+    <td>Desarrollar lógica de autenticación y validación JWT para pacientes.</td>
+    <td>6</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US03 -->
+  <tr>
+    <td>US03</td>
+    <td>Iniciar sesión como profesional de la salud mental</td>
+    <td>T05</td>
+    <td>Interfaz de login para profesionales</td>
+    <td>Diseñar y desarrollar la interfaz de inicio de sesión para profesionales.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US04 -->
+  <tr>
+    <td>US04</td>
+    <td>Registrar información personal del paciente</td>
+    <td>T06</td>
+    <td>Formulario de datos personales</td>
+    <td>Diseñar formulario para registrar datos personales de pacientes.</td>
+    <td>5</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US05–US07 -->
+  <tr>
+    <td>US05</td>
+    <td>Visualizar estado de ánimo del paciente</td>
+    <td>T07</td>
+    <td>Implementar módulo de visualización</td>
+    <td>Diseñar gráfico y panel para mostrar estado de ánimo actual.</td>
+    <td>5</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US06</td>
+    <td>Registrar estado de ánimo</td>
+    <td>T08</td>
+    <td>Creación del formulario de estado de ánimo</td>
+    <td>Permitir al paciente registrar su estado emocional diario.</td>
+    <td>4</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US07</td>
+    <td>Registrar funciones biológicas</td>
+    <td>T09</td>
+    <td>Implementar formulario de funciones biológicas</td>
+    <td>Registro de sueño, apetito, energía e hidratación.</td>
+    <td>5</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US08–US11 -->
+  <tr>
+    <td>US08</td>
+    <td>Registrar medicamentos del paciente</td>
+    <td>T10</td>
+    <td>Formulario de medicamentos</td>
+    <td>Desarrollo del módulo para registrar medicamentos asignados.</td>
+    <td>6</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US09</td>
+    <td>Ver medicamentos</td>
+    <td>T11</td>
+    <td>Implementar vista de medicamentos</td>
+    <td>Visualización de medicamentos asignados al paciente.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US10</td>
+    <td>Crear citas</td>
+    <td>T12</td>
+    <td>Diseño de módulo de citas</td>
+    <td>Crear interfaz para agendar citas entre profesional y paciente.</td>
+    <td>6</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td>US11</td>
+    <td>Ver citas médicas</td>
+    <td>T13</td>
+    <td>Visualización de citas</td>
+    <td>Mostrar citas médicas del paciente con detalle de fecha y profesional.</td>
+    <td>4</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US12–US17 (Mobile) -->
+  <tr>
+    <td>US12–US17</td>
+    <td>Aplicación móvil PsyMed</td>
+    <td>T14</td>
+    <td>Implementar app móvil</td>
+    <td>Desarrollo de vistas principales: login, perfil, estado de salud, medicamentos y citas.</td>
+    <td>16</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US18–US20 (Landing Page) -->
+  <tr>
+    <td>US18–US20</td>
+    <td>Landing Page</td>
+    <td>T15</td>
+    <td>Diseño y maquetado</td>
+    <td>Desarrollar landing page con propósito, gráficos e identidad visual.</td>
+    <td>10</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+</table>
+
 
 #### 4.2.1.3. Development Evidence for Sprint Review
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
