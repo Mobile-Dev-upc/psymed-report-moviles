@@ -426,6 +426,253 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
 
 
 #### 4.2.1.3. Development Evidence for Sprint Review
+
+Durante este Sprint, se completó la implementación funcional de PsyMed, incluyendo la versión móvil y su backend.
+Se desarrollaron los principales módulos de autenticación, gestión de pacientes, manejo de medicamentos, control de sesiones, visualización de estadísticas emocionales y biológicas, y mejoras en la interfaz de usuario.
+Las evidencias de desarrollo se reflejan en los commits realizados en el repositorio principal del proyecto de la aplicación móvil y el backend.
+
+#### Aplicación móvil PsyMed
+<table>
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Commited on (Date)</th>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>001a3d9</td>
+    <td>chore: initial commit</td>
+    <td>Configuración inicial del repositorio y estructura base del proyecto PsyMed.</td>
+    <td>2025-11-09</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>fa97d25</td>
+    <td>refactor: streamline analytics and tasks screen layouts; improve loading state handling</td>
+    <td>Optimización de las pantallas de analíticas y tareas, mejorando la gestión de estados de carga.</td>
+    <td>2025-11-09</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>f1a29d7</td>
+    <td>refactor: improve analytics loading and calculation methods; enhance date parsing logic</td>
+    <td>Mejora en los métodos de carga y cálculo de analíticas, con optimización en el análisis de fechas.</td>
+    <td>2025-11-10</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>d9f22b6</td>
+    <td>refactor: streamline analytics and tasks screen layouts; improve loading state handling</td>
+    <td>Refactorización del diseño de pantallas de analíticas y tareas, mejorando el manejo del estado de carga.</td>
+    <td>2025-11-10</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>cc1a6f8</td>
+    <td>feat: add PSYMED logo to login screen and include in asset bundle</td>
+    <td>Incorporación del logotipo oficial de PsyMed en la pantalla de inicio de sesión y su inclusión en los recursos del proyecto.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>e2f1c9d</td>
+    <td>refactor: update app color palette to Mint/Teal theme and adjust theme usage in AppTheme</td>
+    <td>Actualización de la paleta de colores de la aplicación al tema Mint/Teal y ajuste del uso de temas globales.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>a6b4f31</td>
+    <td>feat: add registration screen for professionals and update API services</td>
+    <td>Creación de la pantalla de registro para profesionales y actualización de servicios API.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>d9f22b6</td>
+    <td>feat: replace top TabBar with bottom navigation for improved navigation experience</td>
+    <td>Sustitución de la barra de navegación superior por navegación inferior para una mejor experiencia de usuario.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>f1a29d7</td>
+    <td>feat: add mood and biological statistics cards to patient detail screen</td>
+    <td>Integración de tarjetas de estadísticas de estado de ánimo y funciones biológicas en el detalle del paciente.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>3d8a7e2</td>
+    <td>feat: implement medication management with add, edit, and delete functionalities</td>
+    <td>Implementación del módulo de manejo de medicamentos con opciones de agregar, editar y eliminar.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>1e2b4c8</td>
+    <td>feat: enhance session management with create, update, and delete functionalities</td>
+    <td>Gestión de sesiones con funciones de creación, actualización y eliminación; refactor de manejo de tiempos de sesión.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>7c9d1f4</td>
+    <td>feat: add task update functionality and enhance error handling in task service</td>
+    <td>Implementación de la actualización de tareas y mejora en el manejo de errores dentro del servicio de tareas.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>8b7d2e9</td>
+    <td>feat: refactor task progress display and enhance UI for better user experience</td>
+    <td>Refactorización de la visualización del progreso de tareas y mejora de la experiencia de usuario en la interfaz móvil.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Mobile-Dev-upc/PsyMed-Flutter</td>
+    <td>feature/professionalversion</td>
+    <td>14ca4e3</td>
+    <td>Merge pull request #1 from Mobile-Dev-upc/feature/professionalversion</td>
+    <td>Integración de los cambios principales para la versión profesional de PsyMed.</td>
+    <td>2025-11-11</td>
+  </tr>
+</table>
+
+#### Backend PsyMed
+
+<table>
+  <tr>
+    <th>Repository</th>
+    <th>Branch</th>
+    <th>Commit Id</th>
+    <th>Commit Message</th>
+    <th>Commit Message Body</th>
+    <th>Commited on (Date)</th>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>c01a8d9</td>
+    <td>chore: add domain models and commands for roles, pills, and patient profiles</td>
+    <td>Creación de modelos de dominio y comandos para roles, medicamentos y perfiles de pacientes, estableciendo la base del dominio DDD.</td>
+    <td>2025-11-10</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>a02b7e4</td>
+    <td>feat: implement update and delete functionality for patient profiles and tasks</td>
+    <td>Implementación de funcionalidades para actualizar y eliminar perfiles de pacientes y tareas.</td>
+    <td>2025-11-10</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>b03c6f5</td>
+    <td>feat: add commands and resource assemblers for updating and deleting patient profiles and tasks</td>
+    <td>Agregados comandos y ensambladores de recursos para actualizar y eliminar tareas y perfiles de pacientes en la capa de aplicación.</td>
+    <td>2025-11-10</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>c15d4e2</td>
+    <td>feat: implement update and delete functionality for notes in patient sessions</td>
+    <td>Implementación de endpoints y comandos para actualizar y eliminar notas en sesiones de pacientes.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>d27e8b1</td>
+    <td>feat: implement functionality to mark tasks as incomplete</td>
+    <td>Desarrollo de funcionalidad para permitir marcar tareas como incompletas dentro del seguimiento de sesiones.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>e31c9a7</td>
+    <td>feat: add createdAt field to BiologicalFunctionResource and MoodStateResource</td>
+    <td>Adición de campos <code>createdAt</code> en los recursos de función biológica y estado de ánimo para mejorar trazabilidad.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>f48b6d2</td>
+    <td>feat: implement update functionality for pills</td>
+    <td>Implementación de actualización de información de medicamentos en la capa de servicios.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>g59d7c4</td>
+    <td>feat: implement update and delete functionality for sessions</td>
+    <td>Desarrollo de las operaciones de actualización y eliminación para sesiones de pacientes.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>h64a9e8</td>
+    <td>feat: add Docker configuration for backend and MySQL services</td>
+    <td>Configuración de contenedores Docker para el backend y el servicio de base de datos MySQL, facilitando el despliegue del entorno.</td>
+    <td>2025-11-11</td>
+  </tr>
+
+  <tr>
+    <td>Backend-Dev-upc/psymed-backend-appmoviles</td>
+    <td>main</td>
+    <td>i73b2f1</td>
+    <td>fix: change Hibernate ddl-auto setting from validate to update for production environment</td>
+    <td>Ajuste de la configuración de Hibernate en producción de <code>validate</code> a <code>update</code> para sincronización automática de esquemas.</td>
+    <td>2025-11-11</td>
+  </tr>
+</table>
+
+
 #### 4.2.1.4. Testing Suite Evidence for Sprint Review
 #### 4.2.1.5. Execution Evidence for Sprint Review
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
