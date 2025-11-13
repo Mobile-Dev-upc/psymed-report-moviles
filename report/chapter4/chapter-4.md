@@ -214,11 +214,11 @@ Una vez completado el despliegue, la landing page quedará publicada y accesible
   </tr>
   <tr>
     <th>Sprint 1 - Velocity</th>
-    <td>Estimado en 30 Story Points, enfocado en entregar el MVP con funcionalidades de backend, frontend y autenticación.</td>
+    <td>Estimado en 81 Story Points, enfocado en entregar el MVP con funcionalidades de backend, frontend y autenticación.</td>
   </tr>
   <tr>
     <th>Sprint 1 - Story Points</th>
-    <td>30 Story Points distribuidos en 20 User Stories, incluyendo registro, inicio de sesión, gestión de pacientes, programación de citas, gestion de medicación y control de estado</td>
+    <td>81 Story Points distribuidos en 20 User Stories, incluyendo registro, inicio de sesión, gestión de pacientes, programación de citas, gestion de medicación y control de estado</td>
   </tr>
 </table>
 
