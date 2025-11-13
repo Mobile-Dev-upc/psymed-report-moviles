@@ -160,7 +160,7 @@ Para el despliegue de la Landing Page se utilizará GitHub Pages, siguiendo los 
 Una vez completado el despliegue, la landing page quedará publicada y accesible públicamente mediante el enlace: https://wx55-closed-source.github.io/landing-page/
 
 ## 4.2. Landing Page & Mobile Application Implementation
-### 4.2.1. Sprint n
+### 4.2.1. Sprint 1
 #### 4.2.1.1. Sprint Planning 1
 
 <table>
