@@ -25,12 +25,12 @@ Ruta de referencia: https://www.figma.com/login
 1. WebStorm: Entorno de desarrollo integrado (IDE) especializado en tecnologías web. Ha sido elegido por su soporte avanzado para HTML, CSS, JavaScript y frameworks como React y Angular. Ofrece herramientas de refactorización, depuración, integración con Git y compatibilidad multiplataforma, lo que optimiza la productividad y estandariza el desarrollo del equipo.
 
    Ruta de referencia: https://www.jetbrains.com/webstorm/
-   <br>
+   <br><br>
 
 2. HTML5: Lenguaje de marcado utilizado para estructurar y presentar el contenido de la aplicación web. Servirá como base para la maquetación de la interfaz.
 
    Ruta de referencia: https://www.w3schools.com/html/html5_syntax.asp
-   <br>
+   <br><br>
 
 3. CSS: Lenguaje de hojas de estilo en cascada para definir la presentación visual del contenido. En conjunto con HTML, permitirá dar estilo, diseño adaptable y coherencia visual a la aplicación.
 
@@ -47,8 +47,28 @@ Ruta de referencia: https://www.figma.com/login
 5. Angular: Framework de JavaScript escrito en TypeScript. Será la principal tecnología para el desarrollo del front-end del proyecto PsyMed. Permite crear aplicaciones escalables, modulares y mantenibles. El código desarrollado se encuentra alojado en el repositorio correspondiente.
 
    Ruta de referencia: https://github.com/Diseno-de-experimentos-Grupo-2/psymed-frontend
+   <br><br>
+6. Android Studio: Entorno de desarrollo integrado (IDE) oficial para el desarrollo de aplicaciones Android. Se utilizará para crear la versión móvil de la aplicación PsyMed, aprovechando sus herramientas de diseño, emulación y depuración específicas para dispositivos Android.
 
- <br>
+   Ruta de referencia: https://developer.android.com/studio
+   <br>
+   <br>
+7. Flutter: Framework de código abierto desarrollado por Google para la creación de aplicaciones nativas multiplataforma. Se empleará para desarrollar la aplicación móvil de PsyMed, permitiendo compartir una base de código entre Android e iOS, lo que optimiza el tiempo de desarrollo y asegura una experiencia consistente en ambas plataformas. <br> <br>
+8. Dart: Lenguaje de programación optimizado para aplicaciones de interfaz de usuario. Será el lenguaje principal utilizado en conjunto con Flutter para desarrollar la lógica y funcionalidad de la aplicación móvil PsyMed.
+
+   Ruta de referencia: https://dart.dev/
+   <br>
+   <br>
+9. Jetpack Compose: Conjunto de herramientas modernas para construir interfaces de usuario nativas en Android. Se utilizará para diseñar y desarrollar la interfaz de la aplicación móvil PsyMed, facilitando la creación de componentes reutilizables y una experiencia de usuario fluida.
+
+   Ruta de referencia: https://developer.android.com/jetpack/compose
+   <br>
+   <br>
+10. Kotlin: Lenguaje de programación moderno y conciso para el desarrollo de aplicaciones Android. Se empleará para complementar el desarrollo de la aplicación móvil PsyMed, aprovechando su interoperabilidad con Java y sus características avanzadas que mejoran la productividad del desarrollador.
+
+   Ruta de referencia: https://kotlinlang.org/
+   <br>
+   <br>
 
 **Software Deployment**
 1. Git: Sistema de control de versiones distribuido. Permitirá a los integrantes del equipo llevar un registro detallado de los cambios, gestionar ramas de desarrollo, y facilitar la integración de nuevas funcionalidades sin comprometer la estabilidad del proyecto.
@@ -139,15 +159,68 @@ Para el despliegue de la Landing Page se utilizará GitHub Pages, siguiendo los 
 ![alt text](../../assets/GithubPages.png)
 Una vez completado el despliegue, la landing page quedará publicada y accesible públicamente mediante el enlace: https://wx55-closed-source.github.io/landing-page/
 
-
 ## 4.2. Landing Page & Mobile Application Implementation
-
-### 4.2.1. Sprint 1
-
-### 5.2.1.2. Sprint Backlog 1
-
 ### 4.2.1. Sprint n
 #### 4.2.1.1. Sprint Planning 1
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 1</td>
+  </tr>
+  <tr>
+    <th>Sprint Planning Background</th>
+    <td>Implementación inicial de la plataforma PsyMed para profesionales de la salud mental y pacientes.</td>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>2025-11-08</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>10:00 AM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Reunión virtual vía Discord</td>
+  </tr>
+  <tr>
+    <th>Prepared By</th>
+    <td>Maita Falckenheiner, Romina Guadalupe</td>
+  </tr>
+  <tr>
+    <th>Attendees</th>
+    <td>Torres Flores, Paolo Alessandro</td>
+  </tr>
+  <tr>
+    <th>Sprint 1 – 1 Review Summary</th>
+    <td>No aplica — este es el Sprint inicial del proyecto PsyMed.</td>
+  </tr>
+  <tr>
+    <th>Sprint 1 – 1 Retrospective Summary</th>
+    <td>No aplica — no existen iteraciones anteriores.</td>
+  </tr>
+  <tr>
+    <th>Sprint Goal &amp; User Stories</th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Sprint 1 Goal</th>
+    <td>
+      <strong>Nuestro enfoque está en</strong> entregar la primera versión funcional de la plataforma PsyMed, que permita la conexión entre profesionales de la salud mental y sus pacientes para una gestión eficiente de las terapias.<br>
+      <strong>Creemos que esto ofrece</strong> una mejora en la comunicación, el seguimiento de tratamientos y la gestión de citas en un entorno seguro y accesible para profesionales de la salud mental y pacientes.<br>
+      <strong>Esto se confirmará cuando</strong> los usuarios puedan registrarse, agendar sesiones y hacer seguimiento de su progreso terapéutico dentro de la plataforma móvil, con funcionamiento estable en los módulos principales.
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint 1 - Velocity</th>
+    <td>Estimado en 30 Story Points, enfocado en entregar el MVP con funcionalidades de backend, frontend y autenticación.</td>
+  </tr>
+  <tr>
+    <th>Sprint 1 - Story Points</th>
+    <td>30 Story Points distribuidos en 20 User Stories, incluyendo registro, inicio de sesión, gestión de pacientes, programación de citas, control de estado y visualización de tareas.</td>
+  </tr>
+</table>
 
 #### 4.2.1.2. Sprint Backlog 1
 
