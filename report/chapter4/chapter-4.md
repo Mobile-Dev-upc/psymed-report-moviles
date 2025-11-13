@@ -229,10 +229,14 @@ destinada a optimizar la gestión, comunicación y seguimiento de pacientes en t
 implementar todas las funcionalidades esenciales del MVP (web, móvil y landing page), garantizando el flujo completo de registro, inicio de sesión, 
 gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
 
-**Url del trello:**
+**Url del trello:** https://trello.com/invite/b/68e438bc12fe9651d240dfe1/ATTIc34f9aa0fa66bc1feb777cef9467dfeeE331B2D7/psymed-moviles-sprint-1
 <br>
 
 <br>
+
+<img width="1141" height="534" alt="image" src="https://github.com/user-attachments/assets/27641449-dab3-4d99-8a74-e3adc0046425" />
+
+
 <br>
 
 <table>
