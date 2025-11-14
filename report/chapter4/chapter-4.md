@@ -1338,6 +1338,125 @@ En conclusión, la psicóloga consideró que la plataforma SciMed es funcional, 
 
 
 ### 4.3.3. Evaluaciones según heurísticas
+#### **UX Heuristics & Principles Evaluation**
+#### **Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software  <br>
+**CURSO:** Aplicaciones para dispositivos móviles  <br>
+**NRC:** 1827 <br>
+**PROFESORES:** David Gerardo Quevedo Velasco<br>
+**AUDITOR:** Paolo Torres <br>
+**CLIENTE(S):** Grupo Go7U<br>
+
+---
+
+#### **SITE o APP A EVALUAR:**
+**Psymed** – Aplicación para profesionales de la salud mental y pacientes que facilita la gestión de procesos interactivos entre ambos.
+
+---
+
+#### **TAREAS A EVALUAR:**
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de paciente
+2. Registro de profesional de la salud mental
+3. Inicio de sesión y acceso al panel principal
+4. Agendar una cita terapéutica
+5. Enviar mensaje al terapeuta o paciente
+6. Registrar notas o avances de sesión
+7. Visualizar historial clínico
+8. Cancelar o reprogramar una cita
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+
+1. Generar reportes estadísticos de sesiones
+2. Configurar recordatorios automáticos por correo o SMS
+3. Integrar pagos en línea
+4. Exportar historial clínico a otros formatos
+5. Funcionalidades de supervisión entre terapeutas
+
+---
+
+#### **ESCALA DE SEVERIDAD:**
+
+| Nivel | Descripción                                                                                                                                       |
+|-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1** | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No requiere corrección inmediata.            |
+| **2** | Problema menor: ocurre con cierta frecuencia o genera confusión leve. Se recomienda corregir en una futura iteración.                             |
+| **3** | Problema mayor: ocurre frecuentemente o impide al usuario completar una tarea sin ayuda. Debe corregirse con prioridad alta.                      |
+| **4** | Problema muy grave: impide completamente el uso de la herramienta o compromete la experiencia del usuario. Debe corregirse antes del lanzamiento. |
+
+---
+
+#### **TABLA RESUMEN:**
+
+| # | Problema                                                                                       | Escala de severidad | Heurística / Principio violado                |
+|---|------------------------------------------------------------------------------------------------|---------------------|-----------------------------------------------|
+| 1 | No existe un botón claro para regresar al panel principal desde la vista de historial clínico. | 3                   | Usability: Libertad y control del usuario     |
+| 2 | Los íconos de funciones no tienen etiquetas textuales para lectores de pantalla.               | 2                   | Inclusive Design: Experiencias comparables    |
+| 3 | La jerarquía visual de la sección de mensajes no resalta las conversaciones activas.           | 2                   | Information Architecture: Is it usable?       |
+| 4 | Al registrar una cita, no se muestra retroalimentación inmediata tras confirmar.               | 3                   | Usability: Visibilidad del estado del sistema |
+| 5 | El botón “Cancelar cita” está demasiado próximo al botón “Guardar cambios”.                    | 3                   | Usability: Prevención de errores              |
+
+---
+
+#### **DESCRIPCIÓN DE PROBLEMAS:**
+
+#### **PROBLEMA #1: No existe un botón claro para regresar al panel principal desde la vista de historial clínico**
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Libertad y control del usuario  
+**Problema:**  
+Cuando el usuario revisa el historial clínico, no dispone de una opción visible que le permita regresar fácilmente al panel principal. Esto genera confusión y obliga a usar el navegador para retroceder, afectando la fluidez de la navegación.
+
+**Recomendación:**  
+Incorporar un botón “Volver al panel” o un ícono de navegación persistente en la interfaz, que permita retornar fácilmente sin perder el contexto actual.
+
+---
+
+#### **PROBLEMA #2: Los íconos de funciones no tienen etiquetas textuales para lectores de pantalla**
+**Severidad:** 2  
+**Heurística violada:** Inclusive Design – Proporciona experiencias comparables  
+**Problema:**  
+Algunos íconos, como el de mensajes o configuración, carecen de atributos `aria-label` o texto alternativo, lo que dificulta la interacción para usuarios con discapacidad visual.
+
+**Recomendación:**  
+Agregar etiquetas accesibles (`aria-label` o `alt`) a todos los elementos interactivos para garantizar compatibilidad con tecnologías de asistencia.
+
+---
+
+#### **PROBLEMA #3: La jerarquía visual de la sección de mensajes no resalta las conversaciones activas**
+**Severidad:** 2  
+**Heurística violada:** Information Architecture – Is it usable?  
+**Problema:**  
+La interfaz de mensajes no diferencia visualmente las conversaciones activas de las archivadas, dificultando la búsqueda y seguimiento de pacientes.
+
+**Recomendación:**  
+Aplicar un esquema visual claro (colores, tipografía o etiquetas) que distinga estados de conversación y facilite la navegación.
+
+---
+
+#### **PROBLEMA #4: Al registrar una cita, no se muestra retroalimentación inmediata tras confirmar**
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Visibilidad del estado del sistema  
+**Problema:**  
+Luego de presionar “Confirmar cita”, el sistema no muestra un mensaje o indicador que confirme la acción, generando incertidumbre sobre si la cita fue registrada correctamente.
+
+**Recomendación:**  
+Incluir una notificación visual o sonora (por ejemplo, un mensaje de éxito o un ícono animado) que confirme la creación de la cita.
+
+---
+
+#### **PROBLEMA #5: El botón “Cancelar cita” está demasiado próximo al botón “Guardar cambios”**
+**Severidad:** 3  
+**Heurística violada:** Usabilidad – Prevención de errores  
+**Problema:**  
+La cercanía entre ambos botones aumenta el riesgo de cancelación accidental, especialmente en pantallas táctiles o móviles.
+
+**Recomendación:**  
+Separar ambos botones con espacio suficiente o colores contrastantes para minimizar errores involuntarios.
+
+---
+
 
 # Conclusiones
 ### Conclusiones y recomendaciones.
