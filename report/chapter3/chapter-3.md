@@ -337,4 +337,14 @@ Este sistema asegura un acceso rápido y sencillo a las funciones y datos clave 
 
 
 
+## 3.1.4.5. Mobile Applications Prototyping.
+
+En esta sección se presenta el prototipo de la aplicación móvil. El prototipo incluye las pantallas principales y la navegación diseñada para representar la experiencia del usuario.
+
+El prototipo puede visualizarse en el siguiente enlace: https://marvelapp.com/prototype/34ij6a2g 
+
+![WhatsApp Image 2025-11-14 at 3 44 37 AM](https://github.com/user-attachments/assets/ad98640a-7ca5-4ef2-a636-aaa58e34054e)
+
+
+
 
