@@ -1195,7 +1195,148 @@ Obtiene todos los registros de estados de ánimo del paciente indicado.
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
+
+Preguntas para segmento profesionales:
+
+- ¿Qué tan fácil te resultó entender cómo crear un nuevo usuario o iniciar sesión?
+
+- ¿Te pareció intuitivo el proceso para registrar un paciente o ingresar medicamentos/citas?
+
+- ¿Hubo algún momento en el video en el que te sentiste confundido o perdiste el hilo de lo que pasaba?
+
+- Si tuvieras que hacer tú mismo las acciones que mostró el video (crear usuario, registrar medicamento, etc.), ¿crees que podrías hacerlo sin ayuda?
+
+- ¿Qué mejorarías para que la app sea más fácil de usar?
+
+- ¿Te resultó clara la parte del registro del estado emocional y biológico?
+
+- ¿Crees que esta app te ayudaría a estar más consciente del estado del paciente?
+
+- ¿Cómo te sentiste al ver la app? (por ejemplo: tranquilo, confundido, interesado, indiferente)
+
+- ¿Sientes que la app respeta la privacidad y la sensibilidad de la información de salud mental?
+
+Preguntas para segmento pacientes:
+
+- ¿Qué tan fácil te resultó entender cómo crear un nuevo usuario o iniciar sesión?
+
+- ¿Te pareció intuitivo el proceso para registrar un paciente o ingresar medicamentos/citas?
+
+- ¿Hubo algún momento en el video en el que te sentiste confundido o perdiste el hilo de lo que pasaba?
+
+- Si tuvieras que hacer tú mismo las acciones que mostró el video (crear usuario, registrar medicamento, etc.), ¿crees que podrías hacerlo sin ayuda?
+
+- ¿Qué mejorarías para que la app sea más fácil de usar?
+
+- ¿Te resultó clara la parte del registro del estado emocional y biológico?
+
+- ¿Te gustaría recibir recordatorios de tus citas o medicamentos?
+
+- ¿Te sentirías cómodo registrando tu estado de ánimo todos los días?
+
+- ¿Crees que esta app te ayudaría a estar más consciente de tu salud mental?
+
+- ¿Cómo te sentiste al ver la app? (por ejemplo: tranquilo, confundido, interesado, indiferente)
+
+- ¿Sientes que la app respeta la privacidad y la sensibilidad de la información de salud mental?
+
+- ¿Qué tan confiable te parece el sistema para manejar información médica?
+
 ### 4.3.2. Registro de Entrevistas
+Entrevistas a segmento profesionales:
+
+- Entrevista 1:
+
+![WhatsApp Image 2025-11-06 at 11 39 00 PM](https://github.com/user-attachments/assets/d236f0f9-7542-455b-a9d0-4742c60feb45)
+
+
+| Nombre               | Karina    |
+|----------------------|-----------|
+| Apellido             | Ramirez   |
+| Edad                 | 51 años   |
+| Distrito             | La Molina |
+| URL                  | https://acortar.link/W1pxX8           |
+| Inicio de entrevista | 00:01           |
+| Fin de entrevista    | 20:35          |
+
+Resumen de entrevista:
+
+La psicoterapeuta Karina Ramírez Sedano brindó una evaluación detallada de la plataforma PSYMED, destinada a facilitar la gestión de pacientes, sesiones, tareas y seguimiento emocional y físico por parte de psicólogos y psiquiatras.
+
+Desde el inicio, la entrevistada consideró que la interfaz de registro de pacientes es clara y funcional, ya que permite recopilar los datos básicos necesarios para abrir una historia clínica y comenzar el seguimiento del tratamiento. Destacó que el sistema facilita la organización inicial y constituye un filtro adecuado para el trabajo terapéutico.
+
+Respecto al módulo de citas, indicó que la aplicación resulta sencilla de usar y adaptable a las dinámicas de sesión, que suelen durar entre 45 y 50 minutos. Apreció que la agenda pueda registrar sesiones semanales y que el sistema no permita programar fechas anteriores, lo cual refuerza la coherencia del registro.
+
+En cuanto al seguimiento emocional del paciente, valoró la idea de que el usuario registre su estado diario, aunque advirtió que en casos clínicos como la depresión los cambios podrían no reflejar una mejora inmediata. Señaló que esta función debe servir como apoyo complementario, más que como indicador clínico determinante.
+
+Sobre la vista de datos físicos y medicamentos, consideró que es útil para psiquiatras y que los psicólogos podrían beneficiarse de tener acceso limitado a esta información. No obstante, enfatizó la importancia de garantizar la privacidad, proponiendo que la aplicación incluya un espacio exclusivo para el profesional, donde se guarden notas confidenciales, protegidas mediante cifrado o acceso restringido.
+
+En términos de usabilidad, Karina Ramírez afirmó que la plataforma es intuitiva y visualmente clara. Recomendó incorporar tonos pastel y colores suaves, que transmitan tranquilidad y cercanía. También sugirió que las sesiones o tareas aparezcan estructuradas como “libretos digitales”, simulando los cuadernos que usan los pacientes en terapia presencial.
+
+Sobre la versión móvil, opinó que es conveniente contar con ambas opciones (web y móvil), ya que los psicoterapeutas suelen trabajar virtualmente con computadoras, mientras que los pacientes usan más el teléfono.
+
+Finalmente, consideró que la plataforma favorece la conciencia emocional del paciente y facilita el seguimiento terapéutico. Recalcó la necesidad de mantener altos estándares de seguridad y confidencialidad, especialmente en la información compartida entre distintos profesionales de salud. Concluyó destacando que el proyecto es innovador, funcional y de gran utilidad para el ámbito psicológico y psiquiátrico.
+
+- Entrevista 2:
+
+![WhatsApp Image 2025-11-08 at 12 04 54 PM](https://github.com/user-attachments/assets/b29e3748-54f2-481f-bfca-aa277d20838a)
+
+
+| Nombre               | Hortensia      |
+|----------------------|----------------|
+| Apellido             | Piedra Cáceres |
+| Edad                 | 36 años        |
+| Distrito             | Arequipa       |
+| URL                  | https://acortar.link/xlvlUg               |
+| Inicio de entrevista | 00:01               |
+| Fin de entrevista    | 17:05               |
+
+Resumen de entrevista:
+
+La psicóloga clínica Hortensia Piedra Cáceres, residente en Arequipa, brindó una evaluación detallada de la plataforma Psymed, un sistema web y móvil diseñado para optimizar la gestión de pacientes, citas y seguimiento emocional y físico en el ámbito psicológico y psiquiátrico.
+
+Desde el inicio, la entrevistada consideró que el proceso de inicio de sesión es claro y sencillo, permitiendo distinguir adecuadamente entre el acceso de pacientes y profesionales. En cuanto al registro de pacientes, sugirió incluir información adicional como la edad y antecedentes de terapia previa, para enriquecer la historia clínica inicial.
+
+Respecto al módulo de citas, destacó su facilidad de uso y propuso añadir opciones que reflejen distintos tipos de atención, como evaluaciones psicológicas, entregas de informes, orientación vocacional o terapias grupales (DBT). También recomendó incorporar campos para registrar costos, paquetes de sesiones y reprogramaciones, ya que son aspectos frecuentes en la práctica clínica.
+
+Sobre el seguimiento emocional y físico, valoró que el paciente pueda registrar su estado diario, pero sugirió incluir un campo de notas donde exprese la causa o contexto de sus emociones, facilitando el análisis posterior en sesión. Consideró apropiado mantener cierta separación entre la información del psicólogo y la del psiquiatra, por motivos de confidencialidad.
+
+En el ámbito de la versión móvil, la psicóloga afirmó que sería útil para profesionales, especialmente para consultar citas y el progreso de sus pacientes. Recalcó la conveniencia de que los terapeutas puedan acceder también desde el celular, no solo desde la computadora.
+
+En términos de diseño y usabilidad, propuso emplear colores cálidos (melón, beige, café claro) en lugar de tonos fríos o clínicos, con el fin de generar cercanía y evitar una estética hospitalaria. También sugirió incorporar pequeñas imágenes decorativas que aporten calidez visual.
+
+Finalmente, consideró que SciMed respeta la privacidad del paciente, dado que el registro emocional es parte del proceso terapéutico. Recomendó agregar el motivo de consulta y un sistema para asignar tareas terapéuticas, donde el paciente pueda indicar si comprendió la actividad y cómo se sintió al realizarla.
+
+Concluyó afirmando que la plataforma es intuitiva, funcional y pertinente para el trabajo psicológico, y que con las mejoras propuestas podría convertirse en una herramienta integral para la práctica clínica y el acompañamiento terapéutico.
+
+- Entrevista 3:
+
+![WhatsApp Image 2025-11-09 at 2 11 16 PM](https://github.com/user-attachments/assets/4bbee769-9e23-43ea-b749-1a0a2063e341)
+
+| Nombre               | Valerie        |
+|----------------------|----------------|
+| Apellido             | Hikaru Ouchida |
+| Edad                 | 29 años        |
+| Distrito             | Lince          |
+| URL                  | https://acortar.link/LMeRNa               |
+| Inicio de entrevista | 00:01               |
+| Fin de entrevista    | 09:45               |
+
+Resumen de entrevista:
+
+Desde el inicio, consideró que el diseño es intuitivo y de fácil uso, destacando la claridad del proceso de inicio de sesión y registro de profesionales. En cuanto al registro de pacientes, recomendó añadir la edad y el motivo de consulta, ya que estos datos permiten contextualizar los casos y facilitan la organización de la información clínica.
+
+Respecto al módulo de citas, coincidió con la necesidad de incluir campos adicionales, como el tipo de sesión (terapia o seguimiento), frecuencia semanal o mensual, número de sesiones y reprogramaciones, lo cual permitiría un control más preciso del tratamiento.
+
+En relación con el seguimiento emocional y físico, consideró muy útil que los pacientes puedan registrar su estado de ánimo diario, aunque subrayó que este módulo requiere compromiso por parte del paciente. Sugirió incorporar un espacio para notas, donde puedan expresar el contexto o las razones detrás de su estado emocional, favoreciendo así el análisis terapéutico.
+
+Sobre la versión móvil, indicó que, por su estilo de trabajo, le resulta más práctico el acceso desde computadora o laptop, ya que facilita la redacción y el registro de información profesional, aunque valoró la utilidad de la aplicación móvil para pacientes.
+
+En cuanto al diseño visual, opinó que la interfaz transmite seriedad, pero podría resultar demasiado médica. Propuso añadir ilustraciones minimalistas relacionadas con la salud mental y usar colores más cálidos o pasteles (como crema o café claro), con el fin de generar un entorno más acogedor y menos clínico.
+
+En conclusión, la psicóloga consideró que la plataforma SciMed es funcional, clara y pertinente para la práctica clínica, y que con pequeñas mejoras en la presentación visual y la ampliación de ciertos campos, podría convertirse en una herramienta integral para el seguimiento terapéutico y la organización profesional.
+
+
 ### 4.3.3. Evaluaciones según heurísticas
 
 # Conclusiones
