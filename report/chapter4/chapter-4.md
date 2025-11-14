@@ -214,11 +214,11 @@ Una vez completado el despliegue, la landing page quedará publicada y accesible
   </tr>
   <tr>
     <th>Sprint 1 - Velocity</th>
-    <td>Estimado en 81 Story Points, enfocado en entregar el MVP con funcionalidades de backend, frontend y autenticación.</td>
+    <td>Estimado en 162 Story Points, enfocado en entregar el MVP con funcionalidades de backend, frontend y autenticación.</td>
   </tr>
   <tr>
     <th>Sprint 1 - Story Points</th>
-    <td>81 Story Points distribuidos en 20 User Stories, incluyendo registro, inicio de sesión, gestión de pacientes, programación de citas, gestion de medicación y control de estado</td>
+    <td>162 Story Points distribuidos en 40 User Stories, incluyendo registro, inicio de sesión, gestión de pacientes, programación de citas, gestion de medicación y control de estado</td>
   </tr>
 </table>
 
@@ -420,6 +420,254 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
     <td>Desarrollar landing page con propósito, gráficos e identidad visual.</td>
     <td>10</td>
     <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US21</td>
+    <td>Crear paciente desde la aplicación móvil</td>
+    <td>T16</td>
+    <td>Crear vista de registro de paciente</td>
+    <td>Diseño e implementación de una vista móvil para registrar pacientes.</td>
+    <td>6</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T17</td>
+    <td>Conectar API de creación de paciente</td>
+    <td>Integrar formulario con endpoint POST de creación de paciente.</td>
+    <td>8</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US22 - Visualizar lista de pacientes -->
+  <tr>
+    <td>US22</td>
+    <td>Visualizar lista de pacientes</td>
+    <td>T18</td>
+    <td>Diseñar listado de pacientes</td>
+    <td>Implementar listado con búsqueda y paginación.</td>
+    <td>5</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US23 - Editar paciente -->
+  <tr>
+    <td>US23</td>
+    <td>Editar información del paciente</td>
+    <td>T19</td>
+    <td>Crear formulario de edición</td>
+    <td>Permitir modificar datos personales del paciente.</td>
+    <td>6</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US24 - Eliminar paciente -->
+  <tr>
+    <td>US24</td>
+    <td>Eliminar paciente</td>
+    <td>T20</td>
+    <td>Implementar función de eliminación</td>
+    <td>Agregar botón y lógica para eliminar paciente con confirmación.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US25 - Crear tarea para paciente -->
+  <tr>
+    <td>US25</td>
+    <td>Crear tarea para un paciente</td>
+    <td>T21</td>
+    <td>Formulario de creación de tareas</td>
+    <td>Crear formulario para asignar tareas al paciente.</td>
+    <td>5</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US26 - Visualizar tareas del paciente -->
+  <tr>
+    <td>US26</td>
+    <td>Visualizar tareas del paciente (profesional)</td>
+    <td>T22</td>
+    <td>Lista de tareas</td>
+    <td>Mostrar tareas asignadas con estados.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US27 - Editar tarea -->
+  <tr>
+    <td>US27</td>
+    <td>Editar tarea del paciente</td>
+    <td>T23</td>
+    <td>Editar tarea</td>
+    <td>Modificar título, descripción o fecha límite.</td>
+    <td>4</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US28 - Eliminar tarea -->
+  <tr>
+    <td>US28</td>
+    <td>Eliminar tarea</td>
+    <td>T24</td>
+    <td>Eliminar tarea</td>
+    <td>Implementar acción de eliminación con confirmación.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US29 - Ver tareas asignadas (paciente) -->
+  <tr>
+    <td>US29</td>
+    <td>Ver tareas asignadas</td>
+    <td>T25</td>
+    <td>Interfaz de tareas del paciente</td>
+    <td>Mostrar lista de tareas pendientes y completadas.</td>
+    <td>5</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US30 - Marcar tarea como completada -->
+  <tr>
+    <td>US30</td>
+    <td>Marcar tarea como completada</td>
+    <td>T26</td>
+    <td>Implementar acción de completado</td>
+    <td>Agregar botón de check y actualización del estado.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US31 - Desmarcar tarea -->
+  <tr>
+    <td>US31</td>
+    <td>Desmarcar tarea completada</td>
+    <td>T27</td>
+    <td>Desmarcar tarea</td>
+    <td>Permitir revertir estado completado.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US32 - Crear cita móvil -->
+  <tr>
+    <td>US32</td>
+    <td>Crear cita médica (móvil)</td>
+    <td>T28</td>
+    <td>Formulario de cita (móvil)</td>
+    <td>Crear interfaz para agendar una cita desde el móvil.</td>
+    <td>6</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US33 - Ver citas (profesional móvil) -->
+  <tr>
+    <td>US33</td>
+    <td>Ver citas (profesional móvil)</td>
+    <td>T29</td>
+    <td>Listado de citas</td>
+    <td>Mostrar citas programadas con filtro por fecha.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US34 - Editar cita -->
+  <tr>
+    <td>US34</td>
+    <td>Editar cita médica</td>
+    <td>T30</td>
+    <td>Modificar datos de cita</td>
+    <td>Permitir cambios en fecha, hora o duración de la cita.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US35 - Eliminar cita -->
+  <tr>
+    <td>US35</td>
+    <td>Eliminar cita (móvil)</td>
+    <td>T31</td>
+    <td>Eliminar cita</td>
+    <td>Implementar acción de borrado con confirmación.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US36 - Registrar medicamento (móvil) -->
+  <tr>
+    <td>US36</td>
+    <td>Registrar medicamento del paciente (móvil)</td>
+    <td>T32</td>
+    <td>Formulario de medicamentos</td>
+    <td>Registrar medicamentos asignados desde la app móvil.</td>
+    <td>5</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US37 - Ver medicamentos (profesional) -->
+  <tr>
+    <td>US37</td>
+    <td>Ver medicamentos del paciente (profesional)</td>
+    <td>T33</td>
+    <td>Vista de medicamentos</td>
+    <td>Mostrar lista de medicamentos recetados por paciente.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US38 - Editar medicamento -->
+  <tr>
+    <td>US38</td>
+    <td>Editar medicamento del paciente</td>
+    <td>T34</td>
+    <td>Editar medicamento</td>
+    <td>Modificar dosis, frecuencia o motivo.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US39 - Eliminar medicamento -->
+  <tr>
+    <td>US39</td>
+    <td>Eliminar medicamento del paciente</td>
+    <td>T35</td>
+    <td>Eliminar medicamento</td>
+    <td>Permitir eliminar medicamento con confirmación.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <!-- US40 - Ver medicamentos asignados (paciente móvil) -->
+  <tr>
+    <td>US40</td>
+    <td>Ver medicamentos asignados (paciente)</td>
+    <td>T36</td>
+    <td>Vista de medicamentos (paciente)</td>
+    <td>Listado simple de medicamentos para el paciente.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
     <td>Done</td>
   </tr>
 </table>
@@ -1052,6 +1300,372 @@ Dado que el visitante navega entre diferentes secciones de la página<br>
 Cuando el sistema renderiza los textos<br>
 Entonces debe mantener coherencia visual en los estilos tipográficos (fuente, tamaño y color)<br><br>
 
+--- 
+### US21
+
+Feature: Creación de paciente en aplicación móvil
+Como profesional de la salud mental<br>
+Quiero crear un paciente desde la aplicación móvil<br>
+Para registrarlo rápidamente y gestionarlo desde la plataforma.<br>
+
+Escenario: Creación exitosa<br>
+Dado que el profesional proporciona todos los datos requeridos del paciente<br>
+Cuando el sistema valida la información<br>
+Entonces debe crear el registro del paciente<br>
+Y asociarlo al perfil del profesional<br>
+
+Escenario: Datos incompletos<br>
+Dado que el profesional deja algún campo requerido vacío<br>
+Cuando el sistema valida la información<br>
+Entonces debe impedir la creación del paciente<br>
+Y notificar los campos faltantes<br>
+
+Escenario: Paciente duplicado<br>
+Dado que el profesional intenta registrar un paciente ya existente<br>
+Cuando el sistema valida la información<br>
+Entonces debe impedir la creación<br>
+Y mostrar un mensaje indicando que ya existe un paciente con esos datos<br><br>
+--- 
+### US22
+
+Feature: Visualización de lista de pacientes
+Como profesional de la salud mental<br>
+Quiero visualizar la lista de mis pacientes<br>
+Para acceder rápidamente a su información y estado actual.<br>
+
+Escenario: Lista disponible<br>
+Dado que existen pacientes registrados<br>
+Cuando el sistema recupera la información<br>
+Entonces debe mostrar la lista de pacientes con nombre, ID y estado general<br>
+
+Escenario: Lista vacía<br>
+Dado que no existen pacientes asignados<br>
+Cuando el sistema realiza la consulta<br>
+Entonces debe mostrar un mensaje indicando que no hay pacientes registrados<br><br>
+--- 
+### US23
+
+Feature: Edición de información del paciente
+Como profesional<br>
+Quiero editar la información del paciente<br>
+Para actualizar sus datos cuando sea necesario.<br>
+
+Escenario: Edición exitosa<br>
+Dado que el profesional actualiza uno o más campos<br>
+Cuando el sistema valida los datos<br>
+Entonces debe aplicar los cambios y guardar la información<br>
+
+Escenario: Datos inválidos<br>
+Dado que algún dato ingresado no cumple los requisitos<br>
+Cuando el sistema valida la información<br>
+Entonces debe impedir la actualización<br>
+Y notificar los campos incorrectos<br><br>
+--- 
+### US24
+
+Feature: Eliminación de paciente
+Como profesional<br>
+Quiero eliminar un paciente de mi lista<br>
+Para mantener una gestión organizada y actualizada.<br>
+
+Escenario: Eliminación exitosa<br>
+Dado que el profesional confirma la eliminación<br>
+Cuando el sistema procesa la solicitud<br>
+Entonces debe borrar el registro del paciente<br>
+Y retirarlo de la lista del profesional<br>
+
+Escenario: Cancelación de eliminación<br>
+Dado que el profesional inicia la eliminación<br>
+Cuando decide cancelar<br>
+Entonces el sistema debe mantener el registro intacto<br><br>
+--- 
+### US25
+
+Feature: Creación de tareas para un paciente
+Como profesional<br>
+Quiero crear tareas para un paciente<br>
+Para asignarle actividades terapéuticas que apoyen su progreso.<br>
+
+Escenario: Creación exitosa<br>
+Dado que el profesional define nombre, descripción y fecha límite<br>
+Cuando el sistema valida la información<br>
+Entonces debe crear la tarea y asociarla al paciente<br>
+
+Escenario: Información incompleta<br>
+Dado que falta algún dato requerido<br>
+Cuando el sistema valida la información<br>
+Entonces debe impedir la creación<br>
+Y mostrar los campos faltantes<br><br>
+--- 
+### US26
+
+Feature: Visualización de tareas del paciente (profesional)
+Como profesional<br>
+Quiero ver las tareas asignadas a cada paciente<br>
+Para monitorear su avance terapéutico.<br>
+
+Escenario: Tareas disponibles<br>
+Dado que existen tareas registradas para el paciente<br>
+Cuando el sistema recupera la información<br>
+Entonces debe mostrar la lista con estado, nombre y fecha límite<br>
+
+Escenario: Sin tareas<br>
+Dado que el paciente no tiene tareas asignadas<br>
+Cuando el sistema realiza la consulta<br>
+Entonces debe mostrar un mensaje indicando que no hay tareas disponibles<br><br>
+--- 
+### US27
+
+Feature: Edición de tarea asignada
+Como profesional<br>
+Quiero editar una tarea asignada<br>
+Para modificar su contenido o fecha cuando sea necesario.<br>
+
+Escenario: Edición exitosa<br>
+Dado que el profesional actualiza uno o más campos<br>
+Cuando el sistema valida la información<br>
+Entonces debe guardar los cambios en la tarea<br>
+
+Escenario: Datos inválidos<br>
+Dado que el profesional ingresa un dato incorrecto<br>
+Cuando el sistema valida<br>
+Entonces debe rechazar la edición<br>
+Y mostrar el error<br><br>
+--- 
+### US28
+
+Feature: Eliminación de tarea
+Como profesional<br>
+Quiero eliminar una tarea asignada al paciente<br>
+Para retirar actividades que ya no son necesarias.<br>
+
+Escenario: Eliminación exitosa<br>
+Dado que el profesional confirma la eliminación<br>
+Cuando el sistema procesa la solicitud<br>
+Entonces debe borrar la tarea del registro<br>
+
+Escenario: Cancelación de eliminación<br>
+Dado que el profesional inicia la eliminación<br>
+Cuando decide cancelarla<br>
+Entonces el sistema debe mantener la tarea activa<br><br>
+--- 
+### US29
+
+Feature: Visualización de tareas asignadas (paciente)
+Como paciente<br>
+Quiero ver las tareas que me asignó mi profesional<br>
+Para realizar mis actividades terapéuticas.<br>
+
+Escenario: Tareas disponibles<br>
+Dado que existen tareas asignadas<br>
+Cuando el sistema consulta la información<br>
+Entonces debe mostrar la lista con detalles y fecha límite<br>
+
+Escenario: Sin tareas<br>
+Dado que no existen tareas registradas<br>
+Cuando el sistema realiza la consulta<br>
+Entonces debe mostrar un mensaje indicando que no hay tareas disponibles<br><br>
+--- 
+### US30
+
+Feature: Marcado de tarea completada
+Como paciente<br>
+Quiero marcar una tarea como completada<br>
+Para llevar registro de mi progreso.<br>
+
+Escenario: Marcado exitoso<br>
+Dado que la tarea está pendiente<br>
+Cuando el paciente la marca como completada<br>
+Entonces el sistema debe actualizar su estado<br>
+
+Escenario: Tarea ya completada<br>
+Dado que la tarea ya está marcada como completada<br>
+Cuando el paciente intenta completarla de nuevo<br>
+Entonces el sistema debe impedir la acción<br>
+Y notificar que ya está completada<br><br>
+---
+### US31
+
+Feature: Desmarcar tarea completada
+Como paciente<br>
+Quiero desmarcar una tarea completada<br>
+Para corregir errores o cambios en mi progreso.<br>
+
+Escenario: Desmarcado exitoso<br>
+Dado que la tarea está completada<br>
+Cuando el paciente solicita revertir el estado<br>
+Entonces el sistema debe marcarla como pendiente nuevamente<br>
+
+Escenario: Tarea pendiente<br>
+Dado que la tarea no está completada<br>
+Cuando el paciente intenta desmarcarla
+Entonces el sistema debe notificar que no es posible revertir el estado<br><br>
+---
+### US32
+
+Feature: Creación de cita médica en móvil
+Como profesional<br>
+Quiero crear una cita desde la app móvil<br>
+Para gestionar sesiones sin necesidad de la web.<br>
+
+Escenario: Creación exitosa<br>
+Dado que se ingresan fecha, hora, duración y paciente<br>
+Cuando el sistema valida los datos<br>
+Entonces debe crear la cita y asociarla al paciente<br>
+
+Escenario: Datos incompletos<br>
+Dado que falta algún campo obligatorio<br>
+Cuando el sistema valida<br>
+Entonces debe rechazar la creación<br>
+Y mostrar los campos faltantes<br><br>
+---
+### US33
+
+Feature: Visualización de citas médicas en móvil (profesional)
+Como profesional<br>
+Quiero ver mis citas desde la aplicación móvil<br>
+Para organizar mejor mi agenda diaria.<br>
+
+Escenario: Visualización exitosa<br>
+Dado que existen citas registradas<br>
+Cuando el sistema recupera la información<br>
+Entonces debe mostrar la lista con fecha, hora y paciente<br>
+
+Escenario: Sin citas
+Dado que no existen citas programadas<br>
+Cuando el sistema consulta<br>
+Entonces debe indicar que no hay citas próximas<br><br>
+---
+### US34
+
+Feature: Edición de cita médica
+Como profesional<br>
+Quiero editar una cita médica<br>
+Para corregir o modificar detalles de la sesión.<br>
+
+Escenario: Edición exitosa<br>
+Dado que el profesional actualiza fecha, hora o duración<br>
+Cuando el sistema valida la información<br>
+Entonces debe guardar los cambios<br>
+
+Escenario: Datos inválidos<br>
+Dado que la nueva información no es válida<br>
+Cuando el sistema valida
+Entonces debe rechazar la actualización<br>
+Y notificar el error<br><br>
+---
+
+### US35
+
+Feature: Eliminación de cita médica
+Como profesional<br>
+Quiero eliminar una cita médica
+Para retirar sesiones canceladas.<br>
+
+Escenario: Eliminación exitosa<br>
+Dado que el profesional confirma la acción<br>
+Cuando el sistema procesa la solicitud<br>
+Entonces debe borrar la cita del registro<br>
+
+Escenario: Cancelación de eliminación<br>
+Dado que el profesional inicia la acción<br>
+Cuando decide cancelarla<br>
+Entonces el sistema debe mantener la cita intacta<br><br>
+
+---
+### US36
+
+Feature: Registro de medicamento del paciente en móvil
+Como profesional<br>
+Quiero registrar medicamentos desde la app móvil<br>
+Para actualizar rápidamente el tratamiento del paciente.<br>
+
+Escenario: Registro exitoso<br>
+Dado que el profesional ingresa motivo, frecuencia e intervalo<br>
+Cuando el sistema valida la información<br>
+Entonces debe registrar el medicamento<br>
+Y asociarlo al paciente<br>
+
+Escenario: Datos incompletos<br>
+Dado que falta información requerida<br>
+Cuando el sistema valida
+Entonces debe impedir el registro<br>
+Y mostrar los campos faltantes<br><br>
+---
+
+### US37
+
+Feature: Visualización de medicamentos del paciente (profesional)
+Como profesional<br>
+Quiero ver los medicamentos asignados al paciente<br>
+Para revisar su tratamiento farmacológico.<br>
+
+Escenario: Visualización exitosa<br>
+Dado que existen medicamentos registrados<br>
+Cuando el sistema consulta la información
+Entonces debe mostrarlos con sus detalles<br>
+
+Escenario: Sin medicamentos<br>
+Dado que no existen medicamentos asignados<br>
+Cuando el sistema realiza la consulta<br>
+Entonces debe mostrar un mensaje indicando que no hay medicamentos disponibles<br><br>
+---
+
+### US38
+
+Feature: Edición de medicamento del paciente
+Como profesional<br>
+Quiero editar un medicamento del paciente
+Para actualizar su tratamiento farmacológico.<br>
+
+Escenario: Edición exitosa<br>
+Dado que el profesional actualiza uno o más campos
+Cuando el sistema valida los datos<br>
+Entonces debe aplicar los cambios<br>
+
+Escenario: Datos inválidos<br>
+Dado que la información ingresada no es válida
+Cuando el sistema valida<br>
+Entonces debe impedir la edición
+Y notificar los errores<br><br>
+---
+
+### US39
+
+Feature: Eliminación de medicamento del paciente
+Como profesional<br>
+Quiero eliminar un medicamento del paciente<br>
+Para retirar tratamientos que ya no corresponden a su plan terapéutico.<br>
+
+Escenario: Eliminación confirmada<br>
+Dado que el profesional solicita eliminar un medicamento<br>
+Cuando confirma la acción<br>
+Entonces el sistema debe borrar el registro de forma definitiva<br>
+
+Escenario: Cancelación<br>
+Dado que el profesional inicia la acción de eliminar un medicamento<br>
+Cuando decide cancelarla<br>
+Entonces el sistema debe conservar el medicamento sin cambios<br><br>
+
+---
+### US40
+
+Feature: Visualización de medicamentos asignados (paciente)
+Como paciente<br>
+Quiero ver los medicamentos asignados por mi profesional
+Para cumplir correctamente con mi tratamiento.<br>
+
+Escenario: Medicamentos disponibles<br>
+Dado que existen medicamentos asignados
+Cuando el sistema recupera la información<br>
+Entonces debe mostrarlos con nombre, motivo y frecuencia<br>
+
+Escenario: Sin medicamentos
+Dado que no existen medicamentos registrados<br>
+Cuando el sistema consulta
+Entonces debe indicar que no hay medicamentos disponibles<br><br>
+
+---
 
 #### 4.2.1.5. Execution Evidence for Sprint Review
 
