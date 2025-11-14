@@ -200,11 +200,39 @@ US40 - Ver medicamentos asignados
 
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
+
 #### 2.5.1.1. Candidate Context Discovery
+
+![WhatsApp Image 2025-11-14 at 5 52 24 AM](https://github.com/user-attachments/assets/4679543a-934e-4805-a19e-854516ce7721)
+
 #### 2.5.1.2. Domain Message Flows Modeling
+
+![WhatsApp Image 2025-11-14 at 5 34 53 AM](https://github.com/user-attachments/assets/89107fdb-7bbb-4485-a317-794eabe6df1c)
+
+![WhatsApp Image 2025-11-14 at 5 35 05 AM](https://github.com/user-attachments/assets/113788bf-5226-4ec4-8f93-d14ac1e9048e)
+
+![WhatsApp Image 2025-11-14 at 5 38 20 AM](https://github.com/user-attachments/assets/c909c632-47b9-4f80-a515-73cd2659ec31)
+
+![WhatsApp Image 2025-11-14 at 5 41 48 AM](https://github.com/user-attachments/assets/2df6eb69-3461-4dee-ab79-0223532c8fd4)
+
+![WhatsApp Image 2025-11-14 at 5 44 14 AM (1)](https://github.com/user-attachments/assets/32be9e36-cfbb-421e-b02a-c392097f4cbc)
+
+
 #### 2.5.1.3. Bounded Context Canvases
+
+![WhatsApp Image 2025-11-14 at 4 48 29 AM (1)](https://github.com/user-attachments/assets/e923843b-c342-4c2d-9171-4cf99b009151)
+
+![WhatsApp Image 2025-11-14 at 5 05 17 AM](https://github.com/user-attachments/assets/9521c934-4d4a-4aeb-bcf0-8b29eac9778d)
+
+![WhatsApp Image 2025-11-14 at 5 09 14 AM](https://github.com/user-attachments/assets/36e3b375-baf0-4dc9-8995-a0a6bf719ae8)
+
+![WhatsApp Image 2025-11-14 at 5 20 00 AM](https://github.com/user-attachments/assets/7a988327-cb40-43c4-af15-54cf5e092e16)
+
+![WhatsApp Image 2025-11-14 at 5 55 54 AM](https://github.com/user-attachments/assets/9c5fbfb9-0e79-49c8-b359-715bd6b9d0e8)
+
 ### 2.5.2. Context Mapping
 ### 2.5.3. Software Architecture
+
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
 En esta sección se puede apreciar el diagrama de contexto C4 que muestra el panorama general de trabajo del proyecto.
@@ -221,6 +249,7 @@ Aquí podemos apreciar el diagrama de contenedores del producto realizado
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
+![WhatsApp Image 2025-11-14 at 5 48 30 AM](https://github.com/user-attachments/assets/4a9c8ebe-820a-40d5-9b9d-aa66034eb3d2)
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
