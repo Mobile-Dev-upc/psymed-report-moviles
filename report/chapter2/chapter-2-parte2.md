@@ -430,17 +430,19 @@ Aquí podemos apreciar el diagrama de contenedores del producto realizado
 
 ### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-blob:https://web.whatsapp.com/d7e0b3c7-6f67-4eed-a5fc-5b4f49badcc3
+![WhatsApp Image 2025-11-13 at 10 46 47 PM](https://github.com/user-attachments/assets/0c3e4d4f-506d-4a03-9e7e-8ad11d82b556)
 
 ### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 #### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
-blob:https://web.whatsapp.com/4c2e8789-9498-40ec-9c87-4c6ad304a18d 
+![WhatsApp Image 2025-11-14 at 3 14 38 AM](https://github.com/user-attachments/assets/6a2981c3-903c-45bf-b8db-2d325e57c34a)
 
 #### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-blob:https://web.whatsapp.com/f2931475-ce6b-456c-a314-f6413cdcbc3e 
+![clases](https://github.com/user-attachments/assets/080e4bc0-4e8e-4df7-9940-f8af1e476d02)
+
+![WhatsApp Image 2025-11-14 at 3 17 02 AM](https://github.com/user-attachments/assets/60c4d5b1-1d88-4d67-a6a1-be37e66fa3fe)
 
 ---
 
@@ -870,17 +872,18 @@ blob:https://web.whatsapp.com/f2931475-ce6b-456c-a314-f6413cdcbc3e
 
 ### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-blob:https://web.whatsapp.com/f8e67a03-ef33-4980-82fe-9a21e879531f
+![WhatsApp Image 2025-11-13 at 10 43 24 PM](https://github.com/user-attachments/assets/c41fa460-2e56-47df-bac7-a4846bfde65f)
 
 ### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 #### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-blob:https://web.whatsapp.com/4c2e8789-9498-40ec-9c87-4c6ad304a18d
+![WhatsApp Image 2025-11-14 at 3 14 38 AM](https://github.com/user-attachments/assets/ff6ff023-e32a-47d1-ab82-d2e8d7fbf84b)
 
 #### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-blob:https://web.whatsapp.com/eff93acf-ed46-4c36-a51b-a2de2c1ed6e7
+![WhatsApp Image 2025-11-14 at 3 19 05 AM](https://github.com/user-attachments/assets/055359c0-18ef-4ccc-a1b7-64b94eacd404)
+
 
 ---
 
@@ -1335,17 +1338,17 @@ blob:https://web.whatsapp.com/eff93acf-ed46-4c36-a51b-a2de2c1ed6e7
 
 ### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-
+![WhatsApp Image 2025-11-13 at 10 41 15 PM](https://github.com/user-attachments/assets/0e3764c1-e9a7-4c88-b918-635f58fa1e15)
 
 ### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 #### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-
+![WhatsApp Image 2025-11-14 at 3 29 15 AM](https://github.com/user-attachments/assets/eb114717-9534-4047-8378-032239524401)
 
 #### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-*(Sección vacía - pendiente de diagramas)*
+<img width="938" height="1157" alt="SecionsManagmentBc" src="https://github.com/user-attachments/assets/1a28a47d-d4ce-4aab-8e5c-dbe6e0de2d3c" />
 
 ---
 
@@ -1523,15 +1526,17 @@ blob:https://web.whatsapp.com/eff93acf-ed46-4c36-a51b-a2de2c1ed6e7
 
 ### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
+![WhatsApp Image 2025-11-13 at 10 50 34 PM](https://github.com/user-attachments/assets/c23f88f1-dcb4-439d-ac1c-aa4e86693c30)
+
 ### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
 #### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-*(Sección vacía - pendiente de diagramas)*
+![DC-MedicationManagement](https://github.com/user-attachments/assets/995f0545-fb89-442e-bf6f-28049071bab1)
 
 #### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-*(Sección vacía - pendiente de diagramas)*
+<img width="812" height="838" alt="MedicalManagmentBC" src="https://github.com/user-attachments/assets/52eff6d0-5245-4453-b664-f24c8570cd8f" />
 
 ---
 
@@ -1807,13 +1812,14 @@ blob:https://web.whatsapp.com/eff93acf-ed46-4c36-a51b-a2de2c1ed6e7
 
 ### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
+![89a74bc7-d10f-4b31-8538-abdc8ad6d37a](https://github.com/user-attachments/assets/3cceb5c8-8797-4039-a731-bdb132a4bb50)
 
 ### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 #### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
-*(Sección vacía - pendiente de diagramas)*
+![DC-PatientMoodStates](https://github.com/user-attachments/assets/3c51afce-e9cb-4b15-9f70-f7212abb856a)
 
 #### 2.6.5.6.2. Bounded Context Database Design Diagram
 
-*(Sección vacía - pendiente de diagramas)*
+<img width="1643" height="891" alt="PatientsManagmentBC" src="https://github.com/user-attachments/assets/3a723912-6e61-48db-ac0c-5e52d5dae1d3" />
