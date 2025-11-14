@@ -1472,8 +1472,9 @@ Separar ambos botones con espacio suficiente o colores contrastantes para minimi
 <br>
 
 <br>
+<img width="1350" height="757" alt="image" src="https://github.com/user-attachments/assets/c379512b-823e-419e-ad23-9073f3a7a5f9" />
 
-
+<br><br>
 
 ### Video About the team
 ### Glosario
