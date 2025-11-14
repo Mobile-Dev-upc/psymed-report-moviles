@@ -287,11 +287,12 @@ Este sistema asegura un acceso rápido y sencillo a las funciones y datos clave 
 
 ### 3.1.3.1. Landing Page Wireframe
 
-![Fidelidad 2.jpg](/assets/Fidelidad2.jpg)
+![WhatsApp Image 2025-11-14 at 4 16 22 AM](https://github.com/user-attachments/assets/24ee5383-262f-48bb-bc9a-d15f8353bd7b)
+
 
 ### 3.1.3.2. Landing Page Mock-up
 
-![Mockups Landing.jpg](/assets/MockupsLanding.jpg)
+![WhatsApp Image 2025-11-14 at 4 20 34 AM](https://github.com/user-attachments/assets/e2406a76-d506-4af2-bb42-f5e56158bef9)
 
 ## 3.1.4. Mobile Applications UX/UI Design. 
 ### 3.1.4.1. Mobile Applications Wireframes. 
