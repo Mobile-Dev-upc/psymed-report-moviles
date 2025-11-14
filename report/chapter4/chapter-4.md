@@ -1063,7 +1063,112 @@ Entonces debe mantener coherencia visual en los estilos tipográficos (fuente, t
 
 #### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
+Durante este sprint se completó exitosamente la implementación y documentación de todos los Web Services correspondientes a las historias de usuario planificadas.
+Se configuró Swagger UI como herramienta central para la visualización, prueba e inspección de los endpoints, facilitando la validación funcional por parte del equipo.
 
+Se generó documentación detallada por cada endpoint, incluyendo:
+
+- Sintaxis de la ruta
+
+- Parámetros requeridos
+
+- Ejemplo de request
+
+- Ejemplo de response
+
+- Explicación
+
+- Evidencias mediante capturas de Swagger UI
+<br><br>
+
+| Módulo                    | Endpoint                                                                           | Verbo  | Descripción                                             | URL Documentación                                                                                                              |
+|---------------------------|------------------------------------------------------------------------------------|--------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| **Patient Reports**       | `/api/v1/patients/{patientId}/mood-states`                                         | GET    | Obtiene el historial de estados de ánimo de un paciente | [https://psymed-backend-new.onrender.com/swagger-ui/index.html](https://psymed-backend-new.onrender.com/swagger-ui/index.html) |
+|                           | `/api/v1/patients/{patientId}/mood-states`                                         | POST   | Registra un nuevo estado de ánimo para un paciente      |                                                                                                                                |
+|                           | `/api/v1/patients/{patientId}/biological-functions`                                | GET    | Lista funciones biológicas del paciente                 |                                                                                                                                |
+|                           | `/api/v1/patients/{patientId}/biological-functions`                                | POST   | Crea un registro de función biológica                   |                                                                                                                                |
+| **Professional Profiles** | `/api/v1/professional-profiles`                                                    | POST   | Crea un perfil profesional                              |                                                                                                                                |
+|                           | `/api/v1/professional-profiles/{profileId}`                                        | GET    | Obtiene un perfil por ID                                |                                                                                                                                |
+|                           | `/api/v1/professional-profiles/account/{accountId}`                                | GET    | Obtiene el perfil asociado a una cuenta                 |                                                                                                                                |
+| **Authentication**        | `/api/v1/authentication/sign-up`                                                   | POST   | Registro de usuarios                                    |                                                                                                                                |
+|                           | `/api/v1/authentication/sign-in`                                                   | POST   | Autenticación con JWT                                   |                                                                                                                                |
+| **Professional Sessions** | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions`             | POST   | Reserva una sesión                                      |                                                                                                                                |
+|                           | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions/{sessionId}` | PUT    | Actualiza una sesión                                    |                                                                                                                                |
+|                           | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions/{sessionId}` | DELETE | Elimina una sesión                                      |                                                                                                                                |
+|                           | `/api/v1/professionals/{professionalId}/sessions`                                  | GET    | Obtiene sesiones de un profesional                      |                                                                                                                                |
+| **Medication**            | `/api/v1/pills`                                                                    | POST   | Crea un medicamento                                     |                                                                                                                                |
+|                           | `/api/v1/pills/{pillId}`                                                           | PUT    | Actualiza medicamento                                   |                                                                                                                                |
+|                           | `/api/v1/pills/{pillId}`                                                           | DELETE | Elimina medicamento                                     |                                                                                                                                |
+|                           | `/api/v1/pills`                                                                    | GET    | Lista medicamentos                                      |                                                                                                                                |
+|                           | `/api/v1/pills/patient/{patientId}`                                                | GET    | Lista medicamentos asignados a un paciente              |                                                                                                                                |
+| **Patient Profiles**      | `/api/v1/patient-profiles`                                                         | POST   | Crea un perfil de paciente                              |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/{profileId}`                                             | GET    | Obtiene perfil                                          |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/{profileId}`                                             | PUT    | Actualiza perfil                                        |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/{profileId}`                                             | DELETE | Elimina perfil                                          |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/professional/{professionalId}`                           | GET    | Perfiles asociados a un psicólogo                       |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/account/{accountId}`                                     | GET    | Perfiles asociados a una cuenta                         |                                                                                                                                |
+| **Session Tools**         | `/api/v1/sessions/{sessionId}/notes`                                               | POST   | Agrega nota clínica                                     |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/notes`                                               | PUT    | Actualiza nota                                          |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/notes`                                               | GET    | Obtiene nota                                            |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/notes`                                               | DELETE | Elimina nota                                            |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/tasks`                                               | GET    | Lista tareas de sesión                                  |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/tasks`                                               | POST   | Agrega tarea                                            |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/tasks/{taskId}/complete`                             | POST   | Marca tarea completada                                  |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/tasks/{taskId}/incomplete`                           | POST   | Marca tarea como incompleta                             |                                                                                                                                |
+| **Patient Sessions**      | `/api/v1/patients/{patientId}/tasks`                                               | GET    | Obtiene tareas asignadas al paciente                    |                                                                                                                                |
+|                           | `/api/v1/patients/{patientId}/sessions`                                            | GET    | Lista sesiones del paciente                             |                                                                                                                                |
+
+<br>
+
+- **Ejemplo de Documentación de un Endpoint** <br><br>
+   **GET**: /api/v1/patients/{patientId}/mood-states
+<br>
+<br>
+
+- **Acción:** <br>
+Obtiene todos los registros de estados de ánimo del paciente indicado.
+<br><br>
+
+- **Parámetros:**
+
+    | Tipo | Nombre    | Descripción     |
+    |------|-----------|-----------------|
+    | Path | patientId | ID del paciente |
+
+<br>
+
+- **Response de ejemplo** <br>
+```
+{
+    "patientId": 12,
+    "moodStates": 
+    [
+        {
+            "id": 47,
+            "mood": "Happy",
+            "date": "2025-01-12T15:20:00"
+        }
+    ]
+}
+```
+
+- **Explicación**<br><br>
+    El servicio retorna una lista de estados de ánimo previamente registrados. Permite al profesional de la salud mental visualizar la evolución emocional del paciente.
+<br><br>
+
+- **Capturas de Evidencia**<br>
+
+
+
+- **Repositorio:**
+<br><br>
+
+- **Conclusiones**<br>
+
+    Todos los endpoints previstos fueron implementados, documentados y verificados. Las historias de usuario del Sprint 
+    fueron completadas satisfactoriamente y validadas mediante la documentación generada en Swagger UI.
+<br>
+<br>
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 ## 4.3. Validation Interviews
