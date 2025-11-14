@@ -1055,10 +1055,31 @@ Entonces debe mantener coherencia visual en los estilos tipográficos (fuente, t
 
 #### 4.2.1.5. Execution Evidence for Sprint Review
 
-En esta sección se muestra la evidencia de la ejecución del sprint, incluyendo la gestión de tareas y el seguimiento del progreso en la plataforma Psymed
+En esta sección se muestra la evidencia de la ejecución del sprint, incluyendo las capturas del proyecto en funcionamiento.
 
+<img width="1571" height="1008" alt="image" src="https://github.com/user-attachments/assets/27d21a8e-4430-4a0a-8b40-45d54ffd94ef" />
 
+<br>
 
+<img width="504" height="858" alt="image" src="https://github.com/user-attachments/assets/88081474-14ea-46d3-b0ac-2a8e35686639" />
+
+<br>
+
+<img width="486" height="855" alt="image" src="https://github.com/user-attachments/assets/25307ee0-52bf-4209-8777-e28303688f49" />
+
+<br>
+
+<img width="485" height="851" alt="image" src="https://github.com/user-attachments/assets/f6aa20f0-9de2-472b-930a-558872cb2858" />
+
+<br>
+
+<img width="482" height="852" alt="image" src="https://github.com/user-attachments/assets/4fe92ea0-4578-40b0-a78e-bc8fca5cda05" />
+
+<br>
+
+<img width="488" height="857" alt="image" src="https://github.com/user-attachments/assets/e16517f6-39cf-4308-a3c4-4bb9ad44301c" />
+
+<br>
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
 
 Durante este sprint se completó exitosamente la implementación y documentación de todos los Web Services correspondientes a las historias de usuario planificadas.
@@ -1193,7 +1214,15 @@ Se generó documentación detallada por cada endpoint, incluyendo:
 
 Se desplegó el backend usando Render como plataforma de despliegue de aplicaciones en la nube. A continuación, se presentan las evidencias del despliegue exitoso del backend de Psymed.
 
+<img width="1296" height="678" alt="image" src="https://github.com/user-attachments/assets/25187fb1-8087-4388-8ce1-8e422cdf1368" />
 
+<br>
+
+<img width="1319" height="684" alt="image" src="https://github.com/user-attachments/assets/9c577f97-cbb2-4d8e-b9be-5d564e8035c2" />
+
+<br>
+
+Se puede ver el API documentation desde Swagger UI desde la ruta del despliegue como se nota en el link de la barra buscadora.
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 
