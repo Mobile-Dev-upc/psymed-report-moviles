@@ -23,8 +23,9 @@ Assets, fonts y demás.
   cada etapa de su interacción con la plataforma.
 
 <div align="center">
-  <img src="/assets/PSYMED.png" alt="Logo de la platafroma PSYMED" style="max-width: 50%; height: auto;">
+  <img width="300" height="300" src="../../assets/PSYMED.png" alt="PsyMed">
 </div>
+
 - **Colors:**
 Nuestra paleta de colores se ha seleccionado para proporcionar un 
 entorno digital de apoyo a la salud mental y el bienestar, tanto para 

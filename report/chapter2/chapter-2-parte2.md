@@ -199,13 +199,22 @@ US40 - Ver medicamentos asignados
 
 
 ## 2.5. Strategic-Level Domain-Driven Design
+
+El diseño estratégico de dominio permite identificar y delimitar los contextos acotados del sistema mediante técnicas colaborativas como EventStorming, establecer las relaciones entre contextos mediante Context Mapping, y definir la arquitectura de software a nivel estratégico utilizando diagramas C4.
+
 ### 2.5.1. EventStorming
 
+EventStorming es una técnica colaborativa utilizada para descubrir el dominio del problema mediante la identificación de eventos de dominio, comandos, agregados y actores. Esta técnica permite visualizar el flujo de eventos en el sistema y establecer los límites naturales entre contextos acotados.
+
 #### 2.5.1.1. Candidate Context Discovery
+
+Mediante el análisis de eventos y agregados identificados en el EventStorming, se propusieron seis contextos acotados candidatos que agrupan conceptos del dominio relacionados: IAM (Identity and Access Management), Profiles, Clinical History, Appointment and Administration, Medication, y Patient Report. La agrupación se realizó considerando la cohesión funcional y las responsabilidades de cada contexto.
 
 ![WhatsApp Image 2025-11-14 at 5 52 24 AM](https://github.com/user-attachments/assets/4679543a-934e-4805-a19e-854516ce7721)
 
 #### 2.5.1.2. Domain Message Flows Modeling
+
+Los flujos de mensajes del dominio modelan la interacción entre contextos acotados mediante comandos, consultas y eventos. Estos diagramas documentan escenarios clave como la creación de perfiles de paciente, sesiones, asignación de tareas, registro de estados emocionales y asignación de medicamentos, mostrando la comunicación síncrona e asíncrona entre contextos.
 
 ![WhatsApp Image 2025-11-14 at 5 34 53 AM](https://github.com/user-attachments/assets/89107fdb-7bbb-4485-a317-794eabe6df1c)
 
@@ -220,6 +229,8 @@ US40 - Ver medicamentos asignados
 
 #### 2.5.1.3. Bounded Context Canvases
 
+El Bounded Context Canvas documenta para cada contexto acotado su propósito, estrategia de clasificación, roles del dominio, lenguaje ubicuo, decisiones de negocio, comunicación entrante y saliente, supuestos y métricas de verificación. Estos canvas proporcionan una visión completa de las responsabilidades y relaciones de cada contexto.
+
 ![WhatsApp Image 2025-11-14 at 4 48 29 AM (1)](https://github.com/user-attachments/assets/e923843b-c342-4c2d-9171-4cf99b009151)
 
 ![WhatsApp Image 2025-11-14 at 5 05 17 AM](https://github.com/user-attachments/assets/9521c934-4d4a-4aeb-bcf0-8b29eac9778d)
@@ -231,23 +242,30 @@ US40 - Ver medicamentos asignados
 ![WhatsApp Image 2025-11-14 at 5 55 54 AM](https://github.com/user-attachments/assets/9c5fbfb9-0e79-49c8-b359-715bd6b9d0e8)
 
 ### 2.5.2. Context Mapping
+
+El Context Mapping establece las relaciones entre los contextos acotados identificados. En este sistema, los contextos mantienen relaciones de colaboración y uso mediante comunicaciones síncronas (queries) y asíncronas (eventos). El contexto Profiles actúa como orquestador principal, coordinando la creación de recursos en IAM y Clinical History cuando se crea un perfil de paciente. Los contextos Appointment, Medication y Patient Report dependen de Profiles para validar la existencia de perfiles antes de realizar operaciones.
+
 ### 2.5.3. Software Architecture
+
+La arquitectura de software del sistema se documenta utilizando la metodología C4, que proporciona diferentes niveles de abstracción: Context Level para visualizar el sistema en su entorno, Container Level para mostrar los componentes principales de despliegue, y Deployment Level para representar la infraestructura física de despliegue.
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
-En esta sección se puede apreciar el diagrama de contexto C4 que muestra el panorama general de trabajo del proyecto.
+El diagrama de contexto C4 muestra el sistema PSYMED y sus interacciones con actores externos (pacientes y profesionales), sistemas externos (bases de datos) y usuarios del sistema. Este diagrama proporciona una visión de alto nivel del sistema como una caja negra y su entorno operativo.
 
 ![WhatsApp Image 2025-11-13 at 10 23 47 PM](https://github.com/user-attachments/assets/a9bd679b-41b9-4783-84dd-aefb0c676868)
 
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 
-Aquí podemos apreciar el diagrama de contenedores del producto realizado
+El diagrama de contenedores C4 descompone el sistema en sus componentes principales de despliegue: aplicaciones móviles (Flutter y Android nativo), aplicación web Angular, backend Spring Boot, y base de datos PostgreSQL. Este nivel muestra las tecnologías utilizadas y las interacciones entre contenedores mediante protocolos y APIs.
 
 ![WhatsApp Image 2025-11-13 at 10 28 30 PM](https://github.com/user-attachments/assets/3c184514-5b6a-4a25-952d-ad5228386e5f)
 
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
+
+El diagrama de despliegue muestra la infraestructura física y virtual donde se despliega el sistema. El backend Spring Boot se despliega en Render como servicio web, utilizando Docker Hub para almacenar imágenes de contenedor. La base de datos PostgreSQL se aloja en Neon como base de datos serverless. Las aplicaciones móviles se despliegan en dispositivos Android e iOS de los usuarios.
 
 ![WhatsApp Image 2025-11-14 at 5 48 30 AM](https://github.com/user-attachments/assets/4a9c8ebe-820a-40d5-9b9d-aa66034eb3d2)
 
