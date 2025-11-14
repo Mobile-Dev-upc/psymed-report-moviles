@@ -1158,9 +1158,31 @@ Obtiene todos los registros de estados de ánimo del paciente indicado.
 
 - **Capturas de Evidencia**<br>
 
+<img width="1600" height="697" alt="image" src="https://github.com/user-attachments/assets/f9503522-650c-4004-bbc0-35e49d5637c4" />
 
+<br>
 
-- **Repositorio:**
+<img width="1600" height="809" alt="image" src="https://github.com/user-attachments/assets/5696fa85-9fc4-4dab-9040-f6a2b213bb8e" />
+
+<br>
+
+<img width="1600" height="823" alt="image" src="https://github.com/user-attachments/assets/fde88c5b-8219-43ee-bc27-a1edecece882" />
+
+<br>
+
+<img width="1600" height="695" alt="image" src="https://github.com/user-attachments/assets/1b318bac-70b4-4954-ac70-437ce9b074e1" />
+
+<br>
+
+<img width="1600" height="746" alt="image" src="https://github.com/user-attachments/assets/17bd4cfe-7985-423d-acd8-088830472529" />
+
+<br>
+
+<img width="1600" height="282" alt="image" src="https://github.com/user-attachments/assets/2123e219-31ba-4371-bac7-b7cb3cacef4c" />
+
+<br>
+
+- **Repositorio:** https://github.com/Mobile-Dev-upc/psymed-backend-appmoviles
 <br><br>
 
 - **Conclusiones**<br>
