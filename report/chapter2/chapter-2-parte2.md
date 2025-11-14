@@ -209,14 +209,14 @@ US40 - Ver medicamentos asignados
 
 En esta sección se puede apreciar el diagrama de contexto C4 que muestra el panorama general de trabajo del proyecto.
 
-<img width="1529" height="2700" alt="image" src="https://github.com/user-attachments/assets/cdd027df-31c8-4496-9320-dfe72cff0676" />
+![WhatsApp Image 2025-11-13 at 10 23 47 PM](https://github.com/user-attachments/assets/a9bd679b-41b9-4783-84dd-aefb0c676868)
 
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 
 Aquí podemos apreciar el diagrama de contenedores del producto realizado
 
-<img width="2709" height="3891" alt="image" src="https://github.com/user-attachments/assets/610a59b9-70d0-4352-9536-57c00714d5c7" />
+![WhatsApp Image 2025-11-13 at 10 28 30 PM](https://github.com/user-attachments/assets/3c184514-5b6a-4a25-952d-ad5228386e5f)
 
 
 #### 2.5.3.3. Software Architecture Deployment Diagrams
