@@ -1466,6 +1466,15 @@ Separar ambos botones con espacio suficiente o colores contrastantes para minimi
 ### Conclusiones y recomendaciones.
 ### Video App Validation
 ### Video About the product
+
+**Link del video:** https://acortar.link/bWwB1q 
+
+<br>
+
+<br>
+
+
+
 ### Video About the team
 ### Glosario
 ### Bibliografía
