@@ -296,96 +296,45 @@ Este sistema asegura un acceso rápido y sencillo a las funciones y datos clave 
 ## 3.1.4. Mobile Applications UX/UI Design. 
 ### 3.1.4.1. Mobile Applications Wireframes. 
 
-<img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/44df38aa-f383-4931-9454-adb51ceb70f3" />
+![WhatsApp Image 2025-11-14 at 1 02 21 AM](https://github.com/user-attachments/assets/e36e6791-c9c9-4a16-a456-2b39b664b049)
+
+![WhatsApp Image 2025-11-14 at 1 02 29 AM](https://github.com/user-attachments/assets/fcc39275-1402-490f-a38b-c05c0e9ed27c)
+
 
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams.
 
-<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/bed0395c-376d-40c2-b183-33c46bff87f8" />
+![WhatsApp Image 2025-11-14 at 1 01 33 AM](https://github.com/user-attachments/assets/2292b40a-54d9-4fb2-8501-bab0cb8bcd5c)
+
+![WhatsApp Image 2025-11-14 at 1 01 42 AM](https://github.com/user-attachments/assets/151a4cae-cfc6-4d11-baf8-5d7ea5157621)
 
 ### 3.1.4.3. Mobile Applications Mock-ups. 
 
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/0ee2fd86-5555-4831-8463-b6c6133e65a5" />
+![WhatsApp Image 2025-11-14 at 1 01 56 AM](https://github.com/user-attachments/assets/8e459426-3ea3-4f06-94f0-152b671c81da)
+
+![WhatsApp Image 2025-11-14 at 1 02 07 AM](https://github.com/user-attachments/assets/04167e65-f6ac-44d3-b521-c5f16af0b774)
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams. 
 
-#### **User Goal:**
-El usuario busca iniciar sesión y gestionar su información médica personal incluyendo citas y medicamentos desde una interfaz centralizada y sencilla.
-#### **Task Flow:** 
+![WhatsApp Image 2025-11-14 at 1 29 46 AM](https://github.com/user-attachments/assets/c5b0ee72-6bb4-4a14-8bff-e554e26f2451)
 
-- Registro, inicio de sesión y gestión médica
+![WhatsApp Image 2025-11-14 at 1 30 12 AM](https://github.com/user-attachments/assets/2c3bbb26-11cc-4022-af5b-928ee7ad765b)
 
-##### 1. Descripción del flujo de tareas
+![WhatsApp Image 2025-11-14 at 1 45 54 AM](https://github.com/user-attachments/assets/a75e1387-c05a-406a-9440-f8a59ccb4753)
 
-##### 1.1. Registro de usuario
+![WhatsApp Image 2025-11-14 at 1 46 03 AM](https://github.com/user-attachments/assets/16ea422c-6d36-4d81-8601-a305bace9964)
 
-1. El usuario accede a la aplicación desde la pantalla de **Inicio**.
-2. Selecciona la opción **“Registrarse”**.
-3. Completa los campos requeridos: nombre, correo electrónico, contraseña y confirmación de contraseña.
-4. Presiona el botón **“Confirmar registro”**.
-5. El sistema valida los datos ingresados y crea la cuenta.
-6. La aplicación muestra un mensaje de confirmación y redirige a la pantalla de **Inicio de sesión**.
+![WhatsApp Image 2025-11-14 at 1 54 22 AM](https://github.com/user-attachments/assets/6a05dcb8-13ea-4836-9a89-e392d20f5b9d)
 
----
+![WhatsApp Image 2025-11-14 at 1 58 21 AM](https://github.com/user-attachments/assets/691ec546-6560-4dfb-bfbe-2982f5a3df0c)
 
-##### 1.2. Inicio de sesión
+![WhatsApp Image 2025-11-14 at 2 02 13 AM](https://github.com/user-attachments/assets/81c49f13-df7c-4cd2-bf5b-ffc47ae84236)
 
-1. El usuario introduce sus credenciales (correo y contraseña).
-2. Selecciona la opción **“Iniciar sesión”**.
-3. El sistema valida la información y permite el acceso.
-4. Si las credenciales son correctas, se redirige al **Home**.
-5. En caso de error, el sistema muestra un mensaje de advertencia y ofrece la opción de reintentar.
+![WhatsApp Image 2025-11-14 at 2 05 38 AM](https://github.com/user-attachments/assets/6ada22d0-714d-4552-a941-00ef9b345baa)
 
----
+![WhatsApp Image 2025-11-14 at 2 07 01 AM](https://github.com/user-attachments/assets/3041cf32-cfdf-4a12-8785-700a32c9c9a9)
 
-##### 1.3. Interacción dentro del Home
+![WhatsApp Image 2025-11-14 at 2 10 28 AM](https://github.com/user-attachments/assets/469b47fe-c1bc-439a-9147-52e479810896)
 
-Una vez dentro del *Home*, el usuario dispone de tres módulos principales:
 
-##### a. Módulo de citas
 
-1. El usuario selecciona la opción **“Citas”**.
-2. Completa los campos de fecha, hora y motivo de la cita.
-3. Presiona **“Guardar”**.
-4. El sistema almacena la información y confirma la creación de la cita.
-5. El usuario puede visualizar la lista de citas o regresar al **Home**.
 
-##### b. Módulo de medicamentos
-
-1. Desde el *Home*, selecciona **“Medicamentos”**.
-2. Visualiza la lista actual de medicamentos registrados.
-3. Puede agregar, editar o eliminar un medicamento.
-4. Guarda los cambios y regresa al **Home**.
-
-##### c. Módulo de perfil
-
-1. Desde el *Home*, accede a **“Perfil”**.
-2. Revisa o modifica la información personal y médica.
-3. Guarda los cambios realizados.
-4. Retorna al **Home**.
-
----
-
-##### 2. Rutas alternas y validaciones
-
-- Si el usuario intenta registrar un correo previamente existente, el sistema muestra un mensaje de error y solicita ingresar uno distinto.
-- En caso de error al guardar una cita o medicamento, los datos ingresados se conservan y se ofrece la opción de reintentar.
-- Si la sesión expira o el usuario cierra la aplicación, el sistema redirige automáticamente al módulo de **Inicio de sesión**.
-
----
-
-##### 3. Conclusión
-
-El presente *Task Flow* detalla los pasos que el usuario debe seguir para alcanzar la meta planteada dentro del sistema.  
-Este flujo permite identificar claramente las tareas principales, las rutas alternas y los puntos de validación, contribuyendo al diseño de una experiencia de usuario coherente, eficiente y centrada en las necesidades del usuario.
-
-<div align="center">
-<img width="500" height="1000" alt="image" src="https://github.com/user-attachments/assets/caa69590-976b-4524-b78e-a8bc2bd83afe" />
-</div>
-
-## 3.1.4.5. Mobile Applications Prototyping.
-
-En esta sección se presenta el prototipo de la aplicación móvil. El prototipo incluye las pantallas principales y la navegación diseñada para representar la experiencia del usuario.
-
-El prototipo puede visualizarse en el siguiente enlace: [https://marvelapp.com/prototype/34ij6a2g](https://marvelapp.com/prototype/34ij6a2g)
-
-TODO: Agregar imagen del prototipo
