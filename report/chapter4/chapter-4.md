@@ -1080,6 +1080,7 @@ En esta sección se muestra la evidencia de la ejecución del sprint, incluyendo
 <img width="488" height="857" alt="image" src="https://github.com/user-attachments/assets/e16517f6-39cf-4308-a3c4-4bb9ad44301c" />
 
 <br>
+
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
 
 Durante este sprint se completó exitosamente la implementación y documentación de todos los Web Services correspondientes a las historias de usuario planificadas.
