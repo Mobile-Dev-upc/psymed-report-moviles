@@ -1129,10 +1129,9 @@ Se generó documentación detallada por cada endpoint, incluyendo:
 
 - **Parámetros:**
 
-  | Tipo | Nombre    | Descripción     |
-      |------|-----------|-----------------|
-  | Path | patientId | ID del paciente |
-
+ | Tipo | Nombre    | Descripción     |
+|------|-----------|-----------------|
+| Path | patientId | ID del paciente |
 <br>
 
 - **Response de ejemplo** <br>
