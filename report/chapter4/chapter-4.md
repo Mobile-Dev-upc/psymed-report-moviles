@@ -1191,6 +1191,8 @@ Se generó documentación detallada por cada endpoint, incluyendo:
 
 #### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
+Se desplegó el backend usando Render como plataforma de despliegue de aplicaciones en la nube. A continuación, se presentan las evidencias del despliegue exitoso del backend de Psymed.
+
 
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
@@ -1464,7 +1466,31 @@ Separar ambos botones con espacio suficiente o colores contrastantes para minimi
 
 # Conclusiones
 ### Conclusiones y recomendaciones.
+
+**Conclusiones:**<br>
+
+- PsyMed cumple su objetivo central al proporcionar una plataforma que facilita el acompañamiento terapéutico continuo, integrando seguimiento clínico, comunicación y gestión de citas para fortalecer el vínculo entre pacientes y profesionales de la salud mental dentro de un entorno seguro y accesible.
+<br><br>
+
+- La solución técnica de PsyMed destaca por su arquitectura multiplataforma, que permite ofrecer una experiencia móvil unificada en distintos dispositivos. La integración entre backend y aplicación móvil se desarrolla de manera consistente mediante servicios REST bien definidos, asegurando sincronización en tiempo real, fácil mantenibilidad y capacidad de expansión futura.
+<br><br>
+
+- PsyMed se consolida como una herramienta estratégica para modernizar los procesos de atención en salud mental, mejorando la eficiencia operativa de los profesionales y aumentando la adherencia del paciente, lo que la posiciona como una solución digital de alto valor para clínicas, instituciones y consultorios especializados.
+
+**Recomendaciones:**<br>
+
+- Fortalecer la participación del paciente mediante funciones de acompañamiento activo, como recordatorios automáticos, check-ins emocionales y seguimiento guiado, para incrementar la adherencia terapéutica y maximizar el impacto clínico del sistema.
+<br><br>
+
+- Optimizar la arquitectura multiplataforma implementando estrategias de rendimiento y sincronización offline-first, que permitan a los usuarios registrar datos incluso sin conexión, garantizando una experiencia fluida y confiable en distintos dispositivos y condiciones de red.
+<br><br>
+
+- Establecer una hoja de ruta de escalabilidad que contemple alianzas con instituciones de salud mental, mejora continua del backend y ampliación de módulos clínicos, con el fin de posicionar a PsyMed como una solución integral y competitiva dentro del mercado de herramientas digitales para salud mental.
+
+<br>
+
 ### Video App Validation
+
 ### Video About the product
 
 **Link del video:** https://acortar.link/bWwB1q 
@@ -1478,5 +1504,53 @@ Separar ambos botones con espacio suficiente o colores contrastantes para minimi
 
 ### Video About the team
 ### Glosario
+
+**Paciente**<br>
+Usuario que recibe atención terapéutica y registra su progreso mediante estados de ánimo, funciones biológicas, tareas y seguimiento clínico dentro de la aplicación.
+
+**Profesional de la salud mental**<br>
+Especialista (psicólogo, terapeuta, psiquiatra u otro) que administra sesiones, registra notas clínicas, revisa el progreso del paciente y gestiona su tratamiento en la plataforma.
+
+**Estado de ánimo (Mood State)**<br>
+Registro emocional que el paciente actualiza periódicamente para permitir un seguimiento longitudinal de su bienestar psicológico.
+
+**Funciones biológicas (Biological Functions)**<br>
+Indicadores físicos del paciente como sueño, apetito o energía, utilizados para complementar el análisis clínico y detectar variaciones relevantes en su salud mental.
+
+**Tareas terapéuticas (Session Tasks)**<br>
+Actividades asignadas por el profesional que el paciente debe completar entre sesiones, relacionadas al avance de su proceso terapéutico.
+
+**Notas clínicas (Session Notes)** <br>
+Anotaciones privadas realizadas por el profesional durante o después de una sesión, que documentan observaciones, avances y decisiones terapéuticas.
+
+**Sesión clínica (Session)**<br>
+Encuentro agendado entre profesional y paciente, ya sea presencial o virtual, que se gestiona mediante la aplicación.
+
+**Perfiles de usuario (Patient/Professional Profile)**<br>
+Información relevante del paciente o profesional asociada a su rol dentro de la plataforma, incluyendo datos clínicos, personales y de identificación.
+
+**Autenticación (Authentication)**<br>
+Proceso de verificación de identidad mediante correo y contraseña, con generación de tokens que permiten el acceso seguro a la plataforma.
+
+**JWT (JSON Web Token)**<br>
+Token digital utilizado para mantener sesiones seguras y validar permisos del usuario en las operaciones de la API.
+
+**Backend (API REST)**<br>
+Conjunto de servicios web que gestionan la lógica del sistema, operaciones con datos, seguridad y comunicación con la app móvil o web.
+
+**Frontend móvil multiplataforma**<br>
+Aplicación móvil desarrollada con tecnologías que permiten desplegarla en distintos sistemas operativos (Android/iOS) con una sola base de código.
+
+**Seguimiento clínico**<br>
+Proceso de recopilación continua de datos del paciente, como estados de ánimo, tareas y funciones biológicas, que permiten al profesional evaluar su evolución.
+
 ### Bibliografía
+
+- Flutter - Build apps for any screen. (s/f). Flutter.dev. Recuperado el 14 de noviembre de 2025, de https://flutter.dev
+<br><br>
+- Download Android Studio & app tools. (s/f). Android Developers. Recuperado el 14 de noviembre de 2025, de https://developer.android.com/studio
+<br><br>
+- API Documentation & Design Tools for Teams. (s/f). Swagger.io. Recuperado el 14 de noviembre de 2025, de https://swagger.io
+<br><br>
+
 ### Anexos
