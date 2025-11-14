@@ -1055,13 +1055,11 @@ Entonces debe mantener coherencia visual en los estilos tipográficos (fuente, t
 
 #### 4.2.1.5. Execution Evidence for Sprint Review
 
+En esta sección se muestra la evidencia de la ejecución del sprint, incluyendo la gestión de tareas y el seguimiento del progreso en la plataforma Psymed
+
 
 
 #### 4.2.1.6. Services Documentation Evidence for Sprint Review
-
-
-
-#### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
 Durante este sprint se completó exitosamente la implementación y documentación de todos los Web Services correspondientes a las historias de usuario planificadas.
 Se configuró Swagger UI como herramienta central para la visualización, prueba e inspección de los endpoints, facilitando la validación funcional por parte del equipo.
@@ -1079,7 +1077,7 @@ Se generó documentación detallada por cada endpoint, incluyendo:
 - Explicación
 
 - Evidencias mediante capturas de Swagger UI
-<br><br>
+  <br><br>
 
 | Módulo                    | Endpoint                                                                           | Verbo  | Descripción                                             | URL Documentación                                                                                                              |
 |---------------------------|------------------------------------------------------------------------------------|--------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -1121,19 +1119,19 @@ Se generó documentación detallada por cada endpoint, incluyendo:
 <br>
 
 - **Ejemplo de Documentación de un Endpoint** <br><br>
-   **GET**: /api/v1/patients/{patientId}/mood-states
-<br>
-<br>
+  **GET**: /api/v1/patients/{patientId}/mood-states
+  <br>
+  <br>
 
 - **Acción:** <br>
-Obtiene todos los registros de estados de ánimo del paciente indicado.
-<br><br>
+  Obtiene todos los registros de estados de ánimo del paciente indicado.
+  <br><br>
 
 - **Parámetros:**
 
-    | Tipo | Nombre    | Descripción     |
-    |------|-----------|-----------------|
-    | Path | patientId | ID del paciente |
+  | Tipo | Nombre    | Descripción     |
+      |------|-----------|-----------------|
+  | Path | patientId | ID del paciente |
 
 <br>
 
@@ -1153,8 +1151,8 @@ Obtiene todos los registros de estados de ánimo del paciente indicado.
 ```
 
 - **Explicación**<br><br>
-    El servicio retorna una lista de estados de ánimo previamente registrados. Permite al profesional de la salud mental visualizar la evolución emocional del paciente.
-<br><br>
+  El servicio retorna una lista de estados de ánimo previamente registrados. Permite al profesional de la salud mental visualizar la evolución emocional del paciente.
+  <br><br>
 
 - **Capturas de Evidencia**<br>
 
@@ -1183,16 +1181,23 @@ Obtiene todos los registros de estados de ánimo del paciente indicado.
 <br>
 
 - **Repositorio:** https://github.com/Mobile-Dev-upc/psymed-backend-appmoviles
-<br><br>
+  <br><br>
 
 - **Conclusiones**<br>
 
-    Todos los endpoints previstos fueron implementados, documentados y verificados. Las historias de usuario del Sprint 
-    fueron completadas satisfactoriamente y validadas mediante la documentación generada en Swagger UI.
-<br>
-<br>
+  Todos los endpoints previstos fueron implementados, documentados y verificados. Las historias de usuario del Sprint
+  fueron completadas satisfactoriamente y validadas mediante la documentación generada en Swagger UI.
+  <br>
+  <br>
+
+#### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
+
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
+
+
+
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
 
@@ -1250,14 +1255,14 @@ Entrevistas a segmento profesionales:
 ![WhatsApp Image 2025-11-06 at 11 39 00 PM](https://github.com/user-attachments/assets/d236f0f9-7542-455b-a9d0-4742c60feb45)
 
 
-| Nombre               | Karina    |
-|----------------------|-----------|
-| Apellido             | Ramirez   |
-| Edad                 | 51 años   |
-| Distrito             | La Molina |
-| URL                  | https://acortar.link/W1pxX8           |
-| Inicio de entrevista | 00:01           |
-| Fin de entrevista    | 20:35          |
+| Nombre               | Karina                      |
+|----------------------|-----------------------------|
+| Apellido             | Ramirez                     |
+| Edad                 | 51 años                     |
+| Distrito             | La Molina                   |
+| URL                  | https://acortar.link/W1pxX8 |
+| Inicio de entrevista | 00:01                       |
+| Fin de entrevista    | 20:35                       |
 
 Resumen de entrevista:
 
@@ -1282,14 +1287,14 @@ Finalmente, consideró que la plataforma favorece la conciencia emocional del pa
 ![WhatsApp Image 2025-11-08 at 12 04 54 PM](https://github.com/user-attachments/assets/b29e3748-54f2-481f-bfca-aa277d20838a)
 
 
-| Nombre               | Hortensia      |
-|----------------------|----------------|
-| Apellido             | Piedra Cáceres |
-| Edad                 | 36 años        |
-| Distrito             | Arequipa       |
-| URL                  | https://acortar.link/xlvlUg               |
-| Inicio de entrevista | 00:01               |
-| Fin de entrevista    | 17:05               |
+| Nombre               | Hortensia                   |
+|----------------------|-----------------------------|
+| Apellido             | Piedra Cáceres              |
+| Edad                 | 36 años                     |
+| Distrito             | Arequipa                    |
+| URL                  | https://acortar.link/xlvlUg |
+| Inicio de entrevista | 00:01                       |
+| Fin de entrevista    | 17:05                       |
 
 Resumen de entrevista:
 
@@ -1305,7 +1310,7 @@ En el ámbito de la versión móvil, la psicóloga afirmó que sería útil para
 
 En términos de diseño y usabilidad, propuso emplear colores cálidos (melón, beige, café claro) en lugar de tonos fríos o clínicos, con el fin de generar cercanía y evitar una estética hospitalaria. También sugirió incorporar pequeñas imágenes decorativas que aporten calidez visual.
 
-Finalmente, consideró que SciMed respeta la privacidad del paciente, dado que el registro emocional es parte del proceso terapéutico. Recomendó agregar el motivo de consulta y un sistema para asignar tareas terapéuticas, donde el paciente pueda indicar si comprendió la actividad y cómo se sintió al realizarla.
+Finalmente, consideró que PsyMed respeta la privacidad del paciente, dado que el registro emocional es parte del proceso terapéutico. Recomendó agregar el motivo de consulta y un sistema para asignar tareas terapéuticas, donde el paciente pueda indicar si comprendió la actividad y cómo se sintió al realizarla.
 
 Concluyó afirmando que la plataforma es intuitiva, funcional y pertinente para el trabajo psicológico, y que con las mejoras propuestas podría convertirse en una herramienta integral para la práctica clínica y el acompañamiento terapéutico.
 
@@ -1313,14 +1318,14 @@ Concluyó afirmando que la plataforma es intuitiva, funcional y pertinente para 
 
 ![WhatsApp Image 2025-11-09 at 2 11 16 PM](https://github.com/user-attachments/assets/4bbee769-9e23-43ea-b749-1a0a2063e341)
 
-| Nombre               | Valerie        |
-|----------------------|----------------|
-| Apellido             | Hikaru Ouchida |
-| Edad                 | 29 años        |
-| Distrito             | Lince          |
-| URL                  | https://acortar.link/LMeRNa               |
-| Inicio de entrevista | 00:01               |
-| Fin de entrevista    | 09:45               |
+| Nombre               | Valerie                     |
+|----------------------|-----------------------------|
+| Apellido             | Hikaru Ouchida              |
+| Edad                 | 29 años                     |
+| Distrito             | Lince                       |
+| URL                  | https://acortar.link/LMeRNa |
+| Inicio de entrevista | 00:01                       |
+| Fin de entrevista    | 09:45                       |
 
 Resumen de entrevista:
 
@@ -1334,7 +1339,7 @@ Sobre la versión móvil, indicó que, por su estilo de trabajo, le resulta más
 
 En cuanto al diseño visual, opinó que la interfaz transmite seriedad, pero podría resultar demasiado médica. Propuso añadir ilustraciones minimalistas relacionadas con la salud mental y usar colores más cálidos o pasteles (como crema o café claro), con el fin de generar un entorno más acogedor y menos clínico.
 
-En conclusión, la psicóloga consideró que la plataforma SciMed es funcional, clara y pertinente para la práctica clínica, y que con pequeñas mejoras en la presentación visual y la ampliación de ciertos campos, podría convertirse en una herramienta integral para el seguimiento terapéutico y la organización profesional.
+En conclusión, la psicóloga consideró que la plataforma Psymed es funcional, clara y pertinente para la práctica clínica, y que con pequeñas mejoras en la presentación visual y la ampliación de ciertos campos, podría convertirse en una herramienta integral para el seguimiento terapéutico y la organización profesional.
 
 
 ### 4.3.3. Evaluaciones según heurísticas
