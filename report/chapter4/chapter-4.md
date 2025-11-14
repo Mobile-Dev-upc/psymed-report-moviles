@@ -1226,6 +1226,7 @@ Se puede ver el API documentation desde Swagger UI desde la ruta del despliegue 
 
 #### 4.2.1.8. Team Collaboration Insights during Sprint
 
+<img width="898" height="215" alt="image" src="https://github.com/user-attachments/assets/6a3e9dbe-f9df-40e9-9cec-0b0253e7e795" />
 
 
 ## 4.3. Validation Interviews
