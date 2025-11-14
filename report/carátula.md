@@ -59,7 +59,8 @@ Durante la documentación del proyecto el grupo utilizó GitHub como controlador
 A continuación se muestra una captura de los insights de los integrantes de acuerdo a las entregas:
 
 TB2: 
-<img width="928" height="482" alt="inisss" src="https://github.com/user-attachments/assets/7234530d-4d15-47d8-bf5f-943253430be7" />
+
+![WhatsApp Image 2025-11-14 at 6 41 37 AM (1)](https://github.com/user-attachments/assets/9cd9eea0-000a-41cf-804a-8780244dd890)
 
 # Contenido
 ## Tabla de Contenidos
