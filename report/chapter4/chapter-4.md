@@ -1961,10 +1961,40 @@ Dado que no existen medicamentos registrados<br>
 Cuando el sistema consulta
 Entonces debe indicar que no hay medicamentos disponibles<br><br>
 
----
-
 #### 4.2.2.5. Execution Evidence for Sprint Review
 
+En este punto se demuestra las capturas de ejecución de la version distribuida desde Firebase
+
+![WhatsApp Image 2025-11-29 at 1 35 04 AM](https://github.com/user-attachments/assets/0e58a78c-e2c1-41f6-9ee5-f4080879c5f8)
+
+
+![WhatsApp Image 2025-11-29 at 1 41 10 AM](https://github.com/user-attachments/assets/cc8dc12c-e38e-4576-b843-0ed37fb8c537)
+
+
+![WhatsApp Image 2025-11-29 at 1 41 10 AM (1)](https://github.com/user-attachments/assets/22b7f951-b982-4872-aa0f-8dcf43f490fc)
+
+
+![WhatsApp Image 2025-11-29 at 1 41 10 AM (2)](https://github.com/user-attachments/assets/28925d25-4fcd-4b4c-9182-2d1bb08c6443)
+
+![WhatsApp Image 2025-11-29 at 1 41 10 AM (3)](https://github.com/user-attachments/assets/9823b866-1544-407b-b28e-08eecc973257)
+
+![WhatsApp Image 2025-11-29 at 1 41 11 AM](https://github.com/user-attachments/assets/80f385b6-485a-45b7-af7f-a3e2bd714d5f)
+
+![WhatsApp Image 2025-11-29 at 1 41 11 AM (1)](https://github.com/user-attachments/assets/568da408-2f8f-4d1e-8985-fcbde1f5037e)
+
+![WhatsApp Image 2025-11-29 at 1 41 11 AM (2)](https://github.com/user-attachments/assets/a1015b15-d813-4fd6-9cce-570e5bba54f4)
+
+![WhatsApp Image 2025-11-29 at 1 41 11 AM (3)](https://github.com/user-attachments/assets/d0c27751-10d8-4e95-be17-082e9b61c015)
+
+![WhatsApp Image 2025-11-29 at 1 41 12 AM](https://github.com/user-attachments/assets/245301ca-cba1-4cd5-bfc0-560b2e64c953)
+
+![WhatsApp Image 2025-11-29 at 1 41 12 AM (1)](https://github.com/user-attachments/assets/0901c803-b0b9-4dba-863e-3e7cac7518c3)
+
+![WhatsApp Image 2025-11-29 at 1 41 12 AM (2)](https://github.com/user-attachments/assets/7a2e7f28-5eaf-46f6-a9cf-e5bedac1f0c1)
+
+![WhatsApp Image 2025-11-29 at 1 41 12 AM (3)](https://github.com/user-attachments/assets/a15528dd-7dff-4b69-8899-a1fe277ba2a4)
+
+![WhatsApp Image 2025-11-29 at 1 41 13 AM](https://github.com/user-attachments/assets/7e18f3d7-0df7-4562-9229-db2e5bb62f1a)
 
 #### 4.2.2.6. Services Documentation Evidence for Sprint Review
 
@@ -1998,15 +2028,23 @@ Entonces debe indicar que no hay medicamentos disponibles<br><br>
 
 Nuestro backend está desplegado en Render y nuestra base de datos en Neon Database, a continuación captura de la evidencia
 
+![WhatsApp Image 2025-11-29 at 12 11 10 PM](https://github.com/user-attachments/assets/760f24d8-efe7-47c4-8522-b46e23989347)
+
+![WhatsApp Image 2025-11-29 at 12 12 22 PM](https://github.com/user-attachments/assets/347139f6-e276-4992-a658-cefdad9b29f9)
+
+
 Hemos Utilizado Firebase App Distribution para poder compartir con nuestros testers nuestra primera versión, a continuación captura de la evidencia
 
+![WhatsApp Image 2025-11-29 at 12 15 06 PM](https://github.com/user-attachments/assets/9985f1ca-1835-40eb-a487-3d57a9ad10ca)
+
+![9c5fb7e2-c68c-48a4-9632-670cb1d7f765](https://github.com/user-attachments/assets/4fd4050d-94ac-4516-8b98-6db5422e2081)
 
 
 #### 4.2.2.8. Team Collaboration Insights during Sprint
 
 En esta sección se demuestra la colaboración en equipo que tuvimos para nuestro segundo sprint
 
-
+![WhatsApp Image 2025-11-29 at 12 58 27 PM](https://github.com/user-attachments/assets/c23e4de9-f2bb-455f-bd1f-1c074e46c18a)
 
 ## 4.3. Validation Interviews
 ### 4.3.1. Diseño de Entrevistas
