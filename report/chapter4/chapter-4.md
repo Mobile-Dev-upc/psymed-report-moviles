@@ -256,10 +256,9 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
     <th>Description</th>
     <th>Estimation (Hours)</th>
     <th>Assigned To</th>
-    <th>Status (To-do / In-Process / To-Review / Done)</th>
+    <th>Status</th>
   </tr>
 
-  <!-- US01 -->
   <tr>
     <td>US01</td>
     <td>Registrar como profesional de la salud mental</td>
@@ -280,7 +279,6 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
     <td>Done</td>
   </tr>
 
-  <!-- US02 -->
   <tr>
     <td>US02</td>
     <td>Iniciar sesión como paciente</td>
@@ -301,7 +299,6 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
     <td>Done</td>
   </tr>
 
-  <!-- US03 -->
   <tr>
     <td>US03</td>
     <td>Iniciar sesión como profesional de la salud mental</td>
@@ -313,7 +310,6 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
     <td>Done</td>
   </tr>
 
-  <!-- US04 -->
   <tr>
     <td>US04</td>
     <td>Registrar información personal del paciente</td>
@@ -325,7 +321,6 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
     <td>Done</td>
   </tr>
 
-  <!-- US05–US07 -->
   <tr>
     <td>US05</td>
     <td>Visualizar estado de ánimo del paciente</td>
@@ -357,7 +352,6 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
     <td>Done</td>
   </tr>
 
-  <!-- US08–US11 -->
   <tr>
     <td>US08</td>
     <td>Registrar medicamentos del paciente</td>
@@ -399,278 +393,82 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
     <td>Done</td>
   </tr>
 
-  <!-- US12–US17 (Mobile) -->
   <tr>
-    <td>US12–US17</td>
-    <td>Aplicación móvil PsyMed</td>
+    <td>US12</td>
+    <td>Iniciar sesión como paciente (Móvil)</td>
     <td>T14</td>
-    <td>Implementar app móvil</td>
-    <td>Desarrollo de vistas principales: login, perfil, estado de salud, medicamentos y citas.</td>
-    <td>16</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US18–US20 (Landing Page) -->
-  <tr>
-    <td>US18–US20</td>
-    <td>Landing Page</td>
-    <td>T15</td>
-    <td>Diseño y maquetado</td>
-    <td>Desarrollar landing page con propósito, gráficos e identidad visual.</td>
-    <td>10</td>
-    <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <tr>
-    <td>US21</td>
-    <td>Crear paciente desde la aplicación móvil</td>
-    <td>T16</td>
-    <td>Crear vista de registro de paciente</td>
-    <td>Diseño e implementación de una vista móvil para registrar pacientes.</td>
-    <td>6</td>
+    <td>UI Login Móvil</td>
+    <td>Implementar vista con campos de usuario, contraseña y validación de campos vacíos.</td>
+    <td>3</td>
     <td>Paolo Torres</td>
     <td>Done</td>
   </tr>
   <tr>
     <td></td><td></td>
+    <td>T15</td>
+    <td>Integración Auth Móvil</td>
+    <td>Conectar con API para validar credenciales y manejar tokens de sesión.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US13</td>
+    <td>Visualizar información de perfil (Móvil)</td>
+    <td>T16</td>
+    <td>Vista de Perfil</td>
+    <td>Crear pantalla que muestre nombre, correo, dirección e ID recuperados del backend.</td>
+    <td>2</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US14</td>
+    <td>Cerrar sesión (Móvil)</td>
     <td>T17</td>
-    <td>Conectar API de creación de paciente</td>
-    <td>Integrar formulario con endpoint POST de creación de paciente.</td>
-    <td>8</td>
-    <td>Romina Maita</td>
+    <td>Lógica de Logout</td>
+    <td>Implementar funcionalidad para eliminar datos de sesión y redirigir al login.</td>
+    <td>1</td>
+    <td>Paolo Torres</td>
     <td>Done</td>
   </tr>
 
-  <!-- US22 - Visualizar lista de pacientes -->
   <tr>
-    <td>US22</td>
-    <td>Visualizar lista de pacientes</td>
+    <td>US15</td>
+    <td>Registrar mi estado de salud diario (Móvil)</td>
     <td>T18</td>
-    <td>Diseñar listado de pacientes</td>
-    <td>Implementar listado con búsqueda y paginación.</td>
-    <td>5</td>
-    <td>Paolo Torres</td>
+    <td>Formulario de Salud Móvil</td>
+    <td>Desarrollar interfaz para ingreso de estado diario y conexión POST API.</td>
+    <td>4</td>
+    <td>Romina Maita</td>
     <td>Done</td>
   </tr>
 
-  <!-- US23 - Editar paciente -->
   <tr>
-    <td>US23</td>
-    <td>Editar información del paciente</td>
+    <td>US16</td>
+    <td>Consultar lista de medicamentos (Móvil)</td>
     <td>T19</td>
-    <td>Crear formulario de edición</td>
-    <td>Permitir modificar datos personales del paciente.</td>
-    <td>6</td>
+    <td>Listado de Medicamentos Móvil</td>
+    <td>Implementar lista para mostrar medicamentos, dosis y frecuencia.</td>
+    <td>3</td>
     <td>Romina Maita</td>
     <td>Done</td>
   </tr>
 
-  <!-- US24 - Eliminar paciente -->
   <tr>
-    <td>US24</td>
-    <td>Eliminar paciente</td>
+    <td>US17</td>
+    <td>Ver próximas citas (Móvil)</td>
     <td>T20</td>
-    <td>Implementar función de eliminación</td>
-    <td>Agregar botón y lógica para eliminar paciente con confirmación.</td>
-    <td>4</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US25 - Crear tarea para paciente -->
-  <tr>
-    <td>US25</td>
-    <td>Crear tarea para un paciente</td>
-    <td>T21</td>
-    <td>Formulario de creación de tareas</td>
-    <td>Crear formulario para asignar tareas al paciente.</td>
-    <td>5</td>
-    <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US26 - Visualizar tareas del paciente -->
-  <tr>
-    <td>US26</td>
-    <td>Visualizar tareas del paciente (profesional)</td>
-    <td>T22</td>
-    <td>Lista de tareas</td>
-    <td>Mostrar tareas asignadas con estados.</td>
-    <td>3</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US27 - Editar tarea -->
-  <tr>
-    <td>US27</td>
-    <td>Editar tarea del paciente</td>
-    <td>T23</td>
-    <td>Editar tarea</td>
-    <td>Modificar título, descripción o fecha límite.</td>
-    <td>4</td>
-    <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US28 - Eliminar tarea -->
-  <tr>
-    <td>US28</td>
-    <td>Eliminar tarea</td>
-    <td>T24</td>
-    <td>Eliminar tarea</td>
-    <td>Implementar acción de eliminación con confirmación.</td>
-    <td>3</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US29 - Ver tareas asignadas (paciente) -->
-  <tr>
-    <td>US29</td>
-    <td>Ver tareas asignadas</td>
-    <td>T25</td>
-    <td>Interfaz de tareas del paciente</td>
-    <td>Mostrar lista de tareas pendientes y completadas.</td>
-    <td>5</td>
-    <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US30 - Marcar tarea como completada -->
-  <tr>
-    <td>US30</td>
-    <td>Marcar tarea como completada</td>
-    <td>T26</td>
-    <td>Implementar acción de completado</td>
-    <td>Agregar botón de check y actualización del estado.</td>
-    <td>3</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US31 - Desmarcar tarea -->
-  <tr>
-    <td>US31</td>
-    <td>Desmarcar tarea completada</td>
-    <td>T27</td>
-    <td>Desmarcar tarea</td>
-    <td>Permitir revertir estado completado.</td>
+    <td>Listado de Citas Móvil</td>
+    <td>Crear vista de citas próximas con distinción visual para la cita del día actual.</td>
     <td>3</td>
     <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US32 - Crear cita móvil -->
-  <tr>
-    <td>US32</td>
-    <td>Crear cita médica (móvil)</td>
-    <td>T28</td>
-    <td>Formulario de cita (móvil)</td>
-    <td>Crear interfaz para agendar una cita desde el móvil.</td>
-    <td>6</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US33 - Ver citas (profesional móvil) -->
-  <tr>
-    <td>US33</td>
-    <td>Ver citas (profesional móvil)</td>
-    <td>T29</td>
-    <td>Listado de citas</td>
-    <td>Mostrar citas programadas con filtro por fecha.</td>
-    <td>3</td>
-    <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US34 - Editar cita -->
-  <tr>
-    <td>US34</td>
-    <td>Editar cita médica</td>
-    <td>T30</td>
-    <td>Modificar datos de cita</td>
-    <td>Permitir cambios en fecha, hora o duración de la cita.</td>
-    <td>4</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US35 - Eliminar cita -->
-  <tr>
-    <td>US35</td>
-    <td>Eliminar cita (móvil)</td>
-    <td>T31</td>
-    <td>Eliminar cita</td>
-    <td>Implementar acción de borrado con confirmación.</td>
-    <td>3</td>
-    <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US36 - Registrar medicamento (móvil) -->
-  <tr>
-    <td>US36</td>
-    <td>Registrar medicamento del paciente (móvil)</td>
-    <td>T32</td>
-    <td>Formulario de medicamentos</td>
-    <td>Registrar medicamentos asignados desde la app móvil.</td>
-    <td>5</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US37 - Ver medicamentos (profesional) -->
-  <tr>
-    <td>US37</td>
-    <td>Ver medicamentos del paciente (profesional)</td>
-    <td>T33</td>
-    <td>Vista de medicamentos</td>
-    <td>Mostrar lista de medicamentos recetados por paciente.</td>
-    <td>3</td>
-    <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US38 - Editar medicamento -->
-  <tr>
-    <td>US38</td>
-    <td>Editar medicamento del paciente</td>
-    <td>T34</td>
-    <td>Editar medicamento</td>
-    <td>Modificar dosis, frecuencia o motivo.</td>
-    <td>3</td>
-    <td>Paolo Torres</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US39 - Eliminar medicamento -->
-  <tr>
-    <td>US39</td>
-    <td>Eliminar medicamento del paciente</td>
-    <td>T35</td>
-    <td>Eliminar medicamento</td>
-    <td>Permitir eliminar medicamento con confirmación.</td>
-    <td>3</td>
-    <td>Romina Maita</td>
-    <td>Done</td>
-  </tr>
-
-  <!-- US40 - Ver medicamentos asignados (paciente móvil) -->
-  <tr>
-    <td>US40</td>
-    <td>Ver medicamentos asignados (paciente)</td>
-    <td>T36</td>
-    <td>Vista de medicamentos (paciente)</td>
-    <td>Listado simple de medicamentos para el paciente.</td>
-    <td>4</td>
-    <td>Paolo Torres</td>
     <td>Done</td>
   </tr>
 </table>
+
 
 
 #### 4.2.1.3. Development Evidence for Sprint Review
@@ -1251,7 +1049,505 @@ Dado que no hay citas programadas<br>
 Cuando el sistema consulta la información<br>
 Entonces debe mostrar un mensaje que indique que no hay citas próximas<br><br>
 
----
+
+#### 4.2.1.5. Execution Evidence for Sprint Review
+
+En esta sección se muestra la evidencia de la ejecución del sprint, incluyendo las capturas del proyecto en funcionamiento.
+
+<img width="1571" height="1008" alt="image" src="https://github.com/user-attachments/assets/27d21a8e-4430-4a0a-8b40-45d54ffd94ef" />
+
+<br>
+
+<img width="504" height="858" alt="image" src="https://github.com/user-attachments/assets/88081474-14ea-46d3-b0ac-2a8e35686639" />
+
+<br>
+
+<img width="486" height="855" alt="image" src="https://github.com/user-attachments/assets/25307ee0-52bf-4209-8777-e28303688f49" />
+
+<br>
+
+<img width="485" height="851" alt="image" src="https://github.com/user-attachments/assets/f6aa20f0-9de2-472b-930a-558872cb2858" />
+
+<br>
+
+<img width="482" height="852" alt="image" src="https://github.com/user-attachments/assets/4fe92ea0-4578-40b0-a78e-bc8fca5cda05" />
+
+<br>
+
+<img width="488" height="857" alt="image" src="https://github.com/user-attachments/assets/e16517f6-39cf-4308-a3c4-4bb9ad44301c" />
+
+<br>
+
+#### 4.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante este sprint se completó exitosamente la implementación y documentación de todos los Web Services correspondientes a las historias de usuario planificadas.
+Se configuró Swagger UI como herramienta central para la visualización, prueba e inspección de los endpoints, facilitando la validación funcional por parte del equipo.
+
+Se generó documentación detallada por cada endpoint, incluyendo:
+
+- Sintaxis de la ruta
+
+- Parámetros requeridos
+
+- Ejemplo de request
+
+- Ejemplo de response
+
+- Explicación
+
+- Evidencias mediante capturas de Swagger UI
+  <br><br>
+
+| Módulo                    | Endpoint                                                                           | Verbo  | Descripción                                             | URL Documentación                                                                                                              |
+|---------------------------|------------------------------------------------------------------------------------|--------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| **Patient Reports**       | `/api/v1/patients/{patientId}/mood-states`                                         | GET    | Obtiene el historial de estados de ánimo de un paciente | [https://psymed-backend-new.onrender.com/swagger-ui/index.html](https://psymed-backend-new.onrender.com/swagger-ui/index.html) |
+|                           | `/api/v1/patients/{patientId}/mood-states`                                         | POST   | Registra un nuevo estado de ánimo para un paciente      |                                                                                                                                |
+|                           | `/api/v1/patients/{patientId}/biological-functions`                                | GET    | Lista funciones biológicas del paciente                 |                                                                                                                                |
+|                           | `/api/v1/patients/{patientId}/biological-functions`                                | POST   | Crea un registro de función biológica                   |                                                                                                                                |
+| **Professional Profiles** | `/api/v1/professional-profiles`                                                    | POST   | Crea un perfil profesional                              |                                                                                                                                |
+|                           | `/api/v1/professional-profiles/{profileId}`                                        | GET    | Obtiene un perfil por ID                                |                                                                                                                                |
+|                           | `/api/v1/professional-profiles/account/{accountId}`                                | GET    | Obtiene el perfil asociado a una cuenta                 |                                                                                                                                |
+| **Authentication**        | `/api/v1/authentication/sign-up`                                                   | POST   | Registro de usuarios                                    |                                                                                                                                |
+|                           | `/api/v1/authentication/sign-in`                                                   | POST   | Autenticación con JWT                                   |                                                                                                                                |
+| **Professional Sessions** | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions`             | POST   | Reserva una sesión                                      |                                                                                                                                |
+|                           | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions/{sessionId}` | PUT    | Actualiza una sesión                                    |                                                                                                                                |
+|                           | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions/{sessionId}` | DELETE | Elimina una sesión                                      |                                                                                                                                |
+|                           | `/api/v1/professionals/{professionalId}/sessions`                                  | GET    | Obtiene sesiones de un profesional                      |                                                                                                                                |
+| **Medication**            | `/api/v1/pills`                                                                    | POST   | Crea un medicamento                                     |                                                                                                                                |
+|                           | `/api/v1/pills/{pillId}`                                                           | PUT    | Actualiza medicamento                                   |                                                                                                                                |
+|                           | `/api/v1/pills/{pillId}`                                                           | DELETE | Elimina medicamento                                     |                                                                                                                                |
+|                           | `/api/v1/pills`                                                                    | GET    | Lista medicamentos                                      |                                                                                                                                |
+|                           | `/api/v1/pills/patient/{patientId}`                                                | GET    | Lista medicamentos asignados a un paciente              |                                                                                                                                |
+| **Patient Profiles**      | `/api/v1/patient-profiles`                                                         | POST   | Crea un perfil de paciente                              |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/{profileId}`                                             | GET    | Obtiene perfil                                          |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/{profileId}`                                             | PUT    | Actualiza perfil                                        |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/{profileId}`                                             | DELETE | Elimina perfil                                          |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/professional/{professionalId}`                           | GET    | Perfiles asociados a un psicólogo                       |                                                                                                                                |
+|                           | `/api/v1/patient-profiles/account/{accountId}`                                     | GET    | Perfiles asociados a una cuenta                         |                                                                                                                                |
+| **Session Tools**         | `/api/v1/sessions/{sessionId}/notes`                                               | POST   | Agrega nota clínica                                     |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/notes`                                               | PUT    | Actualiza nota                                          |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/notes`                                               | GET    | Obtiene nota                                            |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/notes`                                               | DELETE | Elimina nota                                            |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/tasks`                                               | GET    | Lista tareas de sesión                                  |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/tasks`                                               | POST   | Agrega tarea                                            |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/tasks/{taskId}/complete`                             | POST   | Marca tarea completada                                  |                                                                                                                                |
+|                           | `/api/v1/sessions/{sessionId}/tasks/{taskId}/incomplete`                           | POST   | Marca tarea como incompleta                             |                                                                                                                                |
+| **Patient Sessions**      | `/api/v1/patients/{patientId}/tasks`                                               | GET    | Obtiene tareas asignadas al paciente                    |                                                                                                                                |
+|                           | `/api/v1/patients/{patientId}/sessions`                                            | GET    | Lista sesiones del paciente                             |                                                                                                                                |
+
+<br>
+
+- **Ejemplo de Documentación de un Endpoint** <br><br>
+  **GET**: /api/v1/patients/{patientId}/mood-states
+  <br>
+  <br>
+
+- **Acción:** <br>
+  Obtiene todos los registros de estados de ánimo del paciente indicado.
+  <br><br>
+
+- **Parámetros:**
+
+ | Tipo | Nombre    | Descripción     |
+|------|-----------|-----------------|
+| Path | patientId | ID del paciente |
+<br>
+
+- **Response de ejemplo** <br>
+```
+{
+    "patientId": 12,
+    "moodStates": 
+    [
+        {
+            "id": 47,
+            "mood": "Happy",
+            "date": "2025-01-12T15:20:00"
+        }
+    ]
+}
+```
+
+- **Explicación**<br><br>
+  El servicio retorna una lista de estados de ánimo previamente registrados. Permite al profesional de la salud mental visualizar la evolución emocional del paciente.
+  <br><br>
+
+- **Capturas de Evidencia**<br>
+
+<img width="1600" height="697" alt="image" src="https://github.com/user-attachments/assets/f9503522-650c-4004-bbc0-35e49d5637c4" />
+
+<br>
+
+<img width="1600" height="809" alt="image" src="https://github.com/user-attachments/assets/5696fa85-9fc4-4dab-9040-f6a2b213bb8e" />
+
+<br>
+
+<img width="1600" height="823" alt="image" src="https://github.com/user-attachments/assets/fde88c5b-8219-43ee-bc27-a1edecece882" />
+
+<br>
+
+<img width="1600" height="695" alt="image" src="https://github.com/user-attachments/assets/1b318bac-70b4-4954-ac70-437ce9b074e1" />
+
+<br>
+
+<img width="1600" height="746" alt="image" src="https://github.com/user-attachments/assets/17bd4cfe-7985-423d-acd8-088830472529" />
+
+<br>
+
+<img width="1600" height="282" alt="image" src="https://github.com/user-attachments/assets/2123e219-31ba-4371-bac7-b7cb3cacef4c" />
+
+<br>
+
+- **Repositorio:** https://github.com/Mobile-Dev-upc/psymed-backend-appmoviles
+  <br><br>
+
+- **Conclusiones**<br>
+
+  Todos los endpoints previstos fueron implementados, documentados y verificados. Las historias de usuario del Sprint
+  fueron completadas satisfactoriamente y validadas mediante la documentación generada en Swagger UI.
+  <br>
+  <br>
+
+#### 4.2.1.7. Software Deployment Evidence for Sprint Review
+
+Se desplegó el backend usando Render como plataforma de despliegue de aplicaciones en la nube. A continuación, se presentan las evidencias del despliegue exitoso del backend de Psymed.
+
+<img width="1296" height="678" alt="image" src="https://github.com/user-attachments/assets/25187fb1-8087-4388-8ce1-8e422cdf1368" />
+
+<br>
+
+<img width="1319" height="684" alt="image" src="https://github.com/user-attachments/assets/9c577f97-cbb2-4d8e-b9be-5d564e8035c2" />
+
+<br>
+
+Se puede ver el API documentation desde Swagger UI desde la ruta del despliegue como se nota en el link de la barra buscadora.
+
+#### 4.2.1.8. Team Collaboration Insights during Sprint
+
+<img width="898" height="215" alt="image" src="https://github.com/user-attachments/assets/6a3e9dbe-f9df-40e9-9cec-0b0253e7e795" />
+
+
+### 4.2.2. Sprint 2
+#### 4.2.2.1. Sprint Planning 2
+
+#### 4.2.2.2. Sprint Backlog 2
+
+<table>
+  <tr>
+    <th colspan="1">Sprint #</th>
+    <td colspan="7">Sprint 2</td>
+  </tr>
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="5">Work-Item / Task</th>
+  </tr>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Estimation (Hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+
+  <tr>
+    <td>US18</td>
+    <td>Encontrar información del propósito de la aplicación</td>
+    <td>T21</td>
+    <td>Implementar sección Hero y Propósito</td>
+    <td>Redacción y maquetación del contenido textual claro que explique el valor de la app.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T22</td>
+    <td>Implementar Call to Action</td>
+    <td>Integrar botones de acción y textos persuasivos para conversión de visitantes.</td>
+    <td>2</td>
+    <td>Romina Maita</td>
+    <td>To-do</td>
+  </tr>
+
+  <tr>
+    <td>US19</td>
+    <td>Visualizar imágenes y gráficos relevantes</td>
+    <td>T23</td>
+    <td>Diseño e integración de assets visuales</td>
+    <td>Selección e implementación de imágenes de alta calidad y gráficos coherentes con la marca.</td>
+    <td>4</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US20</td>
+    <td>Visualizar tipografía cómoda y estética</td>
+    <td>T124</td>
+    <td>Definición de estilos y tipografía</td>
+    <td>Configurar estilos globales (CSS) para asegurar legibilidad, contraste y jerarquía visual.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US21</td>
+    <td>Crear paciente desde la aplicación móvil</td>
+    <td>T25</td>
+    <td>Crear vista de registro de paciente</td>
+    <td>Diseño e implementación de una vista móvil para registrar pacientes.</td>
+    <td>6</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T26</td>
+    <td>Conectar API de creación de paciente</td>
+    <td>Integrar formulario con endpoint POST de creación de paciente.</td>
+    <td>8</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T27</td>
+    <td>Términos y Condiciones</td>
+    <td>Implementar pantalla de términos y checkbox obligatorio antes de finalizar el registro.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>To-do</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T28</td>
+    <td>Distribución en Firebase</td>
+    <td>Configurar proyecto y desplegar el APK/IPA mediante Firebase App Distribution.</td>
+    <td>5</td>
+    <td>Paolo Torres</td>
+    <td>To-do</td>
+  </tr>
+
+  <tr>
+    <td>US22</td>
+    <td>Visualizar lista de pacientes</td>
+    <td>T29</td>
+    <td>Diseñar listado de pacientes</td>
+    <td>Implementar listado con búsqueda y paginación.</td>
+    <td>5</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US23</td>
+    <td>Editar información del paciente</td>
+    <td>T30</td>
+    <td>Crear formulario de edición</td>
+    <td>Permitir modificar datos personales del paciente.</td>
+    <td>6</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US24</td>
+    <td>Eliminar paciente</td>
+    <td>T31</td>
+    <td>Implementar función de eliminación</td>
+    <td>Agregar botón y lógica para eliminar paciente con confirmación.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US25</td>
+    <td>Crear tarea para un paciente</td>
+    <td>T32</td>
+    <td>Formulario de creación de tareas</td>
+    <td>Crear formulario para asignar tareas al paciente.</td>
+    <td>5</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US26</td>
+    <td>Visualizar tareas del paciente (profesional)</td>
+    <td>T33</td>
+    <td>Lista de tareas</td>
+    <td>Mostrar tareas asignadas con estados.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US27</td>
+    <td>Editar tarea del paciente</td>
+    <td>T34</td>
+    <td>Editar tarea</td>
+    <td>Modificar título, descripción o fecha límite.</td>
+    <td>4</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US28</td>
+    <td>Eliminar tarea</td>
+    <td>T35</td>
+    <td>Eliminar tarea</td>
+    <td>Implementar acción de eliminación con confirmación.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US29</td>
+    <td>Ver tareas asignadas</td>
+    <td>T36</td>
+    <td>Interfaz de tareas del paciente</td>
+    <td>Mostrar lista de tareas pendientes y completadas.</td>
+    <td>5</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US30</td>
+    <td>Marcar tarea como completada</td>
+    <td>T37</td>
+    <td>Implementar acción de completado</td>
+    <td>Agregar botón de check y actualización del estado.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US31</td>
+    <td>Desmarcar tarea completada</td>
+    <td>T38</td>
+    <td>Desmarcar tarea</td>
+    <td>Permitir revertir estado completado.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US32</td>
+    <td>Crear cita médica (móvil)</td>
+    <td>T39</td>
+    <td>Formulario de cita (móvil)</td>
+    <td>Crear interfaz para agendar una cita desde el móvil.</td>
+    <td>6</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US33</td>
+    <td>Ver citas (profesional móvil)</td>
+    <td>T40</td>
+    <td>Listado de citas</td>
+    <td>Mostrar citas programadas con filtro por fecha.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US34</td>
+    <td>Editar cita médica</td>
+    <td>T41</td>
+    <td>Modificar datos de cita</td>
+    <td>Permitir cambios en fecha, hora o duración de la cita.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US35</td>
+    <td>Eliminar cita (móvil)</td>
+    <td>T42</td>
+    <td>Eliminar cita</td>
+    <td>Implementar acción de borrado con confirmación.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US36</td>
+    <td>Registrar medicamento del paciente (móvil)</td>
+    <td>T43</td>
+    <td>Formulario de medicamentos</td>
+    <td>Registrar medicamentos asignados desde la app móvil.</td>
+    <td>5</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US37</td>
+    <td>Ver medicamentos del paciente (profesional)</td>
+    <td>T44</td>
+    <td>Vista de medicamentos</td>
+    <td>Mostrar lista de medicamentos recetados por paciente.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US38</td>
+    <td>Editar medicamento del paciente</td>
+    <td>T45</td>
+    <td>Editar medicamento</td>
+    <td>Modificar dosis, frecuencia o motivo.</td>
+    <td>3</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US39</td>
+    <td>Eliminar medicamento del paciente</td>
+    <td>T46</td>
+    <td>Eliminar medicamento</td>
+    <td>Permitir eliminar medicamento con confirmación.</td>
+    <td>3</td>
+    <td>Romina Maita</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US40</td>
+    <td>Ver medicamentos asignados (paciente)</td>
+    <td>T47</td>
+    <td>Vista de medicamentos (paciente)</td>
+    <td>Listado simple de medicamentos para el paciente.</td>
+    <td>4</td>
+    <td>Paolo Torres</td>
+    <td>Done</td>
+  </tr>
+</table>
+
+#### 4.2.2.3. Development Evidence for Sprint Review
+
+
+#### 4.2.2.4. Testing Suite Evidence for Sprint Review
+
+En esta sección se detallarán los user stories implementadas en el presente sprint con sus respectivos tests de aceptación (Gherkin).
 
 ### US18
 Feature: Visualización del propósito de la aplicación en la Landing Page  
@@ -1667,127 +1963,10 @@ Entonces debe indicar que no hay medicamentos disponibles<br><br>
 
 ---
 
-#### 4.2.1.5. Execution Evidence for Sprint Review
+#### 4.2.2.5. Execution Evidence for Sprint Review
 
-En esta sección se muestra la evidencia de la ejecución del sprint, incluyendo las capturas del proyecto en funcionamiento.
 
-<img width="1571" height="1008" alt="image" src="https://github.com/user-attachments/assets/27d21a8e-4430-4a0a-8b40-45d54ffd94ef" />
-
-<br>
-
-<img width="504" height="858" alt="image" src="https://github.com/user-attachments/assets/88081474-14ea-46d3-b0ac-2a8e35686639" />
-
-<br>
-
-<img width="486" height="855" alt="image" src="https://github.com/user-attachments/assets/25307ee0-52bf-4209-8777-e28303688f49" />
-
-<br>
-
-<img width="485" height="851" alt="image" src="https://github.com/user-attachments/assets/f6aa20f0-9de2-472b-930a-558872cb2858" />
-
-<br>
-
-<img width="482" height="852" alt="image" src="https://github.com/user-attachments/assets/4fe92ea0-4578-40b0-a78e-bc8fca5cda05" />
-
-<br>
-
-<img width="488" height="857" alt="image" src="https://github.com/user-attachments/assets/e16517f6-39cf-4308-a3c4-4bb9ad44301c" />
-
-<br>
-
-#### 4.2.1.6. Services Documentation Evidence for Sprint Review
-
-Durante este sprint se completó exitosamente la implementación y documentación de todos los Web Services correspondientes a las historias de usuario planificadas.
-Se configuró Swagger UI como herramienta central para la visualización, prueba e inspección de los endpoints, facilitando la validación funcional por parte del equipo.
-
-Se generó documentación detallada por cada endpoint, incluyendo:
-
-- Sintaxis de la ruta
-
-- Parámetros requeridos
-
-- Ejemplo de request
-
-- Ejemplo de response
-
-- Explicación
-
-- Evidencias mediante capturas de Swagger UI
-  <br><br>
-
-| Módulo                    | Endpoint                                                                           | Verbo  | Descripción                                             | URL Documentación                                                                                                              |
-|---------------------------|------------------------------------------------------------------------------------|--------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| **Patient Reports**       | `/api/v1/patients/{patientId}/mood-states`                                         | GET    | Obtiene el historial de estados de ánimo de un paciente | [https://psymed-backend-new.onrender.com/swagger-ui/index.html](https://psymed-backend-new.onrender.com/swagger-ui/index.html) |
-|                           | `/api/v1/patients/{patientId}/mood-states`                                         | POST   | Registra un nuevo estado de ánimo para un paciente      |                                                                                                                                |
-|                           | `/api/v1/patients/{patientId}/biological-functions`                                | GET    | Lista funciones biológicas del paciente                 |                                                                                                                                |
-|                           | `/api/v1/patients/{patientId}/biological-functions`                                | POST   | Crea un registro de función biológica                   |                                                                                                                                |
-| **Professional Profiles** | `/api/v1/professional-profiles`                                                    | POST   | Crea un perfil profesional                              |                                                                                                                                |
-|                           | `/api/v1/professional-profiles/{profileId}`                                        | GET    | Obtiene un perfil por ID                                |                                                                                                                                |
-|                           | `/api/v1/professional-profiles/account/{accountId}`                                | GET    | Obtiene el perfil asociado a una cuenta                 |                                                                                                                                |
-| **Authentication**        | `/api/v1/authentication/sign-up`                                                   | POST   | Registro de usuarios                                    |                                                                                                                                |
-|                           | `/api/v1/authentication/sign-in`                                                   | POST   | Autenticación con JWT                                   |                                                                                                                                |
-| **Professional Sessions** | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions`             | POST   | Reserva una sesión                                      |                                                                                                                                |
-|                           | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions/{sessionId}` | PUT    | Actualiza una sesión                                    |                                                                                                                                |
-|                           | `/api/v1/professionals/{professionalId}/patients/{patientId}/sessions/{sessionId}` | DELETE | Elimina una sesión                                      |                                                                                                                                |
-|                           | `/api/v1/professionals/{professionalId}/sessions`                                  | GET    | Obtiene sesiones de un profesional                      |                                                                                                                                |
-| **Medication**            | `/api/v1/pills`                                                                    | POST   | Crea un medicamento                                     |                                                                                                                                |
-|                           | `/api/v1/pills/{pillId}`                                                           | PUT    | Actualiza medicamento                                   |                                                                                                                                |
-|                           | `/api/v1/pills/{pillId}`                                                           | DELETE | Elimina medicamento                                     |                                                                                                                                |
-|                           | `/api/v1/pills`                                                                    | GET    | Lista medicamentos                                      |                                                                                                                                |
-|                           | `/api/v1/pills/patient/{patientId}`                                                | GET    | Lista medicamentos asignados a un paciente              |                                                                                                                                |
-| **Patient Profiles**      | `/api/v1/patient-profiles`                                                         | POST   | Crea un perfil de paciente                              |                                                                                                                                |
-|                           | `/api/v1/patient-profiles/{profileId}`                                             | GET    | Obtiene perfil                                          |                                                                                                                                |
-|                           | `/api/v1/patient-profiles/{profileId}`                                             | PUT    | Actualiza perfil                                        |                                                                                                                                |
-|                           | `/api/v1/patient-profiles/{profileId}`                                             | DELETE | Elimina perfil                                          |                                                                                                                                |
-|                           | `/api/v1/patient-profiles/professional/{professionalId}`                           | GET    | Perfiles asociados a un psicólogo                       |                                                                                                                                |
-|                           | `/api/v1/patient-profiles/account/{accountId}`                                     | GET    | Perfiles asociados a una cuenta                         |                                                                                                                                |
-| **Session Tools**         | `/api/v1/sessions/{sessionId}/notes`                                               | POST   | Agrega nota clínica                                     |                                                                                                                                |
-|                           | `/api/v1/sessions/{sessionId}/notes`                                               | PUT    | Actualiza nota                                          |                                                                                                                                |
-|                           | `/api/v1/sessions/{sessionId}/notes`                                               | GET    | Obtiene nota                                            |                                                                                                                                |
-|                           | `/api/v1/sessions/{sessionId}/notes`                                               | DELETE | Elimina nota                                            |                                                                                                                                |
-|                           | `/api/v1/sessions/{sessionId}/tasks`                                               | GET    | Lista tareas de sesión                                  |                                                                                                                                |
-|                           | `/api/v1/sessions/{sessionId}/tasks`                                               | POST   | Agrega tarea                                            |                                                                                                                                |
-|                           | `/api/v1/sessions/{sessionId}/tasks/{taskId}/complete`                             | POST   | Marca tarea completada                                  |                                                                                                                                |
-|                           | `/api/v1/sessions/{sessionId}/tasks/{taskId}/incomplete`                           | POST   | Marca tarea como incompleta                             |                                                                                                                                |
-| **Patient Sessions**      | `/api/v1/patients/{patientId}/tasks`                                               | GET    | Obtiene tareas asignadas al paciente                    |                                                                                                                                |
-|                           | `/api/v1/patients/{patientId}/sessions`                                            | GET    | Lista sesiones del paciente                             |                                                                                                                                |
-
-<br>
-
-- **Ejemplo de Documentación de un Endpoint** <br><br>
-  **GET**: /api/v1/patients/{patientId}/mood-states
-  <br>
-  <br>
-
-- **Acción:** <br>
-  Obtiene todos los registros de estados de ánimo del paciente indicado.
-  <br><br>
-
-- **Parámetros:**
-
- | Tipo | Nombre    | Descripción     |
-|------|-----------|-----------------|
-| Path | patientId | ID del paciente |
-<br>
-
-- **Response de ejemplo** <br>
-```
-{
-    "patientId": 12,
-    "moodStates": 
-    [
-        {
-            "id": 47,
-            "mood": "Happy",
-            "date": "2025-01-12T15:20:00"
-        }
-    ]
-}
-```
-
-- **Explicación**<br><br>
-  El servicio retorna una lista de estados de ánimo previamente registrados. Permite al profesional de la salud mental visualizar la evolución emocional del paciente.
-  <br><br>
+#### 4.2.2.6. Services Documentation Evidence for Sprint Review
 
 - **Capturas de Evidencia**<br>
 
@@ -1815,33 +1994,18 @@ Se generó documentación detallada por cada endpoint, incluyendo:
 
 <br>
 
-- **Repositorio:** https://github.com/Mobile-Dev-upc/psymed-backend-appmoviles
-  <br><br>
+#### 4.2.2.7. Software Deployment Evidence for Sprint Review
 
-- **Conclusiones**<br>
+Nuestro backend está desplegado en Render y nuestra base de datos en Neon Database, a continuación captura de la evidencia
 
-  Todos los endpoints previstos fueron implementados, documentados y verificados. Las historias de usuario del Sprint
-  fueron completadas satisfactoriamente y validadas mediante la documentación generada en Swagger UI.
-  <br>
-  <br>
+Hemos Utilizado Firebase App Distribution para poder compartir con nuestros testers nuestra primera versión, a continuación captura de la evidencia
 
-#### 4.2.1.7. Software Deployment Evidence for Sprint Review
 
-Se desplegó el backend usando Render como plataforma de despliegue de aplicaciones en la nube. A continuación, se presentan las evidencias del despliegue exitoso del backend de Psymed.
 
-<img width="1296" height="678" alt="image" src="https://github.com/user-attachments/assets/25187fb1-8087-4388-8ce1-8e422cdf1368" />
+#### 4.2.2.8. Team Collaboration Insights during Sprint
 
-<br>
+En esta sección se demuestra la colaboración en equipo que tuvimos para nuestro segundo sprint
 
-<img width="1319" height="684" alt="image" src="https://github.com/user-attachments/assets/9c577f97-cbb2-4d8e-b9be-5d564e8035c2" />
-
-<br>
-
-Se puede ver el API documentation desde Swagger UI desde la ruta del despliegue como se nota en el link de la barra buscadora.
-
-#### 4.2.1.8. Team Collaboration Insights during Sprint
-
-<img width="898" height="215" alt="image" src="https://github.com/user-attachments/assets/6a3e9dbe-f9df-40e9-9cec-0b0253e7e795" />
 
 
 ## 4.3. Validation Interviews
