@@ -2339,18 +2339,33 @@ Separar ambos botones con espacio suficiente o colores contrastantes para minimi
 
 ### Video App Validation
 
+Link del video: https://goo.su/f259FM3
+
+<br><br>
+
+<img width="1314" height="633" alt="image" src="https://github.com/user-attachments/assets/965b4968-de24-40d3-835d-4a8a4703b185" />
+
+<br>
+
 ### Video About the product
 
-**Link del video:** https://acortar.link/bWwB1q 
+**Link del video:** https://n9.cl/tfsu4 
 
 <br>
 
 <br>
-<img width="1350" height="757" alt="image" src="https://github.com/user-attachments/assets/c379512b-823e-419e-ad23-9073f3a7a5f9" />
+<img width="1309" height="560" alt="image" src="https://github.com/user-attachments/assets/f6e65260-d708-40db-a738-0148685b9ad5" />
+
 
 <br><br>
 
 ### Video About the team
+
+Link del video: https://n9.cl/chydo <br> <br>
+
+<img width="1316" height="641" alt="image" src="https://github.com/user-attachments/assets/11dcd906-73cc-4817-af77-bc4e242287c7" />
+
+
 ### Glosario
 
 **Paciente**<br>
@@ -2402,3 +2417,11 @@ Proceso de recopilación continua de datos del paciente, como estados de ánimo,
 <br><br>
 
 ### Anexos
+
+- Video About the Product: https://n9.cl/tfsu4 <br>
+
+- Video About the Team: https://n9.cl/chydo <br>
+
+- Video Expo TF: https://goo.su/7Y3OZ  <br>
+
+- Video Validation: https://goo.su/f259FM3 <br>
