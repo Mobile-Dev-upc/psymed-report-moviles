@@ -1231,7 +1231,74 @@ Se puede ver el API documentation desde Swagger UI desde la ruta del despliegue 
 ### 4.2.2. Sprint 2
 #### 4.2.2.1. Sprint Planning 2
 
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 2</td>
+  </tr>
+  <tr>
+    <th>Sprint Planning Background</th>
+    <td>Implementación final de la plataforma PsyMed para profesionales de la salud mental y pacientes.</td>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>2025-11-28</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>10:00 AM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Reunión virtual vía Discord</td>
+  </tr>
+  <tr>
+    <th>Prepared By</th>
+    <td>Maita Falckenheiner, Romina Guadalupe</td>
+  </tr>
+  <tr>
+    <th>Attendees</th>
+    <td>Torres Flores, Paolo Alessandro</td>
+  </tr>
+  <tr>
+    <th>Sprint 2 – 2 Review Summary</th>
+    <td>Se revisó el entregable pasado, verificando la correcta implementación de las User Stories designadas.</td>
+  </tr>
+  <tr>
+    <th>Sprint 2 – 2 Retrospective Summary</th>
+    <td>Se confirma la correcta implementación de User Stories con funcionalidades core y se toma como impulso para añadir las siguientes funcionalidades</td>
+  </tr>
+  <tr>
+    <th>Sprint Goal &amp; User Stories</th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Sprint 2 Goal</th>
+    <td>
+      <strong>Nuestro enfoque está en</strong> entregar la versión final funcional de la plataforma PsyMed, que permita la conexión entre profesionales de la salud mental y sus pacientes para una gestión eficiente de las terapias.<br>
+      <strong>Creemos que esto ofrece</strong> una mejora en la comunicación, el seguimiento de tratamientos y la gestión de citas en un entorno seguro y accesible para profesionales de la salud mental y pacientes.<br>
+      <strong>Esto se confirmará cuando</strong> los usuarios puedan registrarse, agendar sesiones y hacer seguimiento de su progreso terapéutico dentro de la plataforma móvil, con funcionamiento estable en los módulos principales.
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint 2 - Velocity</th>
+    <td>Estimado en 162 Story Points, enfocado en entregar el MVP con funcionalidades de backend, frontend y autenticación.</td>
+  </tr>
+  <tr>
+    <th>Sprint 2 - Story Points</th>
+    <td>162 Story Points distribuidos en 40 User Stories, incluyendo registro, inicio de sesión, gestión de pacientes, programación de citas, gestion de medicación y control de estado</td>
+  </tr>
+</table>
+
 #### 4.2.2.2. Sprint Backlog 2
+
+Se usó Trello para el correcto control de realización de tareas.<br>
+Link del trello: https://trello.com/invite/b/692b1e1e3c5cd474cf90539e/ATTIc2d47750f8fbe65b0a2ebbf2a2f708be7C599AD0/sprint-2 <br>
+
+<br>
+<br>
+<img width="1309" height="626" alt="image" src="https://github.com/user-attachments/assets/ba807531-16e6-4e95-929e-248bc350f6e6" />
+<br><br>
 
 <table>
   <tr>
