@@ -234,7 +234,8 @@ gestión de pacientes, citas, medicamentos y monitoreo del estado emocional.
 
 <br>
 
-<img width="1141" height="534" alt="image" src="https://github.com/user-attachments/assets/27641449-dab3-4d99-8a74-e3adc0046425" />
+<img width="1299" height="631" alt="image" src="https://github.com/user-attachments/assets/03a13d13-6c5b-4499-9882-22f086644cb4" />
+
 
 
 <br>
